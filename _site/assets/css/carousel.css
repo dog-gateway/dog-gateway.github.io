@@ -45,6 +45,12 @@ body {
   z-index: 10;
 }
 
+.carousel-caption p
+{
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 400px;
@@ -67,12 +73,23 @@ body {
 .marketing {
   padding-right: 15px;
   padding-left: 15px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
+}
+
+.marketing p
+{
+	text-align: justify;
+}
+
+.marketing p + p 
+{
+	text-align: center;
 }
 .marketing h2 {
   font-weight: normal;

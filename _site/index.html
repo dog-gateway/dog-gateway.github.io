@@ -24,6 +24,8 @@
 
 <!-- Custom styles for this template -->
 <link href="assets/css/carousel.css" rel="stylesheet">
+<link href="assets/css/custom.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
@@ -39,12 +41,15 @@
 							class="icon-bar"></span> <span class="icon-bar"></span> <span
 							class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">The Dog Gateway</a>
+					<a class="navbar-brand" href="#"><img src="assets/img/dog-logo.png"/>The Dog Gateway</a>
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#about">About</a></li>
+						<li><a href="#use">Use It!</a></li>
+						<li><a href="#integrate">Integrate it!</a></li>
+						<li><a href="#develop">Develop</a></li>
+						<li><a href="about.html">About</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
@@ -53,6 +58,7 @@
 
 	</div>
 </div>
+
 	<!-- Carousel
     ================================================== -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -68,11 +74,10 @@
 				alt="First slide">
 			<div class="container">
 				<div class="carousel-caption">
-					<h1>Device abstraction</h1>
-					<p>Write once, deploy everywhere!</p>
+					<h1>Use it!</h1>
+					<p>Design your own application, web interface, mobile App, independently from the home automation network it will use.</p>
 					<p>
-						<a class="btn btn-lg btn-primary" href="#" role="button">Sign
-							up today</a>
+						<a class="btn btn-lg btn-primary" href="#" role="button">Check the RestAPI</a>
 					</p>
 				</div>
 			</div>
@@ -82,10 +87,8 @@
 				alt="Second slide">
 			<div class="container">
 				<div class="carousel-caption">
-					<h1>Another example headline.</h1>
-					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-						Donec id elit non mi porta gravida at eget metus. Nullam id dolor
-						id nibh ultricies vehicula ut id elit.</p>
+					<h1>Integrate it!</h1>
+					<p>Integrate multiple networks into your enterprise infrastructure. Build your own monitoring and control platform. Create new products based on The Dog Gateway.</p>
 					<p>
 						<a class="btn btn-lg btn-primary" href="#" role="button">Learn
 							more</a>
@@ -98,13 +101,11 @@
 				alt="Third slide">
 			<div class="container">
 				<div class="carousel-caption">
-					<h1>One more for good measure.</h1>
-					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-						Donec id elit non mi porta gravida at eget metus. Nullam id dolor
-						id nibh ultricies vehicula ut id elit.</p>
+					<h1>Develop!</h1>
+					<p>Develop new functionalities inside the gateway. Integrate new technologies. Build your own modules.</p>
 					<p>
-						<a class="btn btn-lg btn-primary" href="#" role="button">Browse
-							gallery</a>
+						<a class="btn btn-lg btn-primary" href="#" role="button">Developer
+							Resources</a>
 					</p>
 				</div>
 			</div>
@@ -121,7 +122,7 @@
 
 	<!-- Three columns of text below the carousel -->
 	<div class="row">
-		<div class="col-lg-4 col-sm-6">
+		<div class="col-lg-4 col-md-4 col-sm-6">
 			<img src="assets/img/sw.png"
 				alt="abstraction">
 			<h2>Uniform</h2>
@@ -136,8 +137,8 @@
 			</p>
 		</div>
 		<!-- /.col-lg-4 -->
-		<div class="col-lg-4 col-sm-6">
-			<img class="img-circle" src="assets/img/abstraction.jpg"
+		<div class="col-lg-4 col-md-4 col-sm-6">
+			<img class="img-circle" src="assets/img/multiprotocol.png"
 				alt="Generic placeholder image">
 			<h2>Multi-protocol</h2>
 			<p>Virtually support any home, building and automation protocol. 
@@ -150,11 +151,11 @@
 			</p>
 		</div>
 		<!-- /.col-lg-4 -->
-		<div class="col-lg-4 col-sm-6">
+		<div class="col-lg-4 col-md-4 col-sm-6">
 			<img class="img-circle" src="assets/img/osi.png"
 				alt="Open Source Initiative">
 			<h2>Open Source</h2>
-			<p>Released under the Apache v2.0 License. Want to contribute? Join us on GitHub!</p>
+			<p>Released under the Apache v2.0 License. Want to contribute? Join us on <a href="https://github.com/dog-gateway">GitHub</a>!</p>
 			<p>
 				<a class="btn btn-default" href="#" role="button">Learn More
 					&raquo;</a>
@@ -185,18 +186,23 @@
 				data-src="holder.js/500x500/auto" alt="Generic placeholder image">
 		</div>
 	</div>
+
+<p> * currently under development</p>
 </div>
 
-
+	
 	<!-- FOOTER -->
+<div class="container">
+<hr/>
 <footer>
 	<p class="pull-right">
 		<a href="#">Back to top</a>
 	</p>
 	<p>
-		&copy; 2006-2014 The Dog gateway. &middot; <a href="#">License</a>
+		&copy; 2006-2014 The Dog Gateway. - <a href="#">License</a>
 	</p>
 </footer>
+</div>
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
