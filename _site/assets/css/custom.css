@@ -1,0 +1,22 @@
+.navbar-brand img
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	width: 32px;
+	height: 32px;
+}
+
+.navbar-brand
+{
+	padding-top: 11px;
+	font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+body
+{
+	font-family: 'Ubuntu', sans-serif;
+}
