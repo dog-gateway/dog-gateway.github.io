@@ -1,0 +1,21 @@
+---
+layout: default
+title: The Dog Gateway - Blog
+---
+
+<ul>
+  {% for post in site.posts %}
+  	{%if forloop.index0 < 10 %}
+    <hr>
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.content }}</p>
+      <p><em>Posted on {{ post.date | date: "%-d %B %Y" }}</em></p>
+
+    {% else %}
+     <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <p>{{ post.excerpt }}</p>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
