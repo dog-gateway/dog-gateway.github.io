@@ -20,3 +20,8 @@ body
 {
 	font-family: 'Ubuntu', sans-serif;
 }
+
+img.pull-left
+{
+	padding-right: 10px;
+}

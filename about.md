@@ -16,3 +16,33 @@ The Dog Gateway development team is striving to improve and enrich the gateway d
 We are actively involved in some European and International standardization activities in the smart energy metering field, and we aim at readily support and integrate the upcoming OSGi device abstraction specification. We are seeking volounteers to contribute to the project in order to boost its adoption in commercial products, research projects and DIY solutions.
 
 # Who are we? #
+
+We are a team of developers either working as Post Doc researchers at the [Politecnico di Torino](http://www.polito.it) or in private companies. We carry design and development activities in our spare time and, when possible during normal working hours (if the designed/developed feature is part of a research project). Currently our team includes:
+
+### Active members ###
+
+<div class="row">
+{% for member in site.data.members %}
+  <div class="col-md-6">
+  	<img src="{{member.image}}" class="img-circle pull-left"/>
+    <strong> {{ member.name }} </strong>
+    <br/>
+    {{ member.description }}
+    </a>
+  </div>
+{% endfor %}
+</div>
+
+### Former Members ###
+
+<div class="row">
+{% for member in site.data.former-members %}
+  <div class="col-md-6">
+  	<img src="{{member.image}}" class="img-circle"/><br/>
+    <strong> {{ member.name }} </strong>
+    <br/>
+    {{ member.description }}
+    </a>
+  </div>
+{% endfor %}
+</div>

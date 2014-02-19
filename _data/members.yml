@@ -1,0 +1,8 @@
+- name: Dario Bonino
+  description: A research assistant in the e-Lite research group at the Department of Computer Science and Automation of Politecnico di Torino. He received his M.S. and Ph.D. degrees in Electronics and Computer Science Engineering, respectively, from Politecnico di Torino in 2002 and 2006. His current research interests include Semantic Web technologies, with a particular focus on architectures for semantic annotation, indexing and retrieval of web resources, domotics and semantic-aware, home-related technologies, distributed systems, multi-agent systems and semantics-aware web architectures.
+  image: assets/img/people/dbonino.jpg
+  
+- name: Luigi De Russis
+  description: A Ph.D. candidate in the e-Lite research group at the Department of Computer Science and Automation of Politecnico di Torino, advised by Fulvio Corno. He received his M.S. degree in Computer Engineering from Politecnico di Torino in 2010. His current research focuses on Human Computer Interaction, with a particular interest on interaction techniques applied to Smart Environments. He was a department editor for the ACM student magazine XRDS up to December 2013.
+  image: assets/img/people/derussis.jpg
+  
