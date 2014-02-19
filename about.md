@@ -19,6 +19,8 @@ We are actively involved in some European and International standardization acti
 
 We are a team of developers either working as Post Doc researchers at the [Politecnico di Torino](http://www.polito.it) or in private companies. We carry design and development activities in our spare time and, when possible during normal working hours (if the designed/developed feature is part of a research project). Currently our team includes:
 
+---
+
 ### Active members ###
 
 <div class="row">
@@ -32,6 +34,8 @@ We are a team of developers either working as Post Doc researchers at the [Polit
   </div>
 {% endfor %}
 </div>
+
+---
 
 ### Former Members ###
 
