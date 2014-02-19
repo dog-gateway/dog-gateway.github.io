@@ -31,3 +31,13 @@ img.small
 	width: 70px;
 	height: 70px;
 }
+
+.profile
+{
+	text-align: center;
+}
+
+.sidebar-fixed
+{
+	position: fixed;
+}

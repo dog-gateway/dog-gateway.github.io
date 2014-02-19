@@ -1,6 +1,7 @@
 ---
 layout: default
 title: The Dog Gateway - About
+active: About
 ---
 
 # About #
@@ -57,7 +58,7 @@ We are a team of developers working as postdoc researchers at the [Politecnico d
 
 <div class="row">
 {% for member in site.data.collaborators %}
-  <div class="col-md-6">
+  <div class="col-md-3 profile">
   	<img src="{{member.image}}" class="img-circle small"/><br/>
     <strong> {{ member.name }} </strong>
     <br/>
@@ -73,7 +74,7 @@ We are a team of developers working as postdoc researchers at the [Politecnico d
 
 <div class="row">
 {% for member in site.data.former-members %}
-  <div class="col-md-4">
+  <div class="col-md-3 profile">
   	<img src="{{member.image}}" class="img-circle small"/><br/>
     <strong> {{ member.name }} </strong>
     <br/>
@@ -89,7 +90,8 @@ We are a team of developers working as postdoc researchers at the [Politecnico d
 
 <div class="row">
 {% for member in site.data.former-contributors %}
-  <div class="col-md-3">
+  <div class="col-md-3 profile">
+  <img src="{{member.image}}" class="img-circle small"/><br/>
     <strong> {{ member.name }} </strong>
     <br/>
     {{ member.description }}

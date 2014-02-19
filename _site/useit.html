@@ -45,13 +45,19 @@
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="/useit.html">Use It!</a></li>
+						<li ><a href="/index.html">Home</a></li>
+						<li  class="active" ><a href="/useit.html">Use It!</a></li>
 						<!-- <li><a href="#integrate">Integrate it!</a></li>-->
-						<li><a href="#develop">Develop!</a></li>
-						<li><a href="/blog.html">Blog</a></li>
-						<li><a href="/about.html">About</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li class="dropdown"><a href="#develop"
+							class="dropdown-toggle" data-toggle="dropdown">Dev Center <b
+								class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Build on it!</a></li>
+								<li><a href="#">Develop!</a></li>
+							</ul></li>
+						<li ><a href="/blog.html">Blog</a></li>
+						<li ><a href="/about.html">About</a></li>
+						<li ><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -59,9 +65,21 @@
 	</div>
 </header>
  
+	
 	<div class="container">
 		<div class="row">
-			<div class="col-md-9" role="main">
+			
+				<!-- sidebar -->
+        <div class="col-md-3 " id="sidebar" role="navigation">
+            <ul class="list-group sidebar-fixed">
+              <li class="list-group-item"><a href="#">Home</a></li>
+              <li class="list-group-item"><a href="#">Configuration</a></li>
+              <li class="list-group-item"><a href="#">Link 2</a></li>
+              <li class="list-group-item"><a href="#">Link 3</a></li>              
+            </ul>
+        </div>
+			
+			<div class="col-md-9 col-md-offset-3" role="main">
 			<h1>Use Dog now!</h1>
 
 <p>Are you eager to experiment? Do you want to start using the Dog Gateway now? Here you can find some easy recipes to getting you online with your brand new Dog installation!</p>
@@ -136,6 +154,34 @@ cp dog-zwave/*.jar dog/drivers
 
 <p>For any additional module (bundle) you download, check the installation and configuration instructions on the corresponding GitHub repository.</p>
 
+<h4>Configuration Anatomy</h4>
+
+<p>The Dog Gateway configuration is stored under the folder named <em>configuration</em>, and has the following structure:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">configuration
+    |--- config
+    |    |--- com.eclipsesource.jaxrs.connector.cfg
+    |    |--- it.polito.elite.dog.addons.[addon configuration files]
+    |    |--- it.polito.elite.dog.core.housemodel.simple.cfg
+    |    |--- it.polito.elite.dog.core.log.console.cfg
+    |    |--- it.polito.elite.dog.drivers.[technology].[driver configuration files]
+    |    |--- home.xml
+    |    |--- [localRuleStore.xml]
+    |    |--- ...
+    |
+    |--- config.ini
+</code></pre></div>
+<p>While the <code>config.ini</code> file usually does not need any change (and, vice-versa any wrong modification may compromise the gateway execution), 
+files inside the <code>configuration</code> folder provide parameters to tune-up the gateway modules and might need to be changed depending on the specific installation. 
+Among the available files, two main types can be identified: <code>.cfg</code> files and <code>.xml</code> files. The former are <code>key = value</code> files used to specify configuration
+parameters needed by the gateway bundles (either to run, or to tune-up their runtime execution). The latter, instead, are used to provide extensive configuration data, e.g., the home configuration in terms of devices and locations, the set of rules to be executed, etc. They are typically pointed by some parameter specified in <code>.cfg</code> files.</p>
+
+<p>To better understand the files structure, let us explain one of the most important configuration files, the <code>it.polito.elite.dog.core.housemodel.simple.cfg</code> which provides details about the home managed by the Dog Gateway.
+Such a file is organized as follows:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text"># Home configuration file
+# xml files might also be in external directories e.g., /data/dog-config/
+DEVICES=zwave.xml
+SVGPLAN=simple_home.svg
+</code></pre></div>
 <h3>Run</h3>
 
 			</div>

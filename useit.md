@@ -1,8 +1,9 @@
 ---
 layout: default
 title: The Dog Gateway - Use it!
----
-
+active: Use It!
+sidebar: useit-sidebar.html
+---      
 # Use Dog now! #
 
 Are you eager to experiment? Do you want to start using the Dog Gateway now? Here you can find some easy recipes to getting you online with your brand new Dog installation!
@@ -62,5 +63,34 @@ or have a look at the sample configurations:
 * [ZWave](https://github.com/dog-gateway/zwave-configuration)
 
 For any additional module (bundle) you download, check the installation and configuration instructions on the corresponding GitHub repository.
+
+#### Configuration Anatomy ####
+The Dog Gateway configuration is stored under the folder named *configuration*, and has the following structure:
+
+	configuration
+		|--- config
+		|	 |--- com.eclipsesource.jaxrs.connector.cfg
+		|	 |--- it.polito.elite.dog.addons.[addon configuration files]
+		|	 |--- it.polito.elite.dog.core.housemodel.simple.cfg
+		|	 |--- it.polito.elite.dog.core.log.console.cfg
+		|	 |--- it.polito.elite.dog.drivers.[technology].[driver configuration files]
+		|	 |--- home.xml
+		|	 |--- [localRuleStore.xml]
+		|	 |--- ...
+		|
+		|--- config.ini
+		
+While the ```config.ini``` file usually does not need any change (and, vice-versa any wrong modification may compromise the gateway execution), 
+files inside the ```configuration``` folder provide parameters to tune-up the gateway modules and might need to be changed depending on the specific installation. 
+Among the available files, two main types can be identified: ```.cfg``` files and ```.xml``` files. The former are ```key = value``` files used to specify configuration
+parameters needed by the gateway bundles (either to run, or to tune-up their runtime execution). The latter, instead, are used to provide extensive configuration data, e.g., the home configuration in terms of devices and locations, the set of rules to be executed, etc. They are typically pointed by some parameter specified in ```.cfg``` files.
+
+To better understand the files structure, let us explain one of the most important configuration files, the ```it.polito.elite.dog.core.housemodel.simple.cfg``` which provides details about the home managed by the Dog Gateway.
+Such a file is organized as follows:
+
+	# Home configuration file
+	# xml files might also be in external directories e.g., /data/dog-config/
+	DEVICES=zwave.xml
+	SVGPLAN=simple_home.svg
 
 ### Run ###

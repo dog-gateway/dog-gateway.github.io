@@ -6,9 +6,13 @@
 </head>
 <body>
 	{% include navbar.html %} 
+	
 	<div class="container">
 		<div class="row">
-			<div class="col-md-9" role="main">
+			{% if page.sidebar %}
+				{% include {{page.sidebar}} %}
+			{% endif %}
+			<div class="col-md-9 {% if page.sidebar %}col-md-offset-3{% endif %}" role="main">
 			{{content }}
 			</div>
 		</div>
