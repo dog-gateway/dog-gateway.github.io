@@ -1,3 +1,5 @@
 name: The Dog Gateway
 markdown: redcarpet
 pygments: true
+url: http://dog-gateway.github.io
+permalink: /:categories/:year/:title.html

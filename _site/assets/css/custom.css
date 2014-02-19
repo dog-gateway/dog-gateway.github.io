@@ -25,3 +25,9 @@ img.pull-left
 {
 	padding-right: 10px;
 }
+
+img.small
+{
+	width: 70px;
+	height: 70px;
+}

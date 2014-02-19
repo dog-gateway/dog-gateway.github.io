@@ -1,21 +1,24 @@
----
-layout: default
-title: The Dog Gateway - Blog
+--- 
+layout: default 
+title: The Dog Gateway - Blog 
 ---
 
-<ul>
-  {% for post in site.posts %}
-  	{%if forloop.index0 < 10 %}
-    <hr>
-      <h3>{{ post.title }}</h3>
-      <p>{{ post.content }}</p>
-      <p><em>Posted on {{ post.date | date: "%-d %B %Y" }}</em></p>
 
-    {% else %}
-     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <p>{{ post.excerpt }}</p>
-    </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+	{% for post in site.posts %} 
+		{%if forloop.index0 < 10 %}
+	<hr>
+	<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ post.title }}"  data-url="{{ site.url }}{{ post.url }}">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	<p>{{ post.excerpt }}
+		<a href="{{ post.url }}">Read more...</a>
+	</p>
+	
+	<p>
+		<em>Posted on {{ post.date | date: "%-d %B %Y" }}</em>
+	</p>
+
+		{% else %}
+	<a href="{{ post.url }}">{{ post.title }}</a>
+		{% endif %} 
+	{% endfor %}

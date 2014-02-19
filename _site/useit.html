@@ -47,7 +47,7 @@
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="#">Home</a></li>
 						<li><a href="/useit.html">Use It!</a></li>
-						<li><a href="#integrate">Integrate it!</a></li>
+						<!-- <li><a href="#integrate">Integrate it!</a></li>-->
 						<li><a href="#develop">Develop</a></li>
 						<li><a href="/blog.html">Blog</a></li>
 						<li><a href="/about.html">About</a></li>
@@ -64,11 +64,79 @@
 			<div class="col-md-9" role="main">
 			<h1>Use Dog now!</h1>
 
-<p>Are you eager to experiment? Do you want to start using the Dog Gateway now? Here you can find some easy recipes to getting you online with your brand new dog installation!</p>
+<p>Are you eager to experiment? Do you want to start using the Dog Gateway now? Here you can find some easy recipes to getting you online with your brand new Dog installation!</p>
 
 <h3>Warm up!</h3>
 
-<p>Do  you already have a platform for running the gateway? which technology you want to interface?</p>
+<p>Do  you already have a platform for running the gateway? which technology do you want to interface? 
+Before downloading the latest version, check the hardware and software environment in which you plan to run the gateway.</p>
+
+<h4>Minimum Requirements</h4>
+
+<ul>
+<li>Java Runtime Environment v1.6 or greater</li>
+<li>256 MByte of system memory (actual memory required by the gateway depends on the configuration and typically ranges between 40 and 120 MBytes).</li>
+<li>64 MByte of storage (typically) </li>
+<li>Ethernet connection (to access the gateway, and to connect to the automation networks)</li>
+</ul>
+
+<h3>Download</h3>
+
+<p>Download the latest release from <a href="https://github.com/dog-gateway/dog-release">GitHub</a>. If your are planning to run the Dog Gateway on <a href="http://www.raspberrypi.org/">RaspberryPi</a> you might also want to check the available pre-compiled <a href="#raspberry-images">images</a>.
+Check for which technology drivers are available and choose the ones you prefer; download the latest releases on the corresponding drivers repositories:</p>
+
+<ul>
+<li><a href="https://github.com/dog-gateway/bticino-drivers">MyHome</a></li>
+<li><a href="https://github.com/dog-gateway/knx-drivers">KNX</a></li>
+<li><a href="https://github.com/dog-gateway/echelon-drivers">Echelon</a></li>
+<li><a href="https://github.com/dog-gateway/modbus-drivers">Modbus</a></li>
+<li><a href="https://github.com/dog-gateway/zwave-drivers">ZWave</a></li>
+</ul>
+
+<h3>Installation</h3>
+
+<p>Ok you&#39;ve got the latest release, what to do next?</p>
+
+<ul>
+<li>Uncompress the release file in the directory in which you want (or move it later to the right place); e.g.,<br/> 
+<code>
+unzip dog-3.0.zip
+</code></li>
+<li>If you downloaded additional drivers, uncompress the driver files in to a temporary folder, and move them to the <code>drivers</code> sub-directory located in the dog installation folder.<br/>
+<code>
+unzip dog-zwave.zip 
+</code>
+<br/>
+<code>
+cp dog-zwave/*.jar dog/drivers
+</code></li>
+</ul>
+
+<h3>Configuration</h3>
+
+<p>Check configuration details for each technology on the corresponding driver page on GitHub:</p>
+
+<ul>
+<li><a href="https://github.com/dog-gateway/bticino-drivers">MyHome</a></li>
+<li><a href="https://github.com/dog-gateway/knx-drivers">KNX</a></li>
+<li><a href="https://github.com/dog-gateway/echelon-drivers">Echelon</a></li>
+<li><a href="https://github.com/dog-gateway/modbus-drivers">Modbus</a></li>
+<li><a href="https://github.com/dog-gateway/zwave-drivers">ZWave</a></li>
+</ul>
+
+<p>or have a look at the sample configurations:</p>
+
+<ul>
+<li><a href="https://github.com/dog-gateway/bticino-configuration">MyHome</a></li>
+<li><a href="https://github.com/dog-gateway/knx-configuration">KNX</a></li>
+<li>Echelon</li>
+<li>Modbus</li>
+<li><a href="https://github.com/dog-gateway/zwave-configuration">ZWave</a></li>
+</ul>
+
+<p>For any additional module (bundle) you download, check the installation and configuration instructions on the corresponding GitHub repository.</p>
+
+<h3>Run</h3>
 
 			</div>
 		</div>
