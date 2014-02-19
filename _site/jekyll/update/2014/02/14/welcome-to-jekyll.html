@@ -23,16 +23,15 @@
     <![endif]-->
 
 <!-- Custom styles for this template -->
-<link href="assets/css/carousel.css" rel="stylesheet">
 <link href="assets/css/custom.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 
+	<link href="assets/css/navbar-fixed.css" rel="stylesheet">
 </head>
 <body>
+	<header>
 	<div class="navbar-wrapper">
-	<div class="container">
-
-		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -41,7 +40,8 @@
 							class="icon-bar"></span> <span class="icon-bar"></span> <span
 							class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#"><img src="assets/img/dog-logo.png"/>The Dog Gateway</a>
+					<a class="navbar-brand" href="#"><img
+						src="assets/img/dog-logo.png" />The Dog Gateway</a>
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
@@ -54,12 +54,14 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-
+		</nav>
 	</div>
-</div>
-
-	<h2>Welcome to Jekyll!</h2>
+</header>
+ 
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9" role="main">
+			<h2>Welcome to Jekyll!</h2>
 <p class="meta">14 Feb 2014</p>
 
 <div class="post">
@@ -79,7 +81,9 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
 
 </div>
 
-	
+			</div>
+		</div>
+	</div>
 	<!-- FOOTER -->
 <div class="container">
 <hr/>
@@ -95,8 +99,10 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+<!-- <script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
 <script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
