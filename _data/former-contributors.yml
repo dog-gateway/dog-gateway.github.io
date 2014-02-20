@@ -1,3 +1,9 @@
 - name: Enrico Allione
-  description: Software developer and analyst for Ufficio Documentale at Servizi Bancari Associati Spa
+  description: Software developer and analyst for Ufficio Documentale at Servizi Bancari Associati S.p.A.
   image: assets/img/people/former/contributors/enrico-allione.jpg
+
+- name: Davide Aimone
+  website: http://it.linkedin.com/pub/davide-aimone/4b/714/3a3
+  website-name: LinkedIn profile
+  description: Software Developer at Freepath s.r.l.
+  image: assets/img/people/former/contributors/aimone-davide.jpg

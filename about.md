@@ -30,7 +30,7 @@ We are actively involved in some European and International standardization acti
 
 # Who are we? #
 
-We are a team of developers working as postdoc researchers at the [Politecnico di Torino](http://www.polito.it). We carry design and development activities in our spare time and, when possible, during normal working hours (if the designed/developed feature is part of a research project). Currently our team includes:
+We are a team of developers working as postdoc researchers at the [Politecnico di Torino](http://www.polito.it). We carry design and development activities in our spare time and, when possible, during normal working hours (if the designed/developed feature is part of a research project). Dog benefits also by the work of several contributors, working in different companies.
 
 ---
 
@@ -73,7 +73,8 @@ We are a team of developers working as postdoc researchers at the [Politecnico d
     <strong> {{ member.name }} </strong>
     <br/>
     {{ member.description }}
-    <a href="{{ member.website }}">Website</a>
+    <br/>
+    <a href="{{ member.website }}">{{ member.website-name }}</a>
   </div>
 {% endfor %}
 </div>
@@ -98,12 +99,14 @@ We are a team of developers working as postdoc researchers at the [Politecnico d
 ### Former contributors ###
 
 <div class="row">
-{% for member in site.data.former-contributors %}
+{% for member in site.data.former-contributors %} 
   <div class="col-md-3 profile">
-  <img src="{{member.image}}" class="img-circle small"/><br/>
+  	<img src="{{member.image}}" class="img-circle small"/><br/>
     <strong> {{ member.name }} </strong>
     <br/>
     {{ member.description }}
+    <br/>
+    <a href="{{ member.website }}">{{ member.website-name }}</a>
   </div>
 {% endfor %}
 </div>
