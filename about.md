@@ -64,7 +64,7 @@ We are a team of developers working as postdoc researchers at the [Politecnico d
 
 ---
 
-### Contributors ###
+### Active contributors ###
 
 <div class="row">
 {% for member in site.data.collaborators %}
