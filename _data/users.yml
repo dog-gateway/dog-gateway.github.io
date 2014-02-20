@@ -1,0 +1,11 @@
+- name: Politecnico di Torino
+  website: http://polito.it
+  image: assets/img/users/polito.png
+
+- name: Proxima Centauri s.r.l.
+  website: http://www.proxima-centauri.it
+  image: assets/img/users/proxima.jpg
+
+- name: Regione Autonoma Valle d'Aosta
+  website: http://www.regione.vda.it/
+  image: assets/img/users/regione-aosta.jpg
