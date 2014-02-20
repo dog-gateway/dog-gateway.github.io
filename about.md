@@ -10,15 +10,27 @@ The Dog Gateway was firstly developed in 2006, mainly with research purposes. It
 
 From 2007 to 2014, the Dog Gateway has been developed and improved embedding more features, integrating new home, building and industrial automation technologies, providing a single uniform device abstraction layer based on Semantic Web technologies (the DogOnt ontology). In these years, 3 major versions have been released, the 3.0 being the latest.
 
-Nowadays the Dog Gateway is an OSGi compliant implementation of smart environment gateway and IoT platform featuring multi-protocol capabilities, REST-based application APIs, Uniform device representation, Rule-based activations, Realtime data elaboration (with complex event processing technologies), Xively integration (to enable social sharing of consumptions and activations), etc.
+Nowadays, the Dog Gateway is an OSGi compliant implementation of smart environment gateway and IoT platform featuring multi-protocol capabilities, REST-based application APIs, Uniform device representation, Rule-based activations, Realtime data elaboration (with complex event processing technologies), Xively integration (to enable social sharing of consumptions and activations), etc.
 
 The Dog Gateway development team is striving to improve and enrich the gateway day by day, and as result of this effort, several new features are currently on the way such as: integration of EnOcean devices, Philips Hue interoperability, Android example apps, etc.
 
 We are actively involved in some European and International standardization activities in the smart energy metering field, and we aim at readily support and integrate the upcoming OSGi device abstraction specification. We are seeking volounteers to contribute to the project in order to boost its adoption in commercial products, research projects and DIY solutions.
 
+# Who uses Dog? #
+
+<div class="row">
+{% for member in site.data.users %}
+  <div class="col-md-4 profile">
+  	<img src="{{member.image}}" /><br/>
+    <strong> {{ member.name }} </strong>
+    <a href="{{ member.website }}">{{ member.website }}</a>
+  </div>
+{% endfor %}
+</div>
+
 # Who are we? #
 
-We are a team of developers working as postdoc researchers at the [Politecnico di Torino](http://www.polito.it). We carry design and development activities in our spare time and, when possible during normal working hours (if the designed/developed feature is part of a research project). Currently our team includes:
+We are a team of developers working as postdoc researchers at the [Politecnico di Torino](http://www.polito.it). We carry design and development activities in our spare time and, when possible, during normal working hours (if the designed/developed feature is part of a research project). Currently our team includes:
 
 ---
 
@@ -31,7 +43,6 @@ We are a team of developers working as postdoc researchers at the [Politecnico d
     <strong> {{ member.name }} </strong>
     <br/>
     {{ member.description }}
-    </a>
   </div>
 {% endfor %}
 </div>
@@ -47,7 +58,6 @@ We are a team of developers working as postdoc researchers at the [Politecnico d
     <strong> {{ member.name }} </strong>
     <br/>
     {{ member.description }}
-    </a>
   </div>
 {% endfor %}
 </div>
@@ -63,7 +73,7 @@ We are a team of developers working as postdoc researchers at the [Politecnico d
     <strong> {{ member.name }} </strong>
     <br/>
     {{ member.description }}
-    </a>
+    <a href="{{ member.website }}">Website</a>
   </div>
 {% endfor %}
 </div>
@@ -79,7 +89,6 @@ We are a team of developers working as postdoc researchers at the [Politecnico d
     <strong> {{ member.name }} </strong>
     <br/>
     {{ member.description }}
-    </a>
   </div>
 {% endfor %}
 </div>
@@ -95,7 +104,6 @@ We are a team of developers working as postdoc researchers at the [Politecnico d
     <strong> {{ member.name }} </strong>
     <br/>
     {{ member.description }}
-    </a>
   </div>
 {% endfor %}
 </div>
