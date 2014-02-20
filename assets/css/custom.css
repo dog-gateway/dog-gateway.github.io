@@ -39,3 +39,13 @@ img.small {
 		top: 60px;
 	}
 }
+
+@media ( max-width : 768px) {
+	.carousel {
+		display: none;
+	}
+	.marketing
+	{
+		margin-top: 60px;
+	}
+}
