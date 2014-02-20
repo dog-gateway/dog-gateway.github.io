@@ -196,14 +196,42 @@ Open-up a browser and type:
 ```http://<dog-ip-address>:8080/admin/ui/index.html```, (if you are running
 dog in the same machine in which you open the browser the ```<dog-ip-address>``` will be ```localhost```).
 
-You will get access to Vet (The Dog Veterinary): the diagnostic and administrative interface of Dog (see the screenshot below).
+You will get access to Vet (The Dog Veterinary): the diagnostic and administrative interface of Dog (see the screenshots below).
 
-<img src="/assets/img/screenshots/vet-home.png" />
 
 Vet is organized in three sections:
 
-* Overview, which provides a quick overlook on the current gateway status reporting useful information such as
+* *Overview* 
+	* Provides a quick overlook on the current gateway status reporting useful information such as
 	the system memory occupation, the number of devices registered in Dog (active) and the number of components (bundles) 
 	currently enabled and running (might vary depending on installed drivers and addons).
-* Devices
-* Components
+
+	<br/>
+	<img src="/assets/img/screenshots/vet-home.png" />
+	
+* *Devices*
+	* Provides information on the devices currently managed by the Dog Gateway. For each device provides a constantly updated view of 
+	the device status and offers means to perform simple actions, e.g., switching on/off, etc.
+	
+	<br/>
+	<img src="/assets/img/screenshots/vet-devices.png" />
+	
+* *Components*
+	* Offers a focus on the installed gateway components, reporting the name and status (green - ok, yellow - warning, red - severe issues are occurring) of each available bundle. May be used to diagnose
+	malfunctions or issues.
+	
+	<br/>
+	<img src="/assets/img/screenshots/vet-components.png" />
+	
+
+<a id="More"></a>
+	
+### Want more? ###
+ 
+
+* You can post you consumption data on Xively.com by downloading and adding the 
+[xively.client](https://github.com/dog-gateway/xively) component. 
+You can check our [in-house gateway data](https://xively.com/feeds/937093077) on xively, 
+or you can ask us for a product serial to set-up your data-sharing on Xively (see the addons documentation for more details).
+
+* An Android app for Dog is under development, stay [tuned](/blog.html) for latest updates. 
