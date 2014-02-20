@@ -145,17 +145,20 @@ home configuration for one room and with some ZWave devices installed.
             <dhc:param name="InstanceID" value="0" type="network"/>
             <dhc:controlFunctionality class="OnOffFunctionality">
                 <dhc:commands>
-                    <dhc:command class="OffCommand" name="OffCommand_Lamp_Holder" id="OffCommand_Lamp_Holder">
+                    <dhc:command class="OffCommand" name="OffCommand_Lamp_Holder" 
+                    	id="OffCommand_Lamp_Holder">
                         <dhc:param name="realCommandName" value="off"/>
                     </dhc:command>
-                    <dhc:command class="OnCommand" name="OnCommand_Lamp_Holder" id="OnCommand_Lamp_Holder">
+                    <dhc:command class="OnCommand" name="OnCommand_Lamp_Holder" 
+                    	id="OnCommand_Lamp_Holder">
                         <dhc:param name="realCommandName" value="on"/>
                     </dhc:command>
                 </dhc:commands>
             </dhc:controlFunctionality>
             <dhc:notificationFunctionality class="StateChangeNotificationFunctionality">
                 <dhc:notifications>
-                    <dhc:notification class="StateChangeNotification" id="StateChangeNotification_Lamp_Holder">
+                    <dhc:notification class="StateChangeNotification" 
+                    	id="StateChangeNotification_Lamp_Holder">
                         <dhc:param name="nParams" value="1"/>
                         <dhc:param name="notificationName" value="stateChanged"/>
                         <dhc:param name="notificationParamName" value="newState" type="State"/>
