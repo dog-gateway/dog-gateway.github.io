@@ -1,5 +1,4 @@
-.navbar-brand img
-{
+.navbar-brand img {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-top: 0px;
@@ -8,36 +7,35 @@
 	height: 32px;
 }
 
-.navbar-brand
-{
+.navbar-brand {
 	padding-top: 11px;
 	font-family: 'Ubuntu', sans-serif;
-
 }
 
-
-body
-{
+body {
 	font-family: 'Ubuntu', sans-serif;
 }
 
-img.pull-left
-{
+img.pull-left {
 	padding-right: 10px;
 }
 
-img.small
-{
+img.small {
 	width: 70px;
 	height: 70px;
 }
 
-.profile
-{
+.profile {
 	text-align: center;
 }
 
-.sidebar-fixed
-{
-	position: fixed;
+.sidebar {
+	position: relative;
+}
+
+@media ( min-width : 768px) {
+	.sidebar {
+		position: fixed;
+		top: 60px;
+	}
 }

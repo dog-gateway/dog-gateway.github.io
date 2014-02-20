@@ -66,20 +66,23 @@
 </header>
  
 	
+	<!-- sidebar -->
+
+<div class="col-md-2 sidebar" id="sidebar" role="navigation">
+	<ul class="list-group">
+		<li class="list-group-item"><a href="#Installation">Installation</a></li>
+		<li class="list-group-item"><a href="#Configuration">Configuration</a></li>
+		<li class="list-group-item"><a href="#Run">Run</a></li>
+		<li class="list-group-item"><a href="#Control">Control</a></li>
+	</ul>
+</div>
+
+	
 	<div class="container">
 		<div class="row">
 			
-				<!-- sidebar -->
-        <div class="col-md-3 " id="sidebar" role="navigation">
-            <ul class="list-group sidebar-fixed">
-              <li class="list-group-item"><a href="#">Home</a></li>
-              <li class="list-group-item"><a href="#">Configuration</a></li>
-              <li class="list-group-item"><a href="#">Link 2</a></li>
-              <li class="list-group-item"><a href="#">Link 3</a></li>              
-            </ul>
-        </div>
-			
-			<div class="col-md-9 col-md-offset-3" role="main">
+				
+			<div class="col-md-9 col-md-offset-2 col-sm-offset-2" role="main">
 			<h1>Use Dog now!</h1>
 
 <p>Are you eager to experiment? Do you want to start using the Dog Gateway now? Here you can find some easy recipes to getting you online with your brand new Dog installation!</p>
@@ -111,6 +114,8 @@ Check for which technology drivers are available and choose the ones you prefer;
 <li><a href="https://github.com/dog-gateway/zwave-drivers">ZWave</a></li>
 </ul>
 
+<p><a id="Installation"></a></p>
+
 <h3>Installation</h3>
 
 <p>Ok you&#39;ve got the latest release, what to do next?</p>
@@ -127,7 +132,8 @@ unzip dog-zwave.zip
 <br/>
 <code>
 cp dog-zwave/*.jar dog/drivers
-</code></li>
+</code>
+<a id="Configuration"></a></li>
 </ul>
 
 <h3>Configuration</h3>
@@ -179,10 +185,119 @@ parameters needed by the gateway bundles (either to run, or to tune-up their run
 Such a file is organized as follows:</p>
 <div class="highlight"><pre><code class="text language-text" data-lang="text"># Home configuration file
 # xml files might also be in external directories e.g., /data/dog-config/
-DEVICES=zwave.xml
+DEVICES=home.xml
 SVGPLAN=simple_home.svg
 </code></pre></div>
+<p>where configuration parameters are on the left and values are on the right, separated by an &quot;=&quot; sign.</p>
+
+<p>In this specific case, the first configuration parameter <code>DEVICES = home.xml</code> identifies the name and
+location of the home configuration file (<code>home.xml</code>). Such a file defines the environment
+structure and the set of devices installed inside the environment. For example, the following excerpt shows a
+home configuration for one room and with some ZWave devices installed.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;dhc:dogHomeConfiguration xmlns:dhc=&quot;http://elite.polito.it/dogHomeConfiguration&quot;&gt;
+&lt;dhc:buildingEnvironment&gt;
+    &lt;dhc:building id=&quot;Case&quot;&gt;
+        &lt;dhc:flat id=&quot;ZWAVE_Demo&quot; class=&quot;Flat&quot;&gt;
+            &lt;dhc:room id=&quot;demo_room&quot; class=&quot;StorageRoom&quot;&gt;
+                &lt;dhc:ceiling id=&quot;ceiling&quot; class=&quot;Ceiling&quot;/&gt;
+                &lt;dhc:floor id=&quot;floor&quot; class=&quot;Floor&quot;/&gt;
+                &lt;dhc:wall id=&quot;wall&quot; class=&quot;Wall&quot;/&gt;
+            &lt;/dhc:room&gt;
+        &lt;/dhc:flat&gt;
+    &lt;/dhc:building&gt;
+&lt;/dhc:buildingEnvironment&gt;
+&lt;dhc:controllables&gt;
+    &lt;dhc:device class=&quot;ZWaveGateway&quot; id=&quot;zwave-gateway&quot; domoticSystem=&quot;ZWave&quot;&gt;
+        &lt;dhc:description&gt;The ZWave X gateway
+        &lt;/dhc:description&gt;
+        &lt;dhc:isIn&gt;demo_room&lt;/dhc:isIn&gt;
+        &lt;dhc:param name=&quot;NodeID&quot; value=&quot;1&quot; type=&quot;network&quot;/&gt;
+        &lt;dhc:controlFunctionality class=&quot;AssociateFunctionality&quot;&gt;
+            &lt;dhc:commands&gt;
+                &lt;dhc:command class=&quot;AssociateCommand&quot; name=&quot;AssociateCommand_zwave-gateway&quot; 
+                    id=&quot;AssociateCommand_zwave-gateway&quot;&gt;
+                    &lt;dhc:param name=&quot;realCommandName&quot; value=&quot;associate&quot;/&gt;
+                &lt;/dhc:command&gt;
+                &lt;dhc:command class=&quot;DisassociateCommand&quot; name=&quot;DisassociateCommand_zwave-gateway&quot; 
+                    id=&quot;DisassociateCommand_zwave-gateway&quot;&gt;
+                    &lt;dhc:param name=&quot;realCommandName&quot; value=&quot;disassociate&quot;/&gt;
+                &lt;/dhc:command&gt;
+            &lt;/dhc:commands&gt;
+        &lt;/dhc:controlFunctionality&gt;
+    &lt;/dhc:device&gt;
+    &lt;dhc:device class=&quot;LampHolder&quot; id=&quot;Lamp_Holder&quot; domoticSystem=&quot;ZWave&quot; gateway=&quot;zwave-gateway&quot;&gt;
+        &lt;dhc:description&gt;A MainsPowerOutlet instance named
+            MainsPowerOutlet_ZW1
+        &lt;/dhc:description&gt;
+        &lt;dhc:isIn&gt;demo_room&lt;/dhc:isIn&gt;
+        &lt;dhc:param name=&quot;NodeID&quot; value=&quot;4&quot; type=&quot;network&quot;/&gt;
+        &lt;dhc:param name=&quot;InstanceID&quot; value=&quot;0&quot; type=&quot;network&quot;/&gt;
+        &lt;dhc:controlFunctionality class=&quot;OnOffFunctionality&quot;&gt;
+            &lt;dhc:commands&gt;
+                &lt;dhc:command class=&quot;OffCommand&quot; name=&quot;OffCommand_Lamp_Holder&quot; id=&quot;OffCommand_Lamp_Holder&quot;&gt;
+                    &lt;dhc:param name=&quot;realCommandName&quot; value=&quot;off&quot;/&gt;
+                &lt;/dhc:command&gt;
+                &lt;dhc:command class=&quot;OnCommand&quot; name=&quot;OnCommand_Lamp_Holder&quot; id=&quot;OnCommand_Lamp_Holder&quot;&gt;
+                    &lt;dhc:param name=&quot;realCommandName&quot; value=&quot;on&quot;/&gt;
+                &lt;/dhc:command&gt;
+            &lt;/dhc:commands&gt;
+        &lt;/dhc:controlFunctionality&gt;
+        &lt;dhc:notificationFunctionality class=&quot;StateChangeNotificationFunctionality&quot;&gt;
+            &lt;dhc:notifications&gt;
+                &lt;dhc:notification class=&quot;StateChangeNotification&quot; id=&quot;StateChangeNotification_Lamp_Holder&quot;&gt;
+                    &lt;dhc:param name=&quot;nParams&quot; value=&quot;1&quot;/&gt;
+                    &lt;dhc:param name=&quot;notificationName&quot; value=&quot;stateChanged&quot;/&gt;
+                    &lt;dhc:param name=&quot;notificationParamName&quot; value=&quot;newState&quot; type=&quot;State&quot;/&gt;
+                &lt;/dhc:notification&gt;
+            &lt;/dhc:notifications&gt;
+        &lt;/dhc:notificationFunctionality&gt;
+        &lt;dhc:state class=&quot;OnOffState&quot;&gt;
+            &lt;dhc:statevalues&gt;
+                &lt;dhc:statevalue class=&quot;OffStateValue&quot; name=&quot;off&quot;/&gt;
+                &lt;dhc:statevalue class=&quot;OnStateValue&quot; name=&quot;on&quot;/&gt;
+            &lt;/dhc:statevalues&gt;
+        &lt;/dhc:state&gt;
+    &lt;/dhc:device&gt;
+    &lt;/dhc:controllables&gt;
+&lt;/dhc:dogHomeConfiguration&gt;
+</code></pre></div>
+<p>Wireless network such as ZigBee and ZWave typically support automatic device discovery 
+(when the devices join the network). In these cases, the <code>home.xml</code> is automatically populated with
+descriptions of newly discovered devices. Instead, wired automation networks require this
+file to be edited manually. Detailed instructions on the compilation of the home configuration file
+could be found in the driver&#39;s wiki, detailed per each supported device. </p>
+
+<p><a id="Run"></a></p>
+
 <h3>Run</h3>
+
+<p>Once set-up the configuration, Dog can be run by simply typing <code>./start-dog.sh</code> in the gateway root folder.
+Microsoft Windows users could do the same by renaming the the start-up script to <code>start-dog.bat</code> and by running it.</p>
+
+<p><a id="Control"></a></p>
+
+<h3>Control you environment</h3>
+
+<p>You are now ready to control your environment through Dog. </p>
+
+<p>Open-up a browser and type:
+<code>http://&lt;dog-ip-address&gt;:8080/admin/ui/index.html</code>, (if you are running
+dog in the same machine in which you open the browser the <code>&lt;dog-ip-address&gt;</code> will be <code>localhost</code>).</p>
+
+<p>You will get access to Vet (The Dog Veterinary): the diagnostic and administrative interface of Dog (see the screenshot below).</p>
+
+<p><img src="/assets/img/screenshots/vet-home.png" /></p>
+
+<p>Vet is organized in three sections:</p>
+
+<ul>
+<li>Overview, which provides a quick overlook on the current gateway status reporting useful information such as
+the system memory occupation, the number of devices registered in Dog (active) and the number of components (bundles) 
+currently enabled and running (might vary depending on installed drivers and addons).</li>
+<li>Devices</li>
+<li>Components</li>
+</ul>
 
 			</div>
 		</div>
