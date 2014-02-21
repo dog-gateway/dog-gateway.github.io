@@ -36,10 +36,8 @@ img.small {
 @media ( min-width : 768px) {
 	.sidebar {
 		position: fixed;
-		top: 70px;
-	}
-	.twitter {
-		margin-left: 25px;
+		top: 100px;
+		left: 30px;
 	}
 }
 
