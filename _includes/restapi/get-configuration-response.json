@@ -1,0 +1,81 @@
+{
+	  "devices" : [ {
+	    "description" : "The ZWave X gateway",
+	    "id" : "zwave-gateway",
+	    "isIn" : demo_room,
+	    "domoticSystem" : "ZWave",
+	    "class" : "ZWaveGateway",
+	    "controlFunctionality" : [ {
+	       "commands" : [ {
+	          "param" : [ {
+	            "name" : "realCommandName",
+	            "value" : "associate"
+	          } ],
+	          "name" : "AssociateCommand_zwave-gateway",
+	          "id" : "AssociateCommand_zwave-gateway",
+	          "class" : "AssociateCommand"
+	        }, {
+	          "param" : [ {
+	            "name" : "realCommandName",
+	            "value" : "disassociate"
+	          } ],
+	          "name" : "DisassociateCommand_zwave-gateway",
+	          "id" : "DisassociateCommand_zwave-gateway",
+	          "class" : "DisassociateCommand"
+	        } ],
+	      "class" : "AssociateFunctionality"
+	    } ]
+	  }, {
+	    "description" : "A MainsPowerOutlet instance named MainsPowerOutlet_ZW1",
+	    "isIn" : "demo_room",
+	    "controlFunctionality" : [ {
+	       "commands" : [ {
+	          "param" : [ {
+	            "name" : "realCommandName",
+	            "value" : "off"
+	          } ],
+	          "name" : "OffCommand_Lamp_Holder",
+	          "id" : "OffCommand_Lamp_Holder",
+	          "class" : "OffCommand"
+	        }, {
+	          "param" : [ {
+	            "name" : "realCommandName",
+	            "value" : "on"
+	          } ],
+	          "name" : "OnCommand_Lamp_Holder",
+	          "id" : "OnCommand_Lamp_Holder",
+	          "class" : "OnCommand"
+	        } ],
+	      "class" : "OnOffFunctionality"
+	    } ],
+	    "notificationFunctionality" : [ {
+	       "notification" : [ {
+	          "param" : [ {
+	            "name" : "notificationName",
+	            "value" : "stateChanged"
+	          }, {
+	            "name" : "notificationParamName",
+	            "value" : "newState",
+	            "type" : "State"
+	          } ],
+	          "id" : "StateChangeNotification_Lamp_Holder",
+	          "class" : "StateChangeNotification"
+	        } ],
+	      "class" : "StateChangeNotificationFunctionality"
+	    } ],
+	    "state" : [ {
+	       "statevalues" : [ {
+	          "name" : "off",
+	          "class" : "OffStateValue"
+	        }, {
+	          "name" : "on",
+	          "class" : "OnStateValue"
+	        } ],
+	      "class" : "OnOffState"
+	    } ],
+	    "id" : "Lamp_Holder",
+	    "domoticSystem" : "ZWave",
+	    "gateway" : "zwave-gateway",
+	    "class" : "LampHolder"
+	  }
+	}

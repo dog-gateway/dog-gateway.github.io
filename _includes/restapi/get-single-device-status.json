@@ -1,0 +1,15 @@
+{
+			"active" : true,
+	        "id" : "MeteringPowerOutlet",
+	        "status" : {
+	          "SinglePhaseActiveEnergyState" : [ {
+	            "value" : "0.0 kWh"
+	          } ],
+	          "OnOffState" : [ {
+	            "value" : "off"
+	          } ],
+	          "SinglePhaseActivePowerMeasurementState" : [ {
+	            "value" : "0.0 W"
+	          } ]
+	        }
+		}

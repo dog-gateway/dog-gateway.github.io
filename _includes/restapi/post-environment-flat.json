@@ -1,0 +1,17 @@
+{
+		"id" : "loft",
+		"class" : "Flat",
+		"description" : "The loft in the city center",
+		"rooms":[
+			{
+				"id" : "kitchen",
+				"class" : "Kitchen",
+				"description" : "The kitchen with a wonderful view"
+			},
+			{
+				"id" : "bedroom",
+				"class": "Bedroom",
+				"description" : "My bedroom"
+			}
+		]
+	}

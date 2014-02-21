@@ -1,0 +1,17 @@
+<dogrules:ruleList xmlns:dogrules="http://elite.polito.it/domotics/dog/rules/rule_definition">
+		<dogrules:rule name="consumptionTooHigh">
+	        <dogrules:if>
+	            <dogrules:event>
+	                <dogrules:notification name="newActivePowerValue" class="SinglePhaseActivePowerMeasurementNotification" fromDevice="MeteringPowerOutlet_1"/>
+	            </dogrules:event>
+	            <dogrules:when>
+	                <dogrules:state class="SinglePhaseActivePowerMeasurementState" ofDevice="MeteringPowerOutlet_1" value="20.0" evaluator="&gt;"/>
+	            </dogrules:when>
+	        </dogrules:if>
+	        <dogrules:then>
+	            <dogrules:action>
+	                <dogrules:command name="off" class="OnOffFunctionality" toDevice="MeteringPowerOutlet_1"/>
+	            </dogrules:action>
+	        </dogrules:then>
+	    </dogrules:rule>
+	</dogrules:ruleList>

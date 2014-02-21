@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ 	  	<dhc:dogHomeConfiguration>
+        	<dhc:buildingEnvironment>
+            	<dhc:building id="SimpleHome">
+                	<dhc:flat class="Flat" svgfootprint="simple_home.svg" id="flat">
+                		<dhc:description>The flat I rent</dhc:description>
+                    	<dhc:room class="Kitchen" id="kitchen">
+                    		<dhc:description>The best room in the house.</dhc:description>
+                        	<dhc:ceiling class="Ceiling" id="Ceiling_kitchen"/>
+                            <dhc:floor class="Floor" id="Floor_kitchen"/>
+                            <dhc:wall class="Wall" id="Wall_kitchen_south"/>
+                            <dhc:wall class="Wall" id="Wall_kicthen_west">
+                            	<dhc:hasWallOpening class="Window" id="Window_w4_kitchen"/>
+                            </dhc:wall>
+                            <dhc:wall class="Wall" id="Wall_kitchen_storage_lobby"/>
+                            <dhc:wall class="Wall" id="Wall_kitchen_lobby">
+                            	<dhc:hasWallOpening class="Door" id="Door_kitchen_lobby"/>
+                           	</dhc:wall>
+                            <dhc:wall class="Wall" id="Wall_kitchen_livingroom">
+                            	<dhc:hasWallOpening class="Door" id="Door_kitchen_living"/>
+                            </dhc:wall>
+                      	</dhc:room>
+                      	<dhc:room class="Bedroom" id="sam_bedroom">
+                    		<dhc:description>Sam's bedroom</dhc:description>
+                        	<dhc:ceiling class="Ceiling" id="Ceiling_sam_bedroom"/>
+                            <dhc:floor class="Floor" id="Floor_sam_bedroom"/>
+                            <dhc:wall class="Wall" id="Wall_sam_bedroom_south"/>
+                            <dhc:wall class="Wall" id="Wall_sam_bedroom_west">
+                            	<dhc:hasWallOpening class="Window" id="Window_w1_sam_bedroom"/>
+                            </dhc:wall>
+                            <dhc:wall class="Wall" id="Wall_sam_bedroom_main_bathroom_lobby"/>
+                            <dhc:wall class="Wall" id="Wall_sam_bedroom_lobby">
+                            	<dhc:hasWallOpening class="Door" id="Door_sam_bedroom_lobby"/>
+                           	</dhc:wall>
+                            <dhc:wall class="Wall" id="Wall_sam-bedroom_livingroom">
+                            	<dhc:hasWallOpening class="Door" id="Door_sam_bedroom_living"/>
+                            </dhc:wall>
+                      	</dhc:room>
+                 	</dhc:flat>
+            	</dhc:building>
+      		</dhc:buildingEnvironment>
+		</dhc:dogHomeConfiguration>

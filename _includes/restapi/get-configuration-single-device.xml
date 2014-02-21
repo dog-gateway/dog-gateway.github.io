@@ -1,0 +1,32 @@
+<dhc:dogHomeConfiguration xmlns:dhc="http://elite.polito.it/dogHomeConfiguration">
+	    <dhc:controllables>
+	        <dhc:device class="LampHolder" id="Lamp_Holder" domoticSystem="ZWave" gateway="zwave-gateway">
+		        <dhc:description>A MainsPowerOutlet instance named MainsPowerOutlet_ZW1</dhc:description>
+		        <dhc:isIn>demo_room</dhc:isIn>
+		        <dhc:controlFunctionality class="OnOffFunctionality">
+		            <dhc:commands>
+		                <dhc:command class="OffCommand" name="OffCommand_Lamp_Holder" id="OffCommand_Lamp_Holder">
+		                    <dhc:param name="realCommandName" value="off"/>
+		                </dhc:command>
+		                <dhc:command class="OnCommand" name="OnCommand_Lamp_Holder" id="OnCommand_Lamp_Holder">
+		                    <dhc:param name="realCommandName" value="on"/>
+		                </dhc:command>
+		            </dhc:commands>
+		        </dhc:controlFunctionality>
+		        <dhc:notificationFunctionality class="StateChangeNotificationFunctionality">
+		            <dhc:notifications>
+		                <dhc:notification class="StateChangeNotification" id="StateChangeNotification_Lamp_Holder">
+		                    <dhc:param name="notificationName" value="stateChanged"/>
+		                    <dhc:param name="notificationParamName" value="newState" type="State"/>
+		                </dhc:notification>
+		            </dhc:notifications>
+		        </dhc:notificationFunctionality>
+		        <dhc:state class="OnOffState">
+		            <dhc:statevalues>
+		                <dhc:statevalue class="OffStateValue" name="off"/>
+		                <dhc:statevalue class="OnStateValue" name="on"/>
+		            </dhc:statevalues>
+		        </dhc:state>
+		    </dhc:device>
+	    </dhc:controllables>
+	</dhc:dogHomeConfiguration>

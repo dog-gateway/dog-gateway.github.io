@@ -1,0 +1,39 @@
+
+	{
+	"flats":[
+		{
+			"id" : "flat",
+			"class" : "Flat",
+			"description" : "The flat I rent",
+			"rooms":[
+				{
+					"id" : "kitchen",
+					"class" : "Kitchen",
+					"description" : "The best room in the house"
+				},
+				{
+					"id" : "sam_bedroom",
+					"class": "Bedroom",
+					"description" : "Sam's bedroom"
+				}
+			]
+		},
+		{
+			"id" : "other-flat",
+			"class" : "Flat",
+			"description" : "The flat I own",
+			"rooms":[
+				{
+					"id" : "kitchen",
+					"class" : "Kitchen",
+					"description" : "The kitchen"
+				},
+				{
+					"id" : "bathroom",
+					"class": "Bathroom",
+					"description" : "The only bathroom"
+				}
+			]
+		}
+	]
+	}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<dogrules:ruleList xmlns:dogrules="http://elite.polito.it/domotics/dog/rules/rule_definition">
+	    <dogrules:rule name="onToOn">
+	        <dogrules:if>
+	            <dogrules:event>
+	                <dogrules:notification name="stateChanged" class="StateChangeNotification" fromDevice="MeteringPowerOutlet_1">
+	                    <dogrules:param name="newState" value="on" type="OnOffState"/>
+	                </dogrules:notification>
+	            </dogrules:event>
+	            <dogrules:when>
+	                <dogrules:state name="off" class="OnOffState" ofDevice="LampHolder_3"/>
+	            </dogrules:when>
+	        </dogrules:if>
+	        <dogrules:then>
+	            <dogrules:action>
+	                <dogrules:command name="on" class="OnOffFunctionality" toDevice="MeteringPowerOutlet_2"/>
+	            </dogrules:action>
+	        </dogrules:then>
+	    </dogrules:rule>
+	    <dogrules:rule name="temporaryDisconnection">
+	        <dogrules:if>
+	            <dogrules:event>
+	                <dogrules:notification name="newActivePowerValue" class="SinglePhaseActivePowerMeasurementNotification" fromDevice="SmartEnergySwitch_5"/>
+	            </dogrules:event>
+	            <dogrules:when>
+	                <dogrules:state class="SinglePhaseActivePowerMeasurementState" ofDevice="SmartEnergySwitch_5" value="50.0" evaluator="&gt;"/>
+	            </dogrules:when>
+	        </dogrules:if>
+	        <dogrules:then>
+	            <dogrules:action>
+	                <dogrules:command name="off" class="OnOffFunctionality" toDevice="SmartEnergySwitch_5"/>
+	            </dogrules:action>
+	        </dogrules:then>
+    	</dogrules:rule>
+	</dogrules:ruleList>

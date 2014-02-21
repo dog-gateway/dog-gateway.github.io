@@ -1,0 +1,27 @@
+{
+	  "building" : [ {
+	    "flats" : [ {
+	      "description" : "The flat I rent",
+	      "rooms" : [ {
+	        "description : "The best room in the house",
+	        "ceiling" : {
+	          "id" : "ceiling",
+	          "class" : "Ceiling"
+	        },
+	        "floor" : {
+	          "id" : "floor",
+	          "class" : "Floor"
+	        },
+	        "walls" : [ {
+	          "id" : "wall",
+	          "class" : "Wall"
+	        } ],
+	        "id" : "kitchen",
+	        "class" : "Kitchen"
+	      } ],
+	      "id" : "flat",
+	      "class" : "Flat"
+	    } ],
+	    "id" : "SimpleHome"
+	  } ]
+	}

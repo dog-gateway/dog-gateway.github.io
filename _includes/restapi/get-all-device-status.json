@@ -1,0 +1,199 @@
+ {
+      "devicesStatus" : [ {
+        "active" : true,
+        "id" : "MeteringPowerOutlet",
+        "status" : {
+          "SinglePhaseActiveEnergyState" : [ {
+            "value" : "0.0 kWh"
+          } ],
+          "OnOffState" : [ {
+            "value" : "off"
+          } ],
+          "SinglePhaseActivePowerMeasurementState" : [ {
+            "value" : "0.0 W"
+          } ]
+        }
+      }, {
+        "active" : true,
+        "id" : "zwave-gateway",
+        "status" : {
+          "DeviceAssociationState" : [ {
+            "value" : "idle"
+          } ]
+        }
+      }, {
+        "active" : true,
+        "id" : "SmartEnergySwitch",
+        "status" : {
+          "SinglePhaseActiveEnergyState" : [ {
+            "value" : "0.028 kWh"
+          } ],
+          "OnOffState" : [ {
+            "value" : "off"
+          } ],
+          "SinglePhaseActivePowerMeasurementState" : [ {
+            "value" : "0.0 W"
+          } ]
+        }
+      }, {
+        "active" : true,
+        "id" : "ThermostaticRadiatorValve_1",
+        "status" : {
+          "ClimateScheduleState" : [ {
+            "value" : {
+              "switchPoints" : [ {
+                "desiredTemperature" : "20.5 C",
+                "timeAt" : 1382449500000
+              }, {
+                "desiredTemperature" : "17.5 C",
+                "timeAt" : 1382467500000
+              } ],
+              "weekDay" : 1
+            }
+          }, {
+            "value" : {
+              "switchPoints" : [ {
+                "desiredTemperature" : "20.5 C",
+                "timeAt" : 1382456700000
+              }, {
+                "desiredTemperature" : "19.5 C",
+                "timeAt" : 1382453100000
+              } ],
+              "weekDay" : 2
+            }
+          }, {
+            "value" : {
+              "switchPoints" : [ {
+                "desiredTemperature" : "25.5 C",
+                "timeAt" : 1382445180000
+              }, {
+                "desiredTemperature" : "20.5 C",
+                "timeAt" : 1382448840000
+              } ],
+              "weekDay" : 3
+            }
+          }, {
+            "value" : {
+              "switchPoints" : [ {
+                "desiredTemperature" : "20.5 C",
+                "timeAt" : 1382456700000
+              }, {
+                "desiredTemperature" : "19.5 C",
+                "timeAt" : 1382453100000
+              } ],
+              "weekDay" : 4
+            }
+          }, {
+            "value" : {
+              "switchPoints" : [ {
+                "desiredTemperature" : "20.5 C",
+                "timeAt" : 1382456700000
+              }, {
+                "desiredTemperature" : "19.5 C",
+                "timeAt" : 1382453100000
+              } ],
+              "weekDay" : 5
+            }
+          }, {
+            "value" : {
+              "switchPoints" : [ {
+                "desiredTemperature" : "20.5 C",
+                "timeAt" : 1382456700000
+              }, {
+                "desiredTemperature" : "19.5 C",
+                "timeAt" : 1382453100000
+              } ],
+              "weekDay" : 6
+            }
+          }, {
+            "value" : {
+              "switchPoints" : [ {
+                "desiredTemperature" : "20.5 C",
+                "timeAt" : 1382456700000
+              }, {
+                "desiredTemperature" : "19.5 C",
+                "timeAt" : 1382453100000
+              } ],
+              "weekDay" : 7
+            }
+          } ],
+          "TemperatureState" : [ {
+            "value" : "19.5 C"
+          } ]
+        }
+      }, {
+        "active" : true,
+        "id" : "Temperature_and_Humidity_sensor",
+        "status" : {
+          "TemperatureState" : [ {
+            "value" : "22.5 C"
+          } ],
+          "HumidityMeasurementState" : [ {
+            "value" : "39.0 %"
+          } ]
+        }
+      }, {
+        "active" : true,
+        "id" : "ZW_DoorWindowSensor_Vision_ZD202EU",
+        "status" : {
+          "OpenCloseState" : [ {
+            "value" : "close"
+          } ]
+        }
+      }, {
+        "active" : true,
+        "id" : "AEOTEC_SmartSwitch_G2",
+        "status" : {
+          "SinglePhaseActiveEnergyState" : [ {
+            "value" : "0.023 kWh"
+          } ],
+          "OnOffState" : [ {
+            "value" : "off"
+          } ],
+          "SinglePhaseActivePowerMeasurementState" : [ {
+            "value" : "0.0 "
+          } ]
+        }
+      }, {
+        "active" : true,
+        "id" : "Lamp_Holder",
+        "status" : {
+          "OnOffState" : [ {
+            "value" : "off"
+          } ]
+        }
+      }, {
+        "active" : true,
+        "id" : "MeteringPowerOutlet_20",
+        "status" : {
+          "SinglePhaseActiveEnergyState" : [ {
+            "value" : "0.0 kWh"
+          } ],
+          "OnOffState" : [ {
+            "value" : "off"
+          } ],
+          "SinglePhaseActivePowerMeasurementState" : [ {
+            "value" : "0.0 W"
+          } ]
+        }
+      }, {
+        "active" : true,
+        "id" : "AEON_HEM",
+        "status" : {
+          "SinglePhaseActiveEnergyState" : [ {
+            "value" : "5.425 kWh"
+          } ],
+          "SinglePhaseActivePowerMeasurementState" : [ {
+            "value" : "6.67 W"
+          } ]
+        }
+      }, {
+        "active" : true,
+        "id" : "ZP3102EU",
+        "status" : {
+          "MovementState" : [ {
+            "value" : "notMoving"
+          } ]
+        }
+      } ]
+    }

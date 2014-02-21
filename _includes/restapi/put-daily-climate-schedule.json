@@ -1,0 +1,15 @@
+	{
+		"value":{
+			"switchPoints":[
+				{
+					"timeAt":"2013-10-22T15:55:00.000+02:00",
+					"desiredTemperature":"20.5 C"
+				},
+				{
+					"timeAt":"2013-10-22T20:45:00.000+02:00",
+					"desiredTemperature":"17.5 C"
+				}
+			],
+			"weekDay":1
+		} 
+	}

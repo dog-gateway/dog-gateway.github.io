@@ -1,0 +1,17 @@
+{
+		"id" : "flat",
+		"class" : "Flat",
+		"description" : "The flat I rent",
+		"rooms":[
+			{
+				"id" : "kitchen",
+				"class" : "Kitchen",
+				"description" : "The best room in the house"
+			},
+			{
+				"id" : "sam_bedroom",
+				"class": "Bedroom",
+				"description" : "Sam's bedroom"
+			}
+		]
+	}
