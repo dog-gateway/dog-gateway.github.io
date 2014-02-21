@@ -22,7 +22,7 @@ We are actively involved in some European and International standardization acti
 {% for member in site.data.users %}
   <div class="col-md-4 profile">
   	<img src="{{member.image}}" /><br/>
-    <strong> {{ member.name }} </strong>
+    <strong> {{ member.name }} </strong><br/>
     <a href="{{ member.website }}">{{ member.website }}</a>
   </div>
 {% endfor %}

@@ -6,6 +6,10 @@
   website: http://www.proxima-centauri.it
   image: assets/img/users/proxima.jpg
 
-- name: Regione Autonoma Valle d'Aosta
-  website: http://www.regione.vda.it/
-  image: assets/img/users/regione-aosta.jpg
+- name: ALCOTRA INNOVAZIONE
+  website: http://www.alcotra-innovazione.eu/
+  image: assets/img/users/alcotra.jpg
+  
+- name: Eudata s.r.l.
+  website: http://www.eudata.biz/
+  image: assets/img/users/eudata.jpg
