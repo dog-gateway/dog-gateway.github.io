@@ -36,7 +36,8 @@ img.small {
 @media ( min-width : 768px) {
 	.sidebar {
 		position: fixed;
-		top: 60px;
+		top: 100px;
+		left: 30px;
 	}
 }
 
