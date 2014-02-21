@@ -39,6 +39,9 @@ img.small {
 		top: 100px;
 		left: 30px;
 	}
+	.twitter {
+		margin-left: 25px;
+	}
 }
 
 @media ( max-width : 768px) {
