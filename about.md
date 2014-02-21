@@ -20,11 +20,14 @@ We are actively involved in some European and International standardization acti
 
 <div class="row">
 {% for member in site.data.users %}
-  <div class="col-md-4 profile">
+  <div class="col-md-4 text-center">
   	<img src="{{member.image}}" /><br/>
     <strong> {{ member.name }} </strong><br/>
     <a href="{{ member.website }}">{{ member.website }}</a>
   </div>
+  {% if forloop.index == 3 %}
+  	<div class="clearfix"></div>
+  {% endif %}
 {% endfor %}
 </div>
 
@@ -38,12 +41,15 @@ We are a team of developers working as postdoc researchers at the [Politecnico d
 
 <div class="row">
 {% for member in site.data.members %}
-  <div class="col-md-6">
+  <div class="col-md-6 profile">
   	<img src="{{member.image}}" class="img-circle pull-left"/>
     <strong> {{ member.name }} </strong>
     <br/>
     {{ member.description }}
   </div>
+  {% if forloop.index == 2 %}
+  	<div class="clearfix"></div>
+  {% endif %}
 {% endfor %}
 </div>
 
@@ -68,14 +74,19 @@ We are a team of developers working as postdoc researchers at the [Politecnico d
 
 <div class="row">
 {% for member in site.data.collaborators %}
-  <div class="col-md-3 profile">
+  <div class="col-md-3 text-center">
   	<img src="{{member.image}}" class="img-circle small"/><br/>
     <strong> {{ member.name }} </strong>
     <br/>
-    {{ member.description }}
-    <br/>
+    {% if member.description %}
+    	{{ member.description }}
+    	<br/>
+    {% endif %}
     <a href="{{ member.website }}">{{ member.website-name }}</a>
   </div>
+  {% if forloop.index == 4 %}
+  	<div class="clearfix"></div>
+  {% endif %}
 {% endfor %}
 </div>
 
@@ -85,12 +96,15 @@ We are a team of developers working as postdoc researchers at the [Politecnico d
 
 <div class="row">
 {% for member in site.data.former-members %}
-  <div class="col-md-3 profile">
+  <div class="col-md-3 text-center">
   	<img src="{{member.image}}" class="img-circle small"/><br/>
     <strong> {{ member.name }} </strong>
     <br/>
     {{ member.description }}
   </div>
+  {% if forloop.index == 4 %}
+  	<div class="clearfix"></div>
+  {% endif %}
 {% endfor %}
 </div>
 
@@ -100,13 +114,18 @@ We are a team of developers working as postdoc researchers at the [Politecnico d
 
 <div class="row">
 {% for member in site.data.former-contributors %} 
-  <div class="col-md-3 profile">
+  <div class="col-md-3 profile text-center">
   	<img src="{{member.image}}" class="img-circle small"/><br/>
     <strong> {{ member.name }} </strong>
     <br/>
-    {{ member.description }}
-    <br/>
+    {% if member.description %}
+    	{{ member.description }}
+    	<br/>
+    {% endif %}
     <a href="{{ member.website }}">{{ member.website-name }}</a>
   </div>
+  {% if forloop.index == 4 %}
+  	<div class="clearfix"></div>
+  {% endif %}
 {% endfor %}
 </div>

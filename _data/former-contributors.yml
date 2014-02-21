@@ -1,8 +1,26 @@
-- name: Enrico Allione
-  image: assets/img/people/former/contributors/enrico-allione.jpg
-
 - name: Davide Aimone
   website: http://it.linkedin.com/pub/davide-aimone/4b/714/3a3
   website-name: LinkedIn profile
   description: Software Developer at Freepath s.r.l.
   image: assets/img/people/former/contributors/aimone-davide.jpg
+  
+- name: Luca Semprini
+  description: Programmer Analyst at Titantex s.r.l.
+  image: assets/img/people/former/contributors/semprini-luca.jpg
+ 
+- name: Simone Pecchenino
+  image: assets/img/people/former/contributors/default.jpg
+  
+- name: Enrico Allione
+  image: assets/img/people/former/contributors/enrico-allione.jpg
+  website: it.linkedin.com/in/icobasco
+  website-name: LinkedIn profile
+  
+- name: Marta De Giorgio
+  image: assets/img/people/former/contributors/default.jpg
+  
+- name: Rosanna Lattarulo
+  image: assets/img/people/former/contributors/default.jpg
+  
+- name: Angelo Ferrante
+  image: assets/img/people/former/contributors/default.jpg
