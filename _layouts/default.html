@@ -13,7 +13,17 @@
 		<div class="row">
 			
 				
-			<div class="col-md-9 col-md-offset-2 col-sm-offset-2" role="main">
+			<div class="col-md-9 
+			{% if page.sidebar %}
+				{% if page.sidebar == 'rest-api-sidebar.html' %}
+					col-md-offset-3 col-sm-offset-3	
+				{% else %}
+					col-md-offset-2 col-sm-offset-2
+				{% endif %}
+			{% else %}
+				col-md-offset-2 col-sm-offset-2
+			{% endif %}
+			" role="main">
 			{{content }}
 			</div>
 		</div>
