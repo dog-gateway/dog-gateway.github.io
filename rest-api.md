@@ -161,12 +161,13 @@ Represents domotic devices handled by Dog and "controllable" by applications usi
 	  }
 	}
 </pre>
-
-
 {% include close-accordion-item.html %}
 {% include open-accordion-item.html panelTitle='Example Response (XML)' panelCount='2' %}
 <pre class="pre-scrollable">
-{% include configuration-response.xml %}
+	{% capture xml %}
+	{% include configuration-response.xml %}
+	{% endcapture %}
+	{{ xml | escape }}
 </pre>
 {% include close-accordion-item.html %}
 {% include accordion-footer.html %}

@@ -15,7 +15,7 @@
 				
 			<div class="col-md-9 
 			{% if page.sidebar %}
-				{% if page.sidebar == 'rest-api-sidebar.html' %}
+				{% if page.sidebar == 'rest-api-sidebar.html' or page.sidebar == 'useit-sidebar.html'%}
 					col-md-offset-3 col-sm-offset-3	
 				{% else %}
 					col-md-offset-2 col-sm-offset-2
@@ -30,6 +30,7 @@
 	</div>
 	{% include footer.html %}
 	{% include footer-bootstrap.html %}
+	{% include custom-js.html %}
 	{% include analytics.html %}
 </body>
 </html>
