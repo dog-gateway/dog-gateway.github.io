@@ -16,7 +16,7 @@ active: Blog
 	</p>
 	
 	<p>
-		<em>Posted on {{ post.date | date: "%-d %B %Y" }}</em>
+		<em>Posted on {{ post.date | date: "%-d %B %Y" }} in {{ post.categories }}</em>
 	</p>
 
 		{% else %}
