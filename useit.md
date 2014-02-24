@@ -9,7 +9,7 @@ sidebar: useit-sidebar.html
 Are you eager to experiment? Do you want to start using the Dog Gateway now? Here you can find some easy recipes to getting you online with your brand new Dog installation!
 
 ### Warm up!###
-Do  you already have a platform for running the gateway? which technology do you want to interface? 
+Do  you already have a platform for running the gateway? Which technology do you want to interface? 
 Before downloading the latest version, check the hardware and software environment in which you plan to run the gateway.
 
 #### Minimum Requirements ####
@@ -20,14 +20,14 @@ Before downloading the latest version, check the hardware and software environme
 * Ethernet connection (to access the gateway, and to connect to the automation networks)
 
 ### Download ###
-Download the latest release from [GitHub](https://github.com/dog-gateway/dog-release). If your are planning to run the Dog Gateway on [RaspberryPi](http://www.raspberrypi.org/) you might also want to check the available pre-compiled [images](#raspberry-images).
-Check for which technology drivers are available and choose the ones you prefer; download the latest releases on the corresponding drivers repositories:
+Download the latest release from [GitHub](https://github.com/dog-gateway/dog-release/releases). If your are planning to run the Dog Gateway on [RaspberryPi](http://www.raspberrypi.org/) you might also want to check the available pre-compiled [images](#raspberry-images).
+Check which technology drivers are available and choose the ones you prefer; download the latest releases on the corresponding drivers repositories:
 
- * [MyHome](https://github.com/dog-gateway/bticino-drivers)
- * [KNX](https://github.com/dog-gateway/knx-drivers)
- * [Echelon](https://github.com/dog-gateway/echelon-drivers)
- * [Modbus](https://github.com/dog-gateway/modbus-drivers)
- * [ZWave](https://github.com/dog-gateway/zwave-drivers)
+ * [BTicino MyHome](https://github.com/dog-gateway/bticino-drivers/releases)
+ * [KNX](https://github.com/dog-gateway/knx-drivers/releases)
+ * [Echelon](https://github.com/dog-gateway/echelon-drivers/releases)
+ * [Modbus](https://github.com/dog-gateway/modbus-drivers/releases)
+ * [Z-Wave](https://github.com/dog-gateway/zwave-drivers/releases)
 
 <a id="Installation"></a>
 
@@ -36,7 +36,7 @@ Ok you've got the latest release, what to do next?
 
 * Uncompress the release file in the directory in which you want (or move it later to the right place); e.g.,<br/> 
 	```
-	unzip dog-3.0.zip
+	unzip dog-3.0.0.zip
 	```
 * If you downloaded additional drivers, uncompress the driver files in to a temporary folder, and move them to the ```drivers``` sub-directory located in the dog installation folder.<br/>
 	```
@@ -52,7 +52,7 @@ Ok you've got the latest release, what to do next?
 
 Check configuration details for each technology on the corresponding driver page on GitHub:
 
-* [MyHome](https://github.com/dog-gateway/bticino-drivers)
+* [BTicino MyHome](https://github.com/dog-gateway/bticino-drivers)
 * [KNX](https://github.com/dog-gateway/knx-drivers)
 * [Echelon](https://github.com/dog-gateway/echelon-drivers)
 * [Modbus](https://github.com/dog-gateway/modbus-drivers)
@@ -60,7 +60,7 @@ Check configuration details for each technology on the corresponding driver page
 
 or have a look at the sample configurations:
 
-* [MyHome](https://github.com/dog-gateway/bticino-configuration)
+* [BTicino MyHome](https://github.com/dog-gateway/bticino-configuration)
 * [KNX](https://github.com/dog-gateway/knx-configuration)
 * Echelon
 * Modbus
@@ -84,10 +84,9 @@ The Dog Gateway configuration is stored under the folder named *configuration*, 
 		|
 		|--- config.ini
 		
-While the ```config.ini``` file usually does not need any change (and, vice-versa any wrong modification may compromise the gateway execution), 
-files inside the ```configuration``` folder provide parameters to tune-up the gateway modules and might need to be changed depending on the specific installation. 
-Among the available files, two main types can be identified: ```.cfg``` files and ```.xml``` files. The former are ```key = value``` files used to specify configuration
-parameters needed by the gateway bundles (either to run, or to tune-up their runtime execution). The latter, instead, are used to provide extensive configuration data, e.g., the home configuration in terms of devices and locations, the set of rules to be executed, etc. They are typically pointed by some parameter specified in ```.cfg``` files.
+While the `config.ini` file usually does not need any change (and, vice-versa, any wrong modification may compromise the gateway execution), files inside the `configuration` folder provide parameters to tune-up the gateway modules and might need to be changed depending on the specific installation. 
+Among the available files, two main types can be identified: ```.cfg``` files and ```.xml``` files. The former are ```key = value``` files used to specify configuration parameters needed by the gateway bundles (either to run, or to tune-up their runtime execution).
+The latter, instead, are used to provide extensive configuration data, e.g., the home configuration in terms of devices and locations, the set of rules to be executed, etc. They are typically pointed by some parameter specified in ```.cfg``` files.
 
 To better understand the files structure, let us explain one of the most important configuration files, the ```it.polito.elite.dog.core.housemodel.simple.cfg``` which provides details about the home managed by the Dog Gateway.
 Such a file is organized as follows:
@@ -97,12 +96,10 @@ Such a file is organized as follows:
 	DEVICES=home.xml
 	SVGPLAN=simple_home.svg
 
-where configuration parameters are on the left and values are on the right, separated by an "=" sign.
+where configuration parameters are on the left and values are on the right, separated by a "=" sign.
 
-In this specific case, the first configuration parameter ```DEVICES = home.xml``` identifies the name and
-location of the home configuration file (```home.xml```). Such a file defines the environment
-structure and the set of devices installed inside the environment. For example, the following excerpt shows a
-home configuration for one room and with some ZWave devices installed.
+In this specific case, the first configuration parameter `DEVICES = home.xml` identifies the name and location of the home configuration file (`home.xml`).
+Such a file defines the environment structure and the set of devices installed inside the environment. For example, the following excerpt shows a home configuration for one room and with some Z-Wave devices installed.
 
 	<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 	<dhc:dogHomeConfiguration xmlns:dhc="http://elite.polito.it/dogHomeConfiguration">
@@ -175,17 +172,16 @@ home configuration for one room and with some ZWave devices installed.
 	    </dhc:controllables>
 	</dhc:dogHomeConfiguration>
 
-Wireless network such as ZigBee and ZWave typically support automatic device discovery 
-(when the devices join the network). In these cases, the ```home.xml``` is automatically populated with
-descriptions of newly discovered devices. Instead, wired automation networks require this
-file to be edited manually. Detailed instructions on the compilation of the home configuration file
-could be found in the driver's wiki, detailed per each supported device. 
+Wireless network such as ZigBee and Z-Wave typically support automatic device discovery  (when the devices join the network).
+In these cases, the `home.xml` is automatically populated with descriptions of newly discovered devices.
+Instead, wired automation networks require this file to be edited manually.
+Detailed instructions on the compilation of the home configuration file could be found in the driver's wiki, detailed per each supported device. 
 
 <a id="Run"></a>
 
 ### Run ###
-Once set-up the configuration, Dog can be run by simply typing ```./start-dog.sh``` in the gateway root folder.
-Microsoft Windows users could do the same by renaming the the start-up script to ```start-dog.bat``` and by running it.
+Once set-up the configuration, Dog can be run by simply typing `./start-dog.sh` (on the terminal) in the gateway root folder.
+Microsoft Windows users could do the same by renaming the the start-up script to `start-dog.bat` and by running it.
 
 <a id="Control"></a>
 
@@ -193,8 +189,8 @@ Microsoft Windows users could do the same by renaming the the start-up script to
 You are now ready to control your environment through Dog. 
 
 Open-up a browser and type:
-```http://<dog-ip-address>:8080/admin/ui/index.html```, (if you are running
-dog in the same machine in which you open the browser the ```<dog-ip-address>``` will be ```localhost```).
+`http://<dog-ip-address>:8080/admin/ui/index.html`
+(if you are running Dog in the same machine in which you open the browser the `<dog-ip-address>` will be `localhost`).
 
 You will get access to Vet (The Dog Veterinary): the diagnostic and administrative interface of Dog (see the screenshots below).
 
@@ -202,26 +198,22 @@ You will get access to Vet (The Dog Veterinary): the diagnostic and administrati
 Vet is organized in three sections:
 
 * *Overview* 
-	* Provides a quick overlook on the current gateway status reporting useful information such as
-	the system memory occupation, the number of devices registered in Dog (active) and the number of components (bundles) 
-	currently enabled and running (might vary depending on installed drivers and addons).
+	* Provides a quick overlook on the current gateway status reporting useful information such as the system memory occupation, the number of devices registered in Dog (active) and the number of components (bundles)  currently enabled and running (might vary depending on installed drivers and addons).
 
 	<br/>
-	<img src="/assets/img/screenshots/vet-home.png" />
+	<img class="img-responsive" src="/assets/img/screenshots/vet-home.png" />
 	
 * *Devices*
-	* Provides information on the devices currently managed by the Dog Gateway. For each device provides a constantly updated view of 
-	the device status and offers means to perform simple actions, e.g., switching on/off, etc.
+	* Provides information on the devices currently managed by the Dog Gateway. For each device provides a constantly updated view of the device status and offers means to perform simple actions, e.g., switching on/off, etc.
 	
 	<br/>
-	<img src="/assets/img/screenshots/vet-devices.png" />
+	<img class="img-responsive" src="/assets/img/screenshots/vet-devices.png" />
 	
 * *Components*
-	* Offers a focus on the installed gateway components, reporting the name and status (green - ok, yellow - warning, red - severe issues are occurring) of each available bundle. May be used to diagnose
-	malfunctions or issues.
+	* Offers a focus on the installed gateway components, reporting the name and status (green - ok, yellow - warning, red - severe issues are occurring) of each available bundle. May be used to diagnose malfunctions or issues.
 	
 	<br/>
-	<img src="/assets/img/screenshots/vet-components.png" />
+	<img class="img-responsive" src="/assets/img/screenshots/vet-components.png" />
 	
 
 <a id="More"></a>
@@ -229,9 +221,7 @@ Vet is organized in three sections:
 ### Want more? ###
  
 
-* You can post you consumption data on Xively.com by downloading and adding the 
-[xively.client](https://github.com/dog-gateway/xively) component. 
-You can check our [in-house gateway data](https://xively.com/feeds/937093077) on xively, 
-or you can ask us for a product serial to set-up your data-sharing on Xively (see the addons documentation for more details).
+* You can post you consumption data on Xively.com by downloading and adding the [xively client](https://github.com/dog-gateway/xively) component. 
+You can check our [in-house gateway data](https://xively.com/feeds/937093077) on Xively, or you can ask us for a product serial to set-up your data-sharing on Xively (see the addons documentation for more details).
 
-* An Android app for Dog is under development, stay [tuned](/blog.html) for latest updates. 
+* An Android app for Dog is under development, read our [blog](/blog.html) or follow us on [Twitter](http://twitter.com/TheDogGateway) for latest updates. 
