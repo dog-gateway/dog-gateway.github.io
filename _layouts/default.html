@@ -6,11 +6,12 @@
 </head>
 <body>
 	{% include navbar.html %} 
-	{% if page.sidebar %}
-	{% include {{page.sidebar}} %}
-	{% endif %}
+	
 	<div class="container">
 		<div class="row">	
+		{% if page.sidebar %}
+	{% include {{page.sidebar}} %}
+	{% endif %}
 			<div class="col-md-9 
 			{% if page.sidebar %}
 					col-md-offset-3 col-sm-offset-3	
