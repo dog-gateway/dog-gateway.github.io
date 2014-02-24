@@ -7,12 +7,11 @@ sidebar: rest-api-sidebar.html
 
 # Build on It! #
 
-Want to build your own application once and deploy it everywhere, regardless of the available home, building or industrial automation
-systems? The Dog Gateway offers a technology independent REST API upon which you can build your own web applications, mobile apps, or whatever you imagine.
+Want to build your own application once and deploy it everywhere, regardless of the available home, building or industrial automation systems?
+The Dog Gateway offers a technology independent REST API upon which you can build your own web applications, mobile apps, or whatever you imagine.
 Exploit the power of standard web technology and interaction paradigms to boost up your productivity and to free your talent, start building now!
 
 ## Dog REST API - Documentation ##
-
 
 The Dog REST API allows developers to easily integrate home and building automation into their applications, be they web applications, smartphone (Android, iOS, etc.) apps or computer programs.
 
@@ -41,9 +40,9 @@ APIs allow to:
 
 API access is currently available over HTTP, at:
 
-  `http://<dog-address>/api/v1.0`. 
+  `http://<dog-address>/api/v1`. 
 
-To select the desired response type (JSON or XML), the `Accept` http header must be used in the request.
+To select the desired response type (JSON or XML), the `Accept` HTTP header must be used in the request.
 
 #### Function summary ####
 
@@ -127,8 +126,7 @@ Represents domotic devices handled by Dog and "controllable" by applications usi
 |Response Object|**Device**|
 |API Version|**v1.0**|
 
-Represents a single domotic device handled by Dog, identified by a unique *device-id* (currently encoded in the *id* attribute for the XML response to the [GET /devices](#devices) request),
-and "controllable" by applications using this API. 
+Represents a single domotic device handled by Dog, identified by a unique *device-id* (currently encoded in the *id* attribute for the XML response to the [GET /devices](#devices) request), and "controllable" by applications using this API. 
 
 *URL:* /devices/{device-id}
 
