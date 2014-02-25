@@ -83,7 +83,7 @@ Together with source repositories, we provide a set of configuration samples (as
 We are currently working on formal development guidelines, at the moment we could only provide some references to the OSGi guidelines (which should be respected when developing new bundles) and to some presentations on the Dog Gateway architecture and inner working.
 
 
-We are also finalizing development **HowTo**s, so please [stay tuned](/blog.html)!
+We are also finalizing development [**HowTo**s](/development-howto.html), so please [stay tuned](/blog.html)!
 
 ### <a id="Javadoc"></a> Javadoc ###
 Please refer to the single gateway bundle repositories to get the corresponding Javadocs.
