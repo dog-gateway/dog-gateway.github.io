@@ -40,11 +40,11 @@ Ok you've got the latest release, what to do next?
 	```
 * If you downloaded additional drivers, uncompress the driver files in to a temporary folder, and move them to the ```drivers``` sub-directory located in the dog installation folder.<br/>
 	```
-	unzip dog-zwave.zip 
+	unzip zwave-drivers.zip 
 	```
 	<br/>
 	```
-	cp dog-zwave/*.jar dog/drivers
+	cp zwave-drivers/*.jar dog/drivers
 	```
 <a id="Configuration"></a>
 
