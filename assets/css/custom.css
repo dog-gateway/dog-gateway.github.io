@@ -25,6 +25,15 @@ img.small {
 	height: 70px;
 }
 
+img.ribbon
+{
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	border: 0;
+	z-index: 100;
+}
+
 .profile {
 	margin-bottom: 20px;
 }
@@ -39,10 +48,23 @@ img.small {
 		top: 100px;
 		left: 30px;
 	}
+	
+	img.ribbon
+	{
+		position: absolute; 
+		top: 0; 
+		right: 0; 
+		border: 0;
+		z-index: 2000;
+	}
 }
 
 @media ( max-width : 768px) {
 	.carousel {
+		display: none;
+	}
+	img.ribbon
+	{
 		display: none;
 	}
 	.marketing
