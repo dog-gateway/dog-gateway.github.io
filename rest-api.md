@@ -91,7 +91,7 @@ Represents domotic devices handled by Dog and "controllable" by applications usi
 
 **Example Request**
 
-	GET http://www.mydog.com/api/devices
+	GET http://www.mydog.com/api/v1/devices
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='1' %}
@@ -136,7 +136,7 @@ Represents a single domotic device handled by Dog, identified by a unique *devic
 
 **GET: Example**
 
-	GET http://www.mydog.com/api/devices/Lamp_Holder
+	GET http://www.mydog.com/api/v1/devices/Lamp_Holder
 
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='3' %}
@@ -180,7 +180,7 @@ Updates the location of a single domotic device handled by Dog, identified by a 
 
 **PUT: Example**
 
-	PUT http://www.mydog.com/api/devices/Lamp_Holder/location
+	PUT http://www.mydog.com/api/v1/devices/Lamp_Holder/location
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Request Body' panelCount='5' %}
@@ -216,7 +216,7 @@ Updates the description (i.e., the long name) of a single domotic device handled
 
 **PUT: Example**
 	
-	PUT http://www.mydog.com/api/devices/Lamp_Holder/description
+	PUT http://www.mydog.com/api/v1/devices/Lamp_Holder/description
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Request Body' panelCount='6' %}
@@ -251,7 +251,7 @@ Represents the status of devices registered in the Dog gateway runtime, i.e., de
 
 **Example Request**
 
-	GET http://www.mydog.com/api/devices/status
+	GET http://www.mydog.com/api/v1/devices/status
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='7' %}
@@ -295,7 +295,7 @@ Represents the status of the device identified by the given *device-id* and regi
 
 **Example Request**
 
-	GET http://www.mydog.com/api/devices/MeteringPowerOutlet/status
+	GET http://www.mydog.com/api/v1/devices/MeteringPowerOutlet/status
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='9' %}
@@ -382,7 +382,7 @@ Sets the Weekly Schedule for the Thermostatic Vlave identified by {device-id}
 
 **PUT: Example**
 	
-	PUT http://www.mydog.com/api/devices/ThermostaticRadiatorValve_1/commands/setClimateSchedule
+	PUT http://www.mydog.com/api/v1/devices/ThermostaticRadiatorValve_1/commands/setClimateSchedule
 
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Request Body' panelCount='12' %}
@@ -420,7 +420,7 @@ Sets the Daily Schedule for the Thermostatic Valve identified by {device-id}
 
 **PUT: Example**
 
-	PUT http://www.mydog.com/api/devices/ThermostaticRadiatorValve_1/commands/setDailyClimateSchedule
+	PUT http://www.mydog.com/api/v1/devices/ThermostaticRadiatorValve_1/commands/setDailyClimateSchedule
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Request Body' panelCount='13' %}
@@ -457,7 +457,7 @@ Sets the Temperature setPoint for the Thermostatic Valve identified by {device-i
 
 **PUT: Example**
 
-	PUT http://www.mydog.com/api/devices/ThermostaticRadiatorValve_1/commands/setTemperatureAt
+	PUT http://www.mydog.com/api/v1/devices/ThermostaticRadiatorValve_1/commands/setTemperatureAt
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Request Body' panelCount='14' %}
@@ -520,7 +520,7 @@ Represents the environment (i.e., the building) configured in Dog.
 
 **Example Request**
 
-	GET http://www.mydog.com/api/environment
+	GET http://www.mydog.com/api/v1/environment
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='15' %}
@@ -566,7 +566,7 @@ Represents all the flats present in the environment (i.e., int the building).
 
 **Example Requests**
 
-	GET http://www.mydog.com/api/environment/flats
+	GET http://www.mydog.com/api/v1/environment/flats
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='17' %}
@@ -576,7 +576,7 @@ Represents all the flats present in the environment (i.e., int the building).
 {% include close-accordion-item.html %}
 {% include accordion-footer.html %}
 
-	POST http://www.mydog.com/api/environment/flats
+	POST http://www.mydog.com/api/v1/environment/flats
 
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Request Body' panelCount='18' %}
@@ -617,7 +617,7 @@ Represents a specific flat present in the environment (i.e., in the building).
 
 **Example Requests**
 
-	GET http://www.mydog.com/api/environment/flats/flat
+	GET http://www.mydog.com/api/v1/environment/flats/flat
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='19' %}
@@ -627,7 +627,7 @@ Represents a specific flat present in the environment (i.e., in the building).
 {% include close-accordion-item.html %}
 {% include accordion-footer.html %}
 
-	PUT http://www.mydog.com/api/environment/flats/flat
+	PUT http://www.mydog.com/api/v1/environment/flats/flat
 
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Request Body' panelCount='20' %}
@@ -667,7 +667,7 @@ Represents all the rooms present in a given flat.
 
 **Example Requests**
 
-	GET http://www.mydog.com/api/environment/flats/flat/rooms
+	GET http://www.mydog.com/api/v1/environment/flats/flat/rooms
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='21' %}
@@ -677,7 +677,7 @@ Represents all the rooms present in a given flat.
 {% include close-accordion-item.html %}
 {% include accordion-footer.html %}
 
-	POST http://www.mydog.com/api/environment/flats/flat/rooms
+	POST http://www.mydog.com/api/v1/environment/flats/flat/rooms
 
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Request Body' panelCount='22' %}
@@ -717,7 +717,7 @@ Represents a specific room in the flat identified by the given *flat-id*.
 
 **Example Requests**
 
-	GET http://www.mydog.com/api/environment/flats/flat/rooms/kitchen
+	GET http://www.mydog.com/api/v1/environment/flats/flat/rooms/kitchen
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='23' %}
@@ -727,7 +727,7 @@ Represents a specific room in the flat identified by the given *flat-id*.
 {% include close-accordion-item.html %}
 {% include accordion-footer.html %}
 
-	PUT http://www.mydog.com/api/environment/flats/flat/rooms/kitchen
+	PUT http://www.mydog.com/api/v1/environment/flats/flat/rooms/kitchen
 
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Request Body' panelCount='24' %}
@@ -774,7 +774,7 @@ Currently, all the responses and the requests are in XML format.
 
 **Example Requests**
 
-	GET http://www.mydog.com/api/rules
+	GET http://www.mydog.com/api/v1/rules
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='25' %}
@@ -792,7 +792,7 @@ Currently, all the responses and the requests are in XML format.
 {% include close-accordion-item.html %}
 {% include accordion-footer.html %}
 
-	POST http://www.mydog.com/api/rules
+	POST http://www.mydog.com/api/v1/rules
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Request Body' panelCount='27' %}
@@ -835,7 +835,7 @@ Currently, all the responses and the requests are in XML format.
 
 **Example Requests**
 
-	GET http://www.mydog.com/api/rules/onToOn
+	GET http://www.mydog.com/api/v1/rules/onToOn
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='28' %}
@@ -853,7 +853,7 @@ Currently, all the responses and the requests are in XML format.
 {% include close-accordion-item.html %}
 {% include accordion-footer.html %}
 
-	PUT http://www.mydog.com/api/rules/consumptionToHigh
+	PUT http://www.mydog.com/api/v1/rules/consumptionToHigh
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Request Body' panelCount='30' %}
@@ -866,4 +866,4 @@ Currently, all the responses and the requests are in XML format.
 {% include close-accordion-item.html %}
 {% include accordion-footer.html %}
 	
-	DELETE http://www.mydog.com/api/rules/onToOn
+	DELETE http://www.mydog.com/api/v1/rules/onToOn
