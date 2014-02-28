@@ -20,7 +20,7 @@ Before downloading the latest version, check the hardware and software environme
 * Ethernet connection (to access the gateway, and to connect to the automation networks)
 
 ### Download ###
-Download the latest release from [GitHub](https://github.com/dog-gateway/dog-release/releases). If your are planning to run the Dog Gateway on [RaspberryPi](http://www.raspberrypi.org/) you might also want to check the available pre-compiled [images](/raspberrypi.html).
+Download the latest release from [GitHub](https://github.com/dog-gateway/dog-release/releases). If you are planning to run the Dog Gateway on [RaspberryPi](http://www.raspberrypi.org/) you might want to check the available pre-compiled [images](/raspberrypi.html).
 Check which technology drivers are available and choose the ones you prefer; download the latest releases on the corresponding drivers repositories:
 
  * [BTicino MyHome](https://github.com/dog-gateway/bticino-drivers/releases)
@@ -34,11 +34,11 @@ Check which technology drivers are available and choose the ones you prefer; dow
 ### Installation  ###
 Ok you've got the latest release, what to do next?
 
-* Uncompress the release file in the directory in which you want (or move it later to the right place); e.g.,<br/> 
+* Uncompress the release file in the directory in which you want to install the gateway (or move it later to the right place); e.g.,<br/> 
 	```
 	unzip dog-3.0.0.zip
 	```
-* If you downloaded additional drivers, uncompress the driver files in to a temporary folder, and move them to the ```drivers``` sub-directory located in the dog installation folder.<br/>
+* If you downloaded some additional drivers, uncompress the driver files in a temporary folder, and move them to the ```drivers``` sub-directory located in the dog installation folder.<br/>
 	```
 	unzip zwave-drivers.zip 
 	```
@@ -85,8 +85,8 @@ The Dog Gateway configuration is stored under the folder named *configuration*, 
 		|--- config.ini
 		
 While the `config.ini` file usually does not need any change (and, vice-versa, any wrong modification may compromise the gateway execution), files inside the `configuration` folder provide parameters to tune-up the gateway modules and might need to be changed depending on the specific installation. 
-Among the available files, two main types can be identified: ```.cfg``` files and ```.xml``` files. The former are ```key = value``` files used to specify configuration parameters needed by the gateway bundles (either to run, or to tune-up their runtime execution).
-The latter, instead, are used to provide extensive configuration data, e.g., the home configuration in terms of devices and locations, the set of rules to be executed, etc. They are typically pointed by some parameter specified in ```.cfg``` files.
+Among the available files, two main types can be identified: ```.cfg``` files and ```.xml``` files. The former uses a ```key = value``` format to specify configuration parameters needed by the gateway bundles (either to run, or to tune-up their runtime execution).
+File belonging to the latter, instead, provide extensive configuration data, e.g., the home configuration in terms of devices and locations, the set of rules to be executed, etc. They are typically pointed by some parameters specified in ```.cfg``` files.
 
 To better understand the files structure, let us explain one of the most important configuration files, the ```it.polito.elite.dog.core.housemodel.simple.cfg``` which provides details about the home managed by the Dog Gateway.
 Such a file is organized as follows:

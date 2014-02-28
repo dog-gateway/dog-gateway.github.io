@@ -8,7 +8,7 @@ categories: development-howto
 Even if a given technology, e.g., ZWave, might already be supported in Dog, there are cases in which drivers for specific devices are missing. In this simple tutorial we tackle the development of a new device driver for a technology already supported in Dog.
 
 
-The first step to accomplish when starting to develop a new device driver is to identify the corresponding device model in DogOnt, (or in the [core-library](https://github.com/dog-gateway/core-library) repository).
+The first step to accomplish when starting to develop a new device driver is to identify the corresponding device model in DogOnt, or in the [core-library](https://github.com/dog-gateway/core-library) repository.
 
 Let's assume we want to develop a new driver for handling a ZWave clean contact actuator. By analyzing the DogOnt model (or the core library) we can easily conclude that the most suited device category would be OnOffOutput (```it.polito.elite.dog.core.library.model.devicecategory.OnOffOutput```).
 
