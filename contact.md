@@ -15,11 +15,11 @@ sidebar: twitter-feed.html
 
   * Send an e-mail to the official Dog Gateway team address: [domoticdog@gmail.com](mailto:domoticdog@gmail.com)
   * Ask your questions to the team members: [Dario Bonino](mailto:dario.bonino@polito.it) or [Luigi De Russis](mailto:luigi.derussis@polito.it)
-  * If you suspect a bug, open an issue on the main [GitHub](https://github.com/dog-gateway/dog-release) repository
+  * If you suspect a bug, open an issue on the main [GitHub](https://github.com/dog-gateway/dog/issues) repository
 
 ### Want to contribute? ###
 
-  * To report a bug or suggest an improvement in Dog, use the issue tracker available on [GitHub](https://github.com/dog-gateway). Several repositories are available, please select the most precise (or use the [release](https://github.com/dog-gateway/dog-release) repository).
+  * To report a bug or suggest an improvement in Dog, use the issue tracker available on [GitHub](https://github.com/dog-gateway). Several repositories are available, please select the most precise (or use the [release](https://github.com/dog-gateway/dog) repository).
   * To contribute a bug fix or other patch to Dog, you can also open a merge request on the bundle repository you modified.
   * To contribute to the official documentation, use the [issue tracker](https://github.com/dog-gateway/dog-gateway.github.io/issues) to contribute a documentation patch.
   * To announce your module or application to the Dog community, send us an e-mail or a [tweet](http://twitter.com/TheDogGateway).

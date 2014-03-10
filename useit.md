@@ -20,7 +20,7 @@ Before downloading the latest version, check the hardware and software environme
 * Ethernet connection (to access the gateway, and to connect to the automation networks)
 
 ### Download ###
-Download the latest release from [GitHub](https://github.com/dog-gateway/dog-release/releases). If you are planning to run the Dog Gateway on [RaspberryPi](http://www.raspberrypi.org/) you might want to check the available pre-compiled [images](/raspberrypi.html).
+Download the latest release from [GitHub](https://github.com/dog-gateway/dog/releases). If you are planning to run the Dog Gateway on [Raspberry Pi](http://www.raspberrypi.org/) you might want to check the available pre-compiled [images](/raspberrypi.html).
 Check which technology drivers are available and choose the ones you prefer; download the latest releases on the corresponding drivers repositories:
 
  * [BTicino MyHome](https://github.com/dog-gateway/bticino-drivers/releases)
@@ -56,7 +56,7 @@ Check configuration details for each technology on the corresponding driver page
 * [KNX](https://github.com/dog-gateway/knx-drivers)
 * [Echelon](https://github.com/dog-gateway/echelon-drivers)
 * [Modbus](https://github.com/dog-gateway/modbus-drivers)
-* [ZWave](https://github.com/dog-gateway/zwave-drivers)
+* [Z-Wave](https://github.com/dog-gateway/zwave-drivers)
 
 or have a look at the sample configurations:
 
@@ -64,7 +64,7 @@ or have a look at the sample configurations:
 * [KNX](https://github.com/dog-gateway/knx-configuration)
 * Echelon
 * Modbus
-* [ZWave](https://github.com/dog-gateway/zwave-configuration)
+* [Z-Wave](https://github.com/dog-gateway/zwave-configuration)
 
 For any additional module (bundle) you download, check the installation and configuration instructions on the corresponding GitHub repository.
 
