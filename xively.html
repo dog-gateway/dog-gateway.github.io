@@ -1,0 +1,51 @@
+---
+layout: xively
+title: The Dog Gateway - Live!
+active: Live!
+--- 
+<h2 class="section-title">The Dog Gateway Live!</h2>
+    
+<ul class="demo-streams list-unstyled list-inline">
+	<li>Humidity <span class="label label-info"><span id="humidity">--</span> %</span></li>
+	<li>Temperature <span class="label label-info"><span id="temperature">--</span> &deg;C</span></li>
+	<li>Luigi's monitor <span class="label label-info"><span id="monitor-luigi">--</span> W</span></li>
+</ul>
+<div class="row">
+<div class="col-md-12 well">
+<p>Humidity</p> 
+<div id="chart_container">
+	<div class="chart" data-stream="HUMIDITY_OFFICE"></div>
+	<!--<div id="legend_container">
+		  <div id="smoother" title="Smoothing"></div>-->
+		<div class="legend"></div>
+	<!--</div>-->
+	<div id="slider"></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 well">
+<p>Temperature</p> 
+<div id="chart_container">
+	<div class="chart" data-stream="TEMPERATURE_OFFICE"></div>
+	<!--<div id="legend_container">
+		  <div id="smoother" title="Smoothing"></div>-->
+		<div class="legend"></div>
+	<!--</div>-->
+	<div id="slider"></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 well">
+<p>Luigi's monitor</p> 
+<div id="chart_container">
+	<div class="chart" data-stream="MeteringPowerOutlet_5_Power"></div>
+	<!--<div id="legend_container">
+		  <div id="smoother" title="Smoothing"></div>-->
+		<div class="legend"></div>
+	<!--</div>-->
+	<div id="slider"></div>
+</div>
+</div>
+</div>
