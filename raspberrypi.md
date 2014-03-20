@@ -18,4 +18,5 @@ Image installation follows almost the same procedure indicated in the [Raspberry
 
 #### Z-Wave images ####
 
+* [2014-03-18 - Dog 3.0.0](http://elite.polito.it/files/releases/dog/images/2014-03-18-dog-public.img.gz) [[sha1](http://elite.polito.it/files/releases/dog/images/2014-03-18-dog-public.img.sha1)]
 * [2014-02-05 - Dog 3.0.0.rc1](http://elite.polito.it/files/releases/dog/images/2014-02-05-dog.img.gz) [[sha1](http://elite.polito.it/files/releases/dog/images/2014-02-05-dog.sha1)]
