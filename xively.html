@@ -1,17 +1,23 @@
 ---
 layout: xively
 title: The Dog Gateway - Live!
-active: Live!
+active: Demo
 --- 
 <h2 class="section-title">The Dog Gateway Live!</h2>
-    
+<p>Watch live data measured by the Dog gateway running in our research lab and posted to <a href="https://xively.com/feeds/937093077">Xively</a>.</p>
+<hr/>
+<div class="row">
+<div class="col-md-10 col-md-offset-1">
 <ul class="demo-streams list-unstyled list-inline">
 	<li>Humidity <span class="label label-info"><span id="humidity">--</span> %</span></li>
 	<li>Temperature <span class="label label-info"><span id="temperature">--</span> &deg;C</span></li>
-	<li>Luigi's monitor <span class="label label-info"><span id="monitor-luigi">--</span> W</span></li>
+	<li>PC Monitor <span class="label label-info"><span id="pc-monitor">--</span> W</span></li>
 </ul>
+<hr/>
+</div>
+</div>
 <div class="row">
-<div class="col-md-12 well">
+<div class="col-md-10 col-md-offset-1 well">
 <p>Humidity</p> 
 <div id="chart_container">
 	<div class="chart" data-stream="HUMIDITY_OFFICE"></div>
@@ -24,7 +30,7 @@ active: Live!
 </div>
 </div>
 <div class="row">
-<div class="col-md-12 well">
+<div class="col-md-10 col-md-offset-1 well">
 <p>Temperature</p> 
 <div id="chart_container">
 	<div class="chart" data-stream="TEMPERATURE_OFFICE"></div>
@@ -37,8 +43,8 @@ active: Live!
 </div>
 </div>
 <div class="row">
-<div class="col-md-12 well">
-<p>Luigi's monitor</p> 
+<div class="col-md-10 col-md-offset-1 well">
+<p>PC Monitor</p> 
 <div id="chart_container">
 	<div class="chart" data-stream="MeteringPowerOutlet_5_Power"></div>
 	<!--<div id="legend_container">

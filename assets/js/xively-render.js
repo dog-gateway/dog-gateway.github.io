@@ -12,7 +12,7 @@ $(function() {
 		feed : 937093077,
 		datastream : 'TEMPERATURE_OFFICE'
 	});
-	$('#monitor-luigi').xively('live', {
+	$('#pc-monitor').xively('live', {
 		feed : 937093077,
 		datastream : 'MeteringPowerOutlet_5_Power'
 	});
@@ -26,7 +26,7 @@ $(function() {
 	var query = {
 		start : startOfYesterday.toJSON(),
 		end : endOfYesterday.toJSON(),
-		interval : 30,
+		interval : 10,
 		limit : 1000
 	};
 
@@ -42,7 +42,7 @@ $(function() {
 		query = {
 			start : startOfYesterday.toJSON(),
 			end : endOfYesterday.toJSON(),
-			interval : 0,
+			interval : 10,
 			limit : 1000
 		};
 	}, 10000);
