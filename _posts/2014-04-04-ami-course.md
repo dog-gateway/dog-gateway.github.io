@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Supporting the AmI: technologies and design course at PoliTo"
+title:  "Supporting the \"AmI: technologies and design\" course at PoliTo"
 date:   2014-04-04 16:00:00
 categories: news
 ---
 
-We are sponsoring the [*Ambient Intelligence: Technologies and Design*](http://bit.ly/polito-ami) course (2014 edition) taught at Politecnico di Torino in the Spring session. 
+We are sponsoring the "[*Ambient Intelligence: Technologies and Design*](http://bit.ly/polito-ami)" course (2014 edition) taught at Politecnico di Torino in the Spring session. 
 
 In such a context we provide three Dog installations respectively connected to:
 

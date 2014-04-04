@@ -2,9 +2,10 @@
 layout: default 
 title: The Dog Gateway - Blog 
 active: Blog
+
 ---
 
-
+	<a href="/feed.xml">Get the Dog Blog RSS feed <img src="/assets/img/icons/feed-icon-14x14.png" alt="RSS" style="vertical-align: text-top"></img></a>
 	{% for post in site.posts %} 
 		{%if forloop.index0 < 10 %}
 	<hr/>
