@@ -2,7 +2,7 @@
 	  "devices" : [ {
 	    "description" : "The ZWave X gateway",
 	    "id" : "zwave-gateway",
-	    "isIn" : demo_room,
+	    "isIn" : "demo_room",
 	    "domoticSystem" : "ZWave",
 	    "class" : "ZWaveGateway",
 	    "controlFunctionality" : [ {
@@ -78,4 +78,5 @@
 	    "gateway" : "zwave-gateway",
 	    "class" : "LampHolder"
 	  }
-	}
+	]
+}
