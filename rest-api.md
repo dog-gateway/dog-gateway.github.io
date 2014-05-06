@@ -43,6 +43,7 @@ API access is currently available over HTTP, at:
   `http://<dog-address>/api/v1`. 
 
 To select the desired response type (JSON or XML), the `Accept` HTTP header must be used in the request.
+In the same way, a proper `Content-Type` *must* be always present for `PUT` and `POST` requests.
 
 #### Function summary ####
 
@@ -55,7 +56,7 @@ To select the desired response type (JSON or XML), the `Accept` HTTP header must
 |[Resource /devices/{device-id}/description ](#device-description) | Update the description (i.e., the long name) of a single domotic device handled by Dog, identified by a unique *device-id*. |
 |[Resource /devices/status](#status) | Represents the status of devices registered in the Dog gateway runtime, i.e., defined in the Dog [configuration](#devices) and successfully registered within the gateway runtime.|
 |[Resource /devices/{device-id}/status](#status-single) | Represents the status of the device identified by the given *device-id*, registered in the Dog gateway runtime, i.e., defined in the Dog [configuration](#devices) and successfully registered within the gateway runtime. | 
-| [Resource /devices/{device-id}/commands/{command-name} ](#command)|Represents a command, identified by a *command-name*, to be sent to the device identified by the given *device-id*. Commands are idempotent: the same command always results in the same behavior of the selected device. If the command brings the device in same state in which the device is, no differences will be appreciable.|
+|[Resource /devices/{device-id}/commands/{command-name} ](#command)|Represents a command, identified by a *command-name*, to be sent to the device identified by the given *device-id*. Commands are idempotent: the same command always results in the same behavior of the selected device. If the command brings the device in same state in which the device is, no differences will be appreciable.|
 |[Resource /dog/configuration](#dogConfiguration) | Unsupported, to be implemented in future... |
 |[Resource /environment](#environment) | Represents the environment (i.e., the building) configured in Dog.|
 |[Resource /environment/flats](#flats) | Represents all the flats present in the environment (i.e., the building).|
@@ -317,7 +318,7 @@ Represents the status of the device identified by the given *device-id* and regi
 
 #### <a id="command"></a> Resource /devices/{device-id}/commands/{command-name} ####
 
-*Updated on Fri, 2013-09-06* <span class="label label-info pull-right">API version 1.0</span>
+*Updated on Fri, 2014-05-06* <span class="label label-info pull-right">API version 1.0</span>
 
 |||
 |----------------|------------------|
@@ -328,7 +329,10 @@ Represents the status of the device identified by the given *device-id* and regi
 |Response Object|**none**|
 |API Version|**v1.0**|
 
-Represents a command, identified by a *command-name*, to be sent to the device identified by the given *device-id*. 
+Represents a command, identified by a *command-name*, to be sent to the device identified by the given *device-id*.
+
+The *command-name* is the value associated to the `realCommandName` parameter present in the device description (see the [\devices](#devices) resource).
+
 Commands are idempotent: the same command always results in the same behavior of the selected device. 
 If the command brings the device in same state in which the device is, no differences will be appreciable. 
 
