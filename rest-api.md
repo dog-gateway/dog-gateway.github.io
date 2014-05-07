@@ -24,8 +24,8 @@ APIs allow to:
 	* add or update the set of devices controlled through the gateway;
 	* update the [location](#device-location) and the [description](#device-description) of a device controlled through the gateway;
 * manage information about the environment
-	* [insert](#rooms-in-flat), [update](#single-room-in-flat) or delete rooms;
-	* [insert](#flats), [update](#single-flat), or delete flats;
+	* [insert](#rooms-in-flat), [update or delete](#single-room-in-flat) rooms;
+	* [insert](#flats), [update or delete](#single-flat) flats;
 * manage rules and automation scenarios
 	* [insert](#rules), [update, or delete](#single-rule) automation rules;
 	* insert, update, or delete scenarios;
@@ -597,7 +597,7 @@ Represents all the flats present in the environment (i.e., int the building).
 
 #### <a id="single-flat"></a> Resource /environment/flats/{flat-id} ####
 
-*Updated on Thu, 2013-11-10*
+*Updated on Thu, 2014-05-07*
 <span class="label label-info pull-right">API version 1.0</span>
 
 |||
@@ -617,6 +617,7 @@ Represents a specific flat present in the environment (i.e., in the building).
 |:-----|:----------|
 | GET | Returns the details of the flat identified by the given *flat-id*. |
 | PUT | Update the flat identified by the given *flat-id*. |
+| DELETE | Delete the flat identified by the given *flat-id*. |
 
 
 **Example Requests**
@@ -643,6 +644,8 @@ Represents a specific flat present in the environment (i.e., in the building).
 </pre>
 {% include close-accordion-item.html %}
 {% include accordion-footer.html %}
+
+	DELETE http://www.mydog.com/api/v1/environment/flats/flat
 
 ---
 
@@ -698,7 +701,7 @@ Represents all the rooms present in a given flat.
 
 #### <a id="single-room-in-flat"></a> Resource /environment/flats/{flat-id}/rooms/{room-id} ####
 
-*Updated on Thu, 2013-11-10*
+*Updated on Thu, 2014-05-07*
 <span class="label label-info pull-right">API version 1.0</span>
 
 |||
@@ -718,6 +721,7 @@ Represents a specific room in the flat identified by the given *flat-id*.
 |:-----|:----------|
 | GET | Returns the details of the room identified by the given *room-id* and located in the given flat. |
 | PUT | Update the room identified by the given *room-id* and located in the given flat. |
+| DELETE | Delete the room identified by the given *room-id* and located in the given flat. |
 
 **Example Requests**
 
@@ -743,6 +747,8 @@ Represents a specific room in the flat identified by the given *flat-id*.
 </pre>
 {% include close-accordion-item.html %}
 {% include accordion-footer.html %}
+
+	DELETE http://www.mydog.com/api/v1/environment/flats/flat/rooms/kitchen
 
 ---
 
