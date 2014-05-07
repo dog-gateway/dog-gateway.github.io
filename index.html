@@ -83,7 +83,7 @@ active: Home
 						href="/rest-api.html">RestAPI</a>. Inter-operation of
 					technologies, devices, and automation networks.
 				</p>
-				<p>
+				<p class="learn-more">
 					<a class="btn btn-default" href="#abstraction" role="button">Learn More
 						&raquo;</a>
 				</p>
@@ -97,7 +97,8 @@ active: Home
 					Wide range of networks, including bus technologies, wireless
 					systems and typical industrial automation solutions: KNX, BTicino
 					MyHome, Echelon, Z-Wave, ZigBee*, EnOcean*, Modbus, Philips Hue*.</p>
-				<p>
+				<p>* currently under development</p>
+				<p class="learn-more">
 					<a class="btn btn-default" href="#multiprotocol" role="button">Learn More
 						&raquo;</a>
 				</p>
@@ -122,9 +123,23 @@ active: Home
 
 
 		<!-- START THE FEATURETTES -->
-		<p>* currently under development</p>
-		<hr class="featurette-divider">
-
+		
+		
+		
+		<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12">
+		<p class="text-primary lead">News</p>
+		<hr>
+		<ul>
+		{% for post in site.posts %} 
+			{%if forloop.index0 < 5 %}
+			<li> {{ post.date | date: "%-d %B %Y" }} - {{post.title}}, <a href="{{post.url}}">more...</a></li>
+			{% endif %}
+		{% endfor %}
+		</ul>
+		<hr>
+		</div>
+		</div>
 		<div class="row featurette">
 			<div class="col-md-7">
 			<a id="abstraction"></a>

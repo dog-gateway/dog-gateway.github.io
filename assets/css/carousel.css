@@ -87,7 +87,7 @@ body {
 	text-align: justify;
 }
 
-.marketing p + p 
+.marketing p.learn-more
 {
 	text-align: center;
 }
