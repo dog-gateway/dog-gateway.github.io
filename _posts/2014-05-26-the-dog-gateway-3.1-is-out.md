@@ -5,7 +5,7 @@ date:   2014-05-26 16:26:00
 categories: news
 ---
 
-Check its new features on the [website](/index.html) or get it on [GitHub](https://github.com/dog-gateway/dog/releases/tag/v3.1.0).
+Check its new features in the changelog or get it on [GitHub](https://github.com/dog-gateway/dog/releases/tag/v3.1.0).
 
 ---------------------
 
