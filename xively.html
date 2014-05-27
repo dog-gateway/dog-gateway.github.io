@@ -4,54 +4,191 @@ title: The Dog Gateway - Live!
 active: Demo
 --- 
 <h2 class="section-title">The Dog Gateway Live!</h2>
-<p>Watch live data measured by the Dog gateway running in our research lab and posted to <a href="https://xively.com/feeds/937093077">Xively</a>.</p>
-<hr/>
+<p>
+	Watch live data measured by the Dog gateway running in our research lab
+	and posted to <a href="https://xively.com/feeds/937093077">Xively</a>.
+</p>
+<hr />
 <div class="row">
-<div class="col-md-10 col-md-offset-1">
-<ul class="demo-streams list-unstyled list-inline">
-	<li>Humidity <span class="label label-info"><span id="humidity">--</span> %</span></li>
-	<li>Temperature <span class="label label-info"><span id="temperature">--</span> &deg;C</span></li>
-	<li>PC Monitor <span class="label label-info"><span id="pc-monitor">--</span> W</span></li>
-</ul>
-<hr/>
-</div>
+	<div class="col-md-12">
+		<h2>Lab</h2>
+		<hr/>
+	</div>
 </div>
 <div class="row">
-<div class="col-md-10 col-md-offset-1 well">
-<p>Humidity</p> 
-<div id="chart_container">
-	<div class="chart" data-stream="HUMIDITY_OFFICE"></div>
-	<!--<div id="legend_container">
+	<div class="col-md-9 col-md-offset-3">
+		<ul class="demo-streams list-unstyled list-inline">
+			<li>Humidity <span class="label label-info"><span
+					id="humidity">--</span> %</span></li>
+			<li>Temperature <span class="label label-info"><span
+					id="temperature">--</span> &deg;C</span></li>
+			<li>PC Monitor <span class="label label-info"><span
+					id="pc-monitor">--</span> W</span></li>
+		</ul>
+		<br/>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-5 col-md-offset-1 well">
+		<p>Humidity</p>
+		<div id="chart_container">
+			<div class="chart" data-stream="HUMIDITY_OFFICE" data-feed="937093077" data-key="s5ZMzIPoBAuiTaV1BCvDJeY8kGraiNG70CyYPDws2t2mmKXe"></div>
+			<!--<div id="legend_container">
 		  <div id="smoother" title="Smoothing"></div>-->
-		<div class="legend"></div>
-	<!--</div>-->
-	<div id="slider"></div>
-</div>
-</div>
+			<div class="legend"></div>
+			<!--</div>-->
+			<div id="slider"></div>
+		</div>
+	</div>
+	<div class="col-md-5 col-md-offset-1 well">
+		<p>Temperature</p>
+		<div id="chart_container">
+			<div class="chart" data-stream="TEMPERATURE_OFFICE" data-feed="937093077" data-key="s5ZMzIPoBAuiTaV1BCvDJeY8kGraiNG70CyYPDws2t2mmKXe"></div>
+			<!--<div id="legend_container">
+		  <div id="smoother" title="Smoothing"></div>-->
+			<div class="legend"></div>
+			<!--</div>-->
+			<div id="slider"></div>
+		</div>
+	</div>
 </div>
 <div class="row">
-<div class="col-md-10 col-md-offset-1 well">
-<p>Temperature</p> 
-<div id="chart_container">
-	<div class="chart" data-stream="TEMPERATURE_OFFICE"></div>
-	<!--<div id="legend_container">
+	<div class="col-md-5 col-md-offset-1 well">
+		<p>PC Monitor</p>
+		<div id="chart_container">
+			<div class="chart" data-stream="MeteringPowerOutlet_5_Power" data-feed="937093077" data-key="s5ZMzIPoBAuiTaV1BCvDJeY8kGraiNG70CyYPDws2t2mmKXe"></div>
+			<!--<div id="legend_container">
 		  <div id="smoother" title="Smoothing"></div>-->
-		<div class="legend"></div>
-	<!--</div>-->
-	<div id="slider"></div>
-</div>
-</div>
+			<div class="legend"></div>
+			<!--</div>-->
+			<div id="slider"></div>
+		</div>
+	</div>
 </div>
 <div class="row">
-<div class="col-md-10 col-md-offset-1 well">
-<p>PC Monitor</p> 
-<div id="chart_container">
-	<div class="chart" data-stream="MeteringPowerOutlet_5_Power"></div>
-	<!--<div id="legend_container">
+	<div class="col-md-12">
+		<h2>Office</h2>
+		<hr/>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-5 col-md-offset-1 well">
+		<p>Office Humidity</p>
+		<div id="chart_container">
+			<div class="chart" data-stream="Humidity" data-feed="1183106458" data-key="8pHPWKJgakSR3J0d9saqhe9NUsfeWE02RiqX1qksmdCdSMz2"></div>
+			<!--<div id="legend_container">
 		  <div id="smoother" title="Smoothing"></div>-->
-		<div class="legend"></div>
-	<!--</div>-->
-	<div id="slider"></div>
+			<div class="legend"></div>
+			<!--</div>-->
+			<div id="slider"></div>
+		</div>
+	</div>
+	<div class="col-md-5 col-md-offset-1 well">
+		<p>Office Humidity at Ceiling</p>
+		<div id="chart_container">
+			<div class="chart" data-stream="Humidity_ceiling" data-feed="1183106458" data-key="8pHPWKJgakSR3J0d9saqhe9NUsfeWE02RiqX1qksmdCdSMz2"></div>
+			<!--<div id="legend_container">
+		  <div id="smoother" title="Smoothing"></div>-->
+			<div class="legend"></div>
+			<!--</div>-->
+			<div id="slider"></div>
+		</div>
+	</div>
 </div>
+<div class="row">
+	<div class="col-md-5 col-md-offset-1 well">
+		<p>Temperature</p>
+		<div id="chart_container">
+			<div class="chart" data-stream="Temperature" data-feed="1183106458" data-key="8pHPWKJgakSR3J0d9saqhe9NUsfeWE02RiqX1qksmdCdSMz2"></div>
+			<!--<div id="legend_container">
+		  <div id="smoother" title="Smoothing"></div>-->
+			<div class="legend"></div>
+			<!--</div>-->
+			<div id="slider"></div>
+		</div>
+	</div>
+	<div class="col-md-5 col-md-offset-1 well">
+		<p>Temperature at Ceiling</p>
+		<div id="chart_container">
+			<div class="chart" data-stream="Temperature_ceiling" data-feed="1183106458" data-key="8pHPWKJgakSR3J0d9saqhe9NUsfeWE02RiqX1qksmdCdSMz2"></div>
+			<!--<div id="legend_container">
+		  <div id="smoother" title="Smoothing"></div>-->
+			<div class="legend"></div>
+			<!--</div>-->
+			<div id="slider"></div>
+		</div>
+	</div>
 </div>
+<div class="row">
+	<div class="col-md-5 col-md-offset-1 well">
+		<p>Total Energy</p>
+		<div id="chart_container">
+			<div class="chart" data-stream="WholeCase_Energy" data-feed="1183106458" data-key="8pHPWKJgakSR3J0d9saqhe9NUsfeWE02RiqX1qksmdCdSMz2"></div>
+			<!--<div id="legend_container">
+		  <div id="smoother" title="Smoothing"></div>-->
+			<div class="legend"></div>
+			<!--</div>-->
+			<div id="slider"></div>
+		</div>
+	</div>
+	<div class="col-md-5 col-md-offset-1 well">
+		<p>Total Power</p>
+		<div id="chart_container">
+			<div class="chart" data-stream="WholeCase_Power" data-feed="1183106458" data-key="8pHPWKJgakSR3J0d9saqhe9NUsfeWE02RiqX1qksmdCdSMz2"></div>
+			<!--<div id="legend_container">
+		  <div id="smoother" title="Smoothing"></div>-->
+			<div class="legend"></div>
+			<!--</div>-->
+			<div id="slider"></div>
+		</div>
+	</div>
 </div>
+<div class="row">
+	<div class="col-md-5 col-md-offset-1 well">
+		<p>Shutter Energy</p>
+		<div id="chart_container">
+			<div class="chart" data-stream="Shutter_Energy" data-feed="1183106458" data-key="8pHPWKJgakSR3J0d9saqhe9NUsfeWE02RiqX1qksmdCdSMz2"></div>
+			<!--<div id="legend_container">
+		  <div id="smoother" title="Smoothing"></div>-->
+			<div class="legend"></div>
+			<!--</div>-->
+			<div id="slider"></div>
+		</div>
+	</div>
+	<div class="col-md-5 col-md-offset-1 well">
+		<p>Shutter Power</p>
+		<div id="chart_container">
+			<div class="chart" data-stream="Shutter_Power" data-feed="1183106458" data-key="8pHPWKJgakSR3J0d9saqhe9NUsfeWE02RiqX1qksmdCdSMz2"></div>
+			<!--<div id="legend_container">
+		  <div id="smoother" title="Smoothing"></div>-->
+			<div class="legend"></div>
+			<!--</div>-->
+			<div id="slider"></div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-5 col-md-offset-1 well">
+		<p>Desk Lamp Energy</p>
+		<div id="chart_container">
+			<div class="chart" data-stream="DeskLamp_Energy" data-feed="1183106458" data-key="8pHPWKJgakSR3J0d9saqhe9NUsfeWE02RiqX1qksmdCdSMz2"></div>
+			<!--<div id="legend_container">
+		  <div id="smoother" title="Smoothing"></div>-->
+			<div class="legend"></div>
+			<!--</div>-->
+			<div id="slider"></div>
+		</div>
+	</div>
+	<div class="col-md-5 col-md-offset-1 well">
+		<p>Light Intensity at ceiling</p>
+		<div id="chart_container">
+			<div class="chart" data-stream="Light_intensity_ceiling" data-feed="1183106458" data-key="8pHPWKJgakSR3J0d9saqhe9NUsfeWE02RiqX1qksmdCdSMz2"></div>
+			<!--<div id="legend_container">
+		  <div id="smoother" title="Smoothing"></div>-->
+			<div class="legend"></div>
+			<!--</div>-->
+			<div id="slider"></div>
+		</div>
+	</div>
+</div>
+

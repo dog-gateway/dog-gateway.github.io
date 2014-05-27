@@ -29,12 +29,20 @@ $(function() {
 		interval : 10,
 		limit : 1000
 	};
+	
+	$('[data-stream]').each(
+			function(index) {
+				xively.setKey($(this).attr('data-key'));
+				xively.datastream.history( $(this).attr('data-feed'), $(this).attr(
+						'data-stream'), query, loadData);
+
+			});
 
 	setInterval(function() {
 		$('[data-stream]').each(
 				function(index) {
-					xively.datastream.history("937093077", $(this).attr(
-							'data-stream'), query, loadData);
+					xively.setKey($(this).attr('data-key'));
+					xively.datastream.history($(this).attr('data-feed'), $(this).attr('data-stream'), query, loadData);
 
 				});
 		startOfYesterday = moment(new Date()).subtract("milliseconds", 10000);
