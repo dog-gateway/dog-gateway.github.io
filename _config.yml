@@ -2,6 +2,6 @@ name: The Dog Gateway
 markdown: redcarpet
 redcarpet:
   extensions: ["hard_wrap", "no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough", "superscript"]
-pygments: true
+highlighter: pygments
 url: http://dog-gateway.github.io
 permalink: /:categories/:year/:title.html
