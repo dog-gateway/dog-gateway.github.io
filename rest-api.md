@@ -1,10 +1,9 @@
---- 
-layout: default 
-title: The Dog Gateway - Rest API 
-active: Rest Api
+---
+layout: default
+title: The Dog Gateway - Rest API
+active: Develop
 sidebar: rest-api-sidebar.html
 ---
-
 # Build on It! #
 
 Want to build your own application once and deploy it everywhere, regardless of the available home, building or industrial automation systems?
