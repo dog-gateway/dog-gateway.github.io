@@ -42,6 +42,18 @@ img.ribbon
 	position: relative;
 }
 
+.upper {
+	margin-bottom: 0;
+}
+
+.upper-item {
+	border-top-width: 0;
+}
+
+.nested {
+	padding-left: 10px;
+}
+
 @media ( min-width : 768px) {
 	.sidebar {
 		position: fixed;
