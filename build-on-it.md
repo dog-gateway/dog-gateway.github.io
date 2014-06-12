@@ -8,7 +8,7 @@ sidebar: build-on-it-sidebar.html
 
 Want to build your own application once and deploy it everywhere, regardless of the available home, building or industrial automation systems?
 The Dog Gateway offers a technology independent REST API upon which you can build your own web applications, mobile apps, or whatever you imagine.
-Moreover, it offers a Streaming API, based on the WebSocket technology, that extends the functionalities provided by the REST API.
+Moreover, it offers a WebSocket API, based on the WebSocket technology, that extends the functionalities provided by the REST API.
 Exploit the power of standard web technology and interaction paradigms to boost up your productivity and to free your talent, start building now!
 
 ## Dog REST API - Summary ##
@@ -56,4 +56,4 @@ Specifically, it provides a real full duplex connection between Dog, acting as a
 
 Moreover, it introduces the possibility for a client to receive notifications from the devices present in the environment.
 
-See the [WebSocket API](websocket-api.html) documentation for further information and have a look at the dedicated [guide](websocket-howto.html).
+See the [WebSocket API](websocket-api.html) documentation for further information and have a look at the dedicated guide(*soon available*).
