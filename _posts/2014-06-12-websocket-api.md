@@ -9,7 +9,7 @@ Stemming from the thesis work of [Teodoro Montanaro](http://www.rosario49.it/teo
 
 Such an API allows bi-directional communication between Dog and a client application, building upon the REST API and extending it with the introduction of device **notifications** handling.
 
-Checkout the corresponding [documentation](websocket-api.html), the relative OSGi bundles from GitHub:
+Checkout the corresponding [documentation](/websocket-api.html), the relative OSGi bundles from GitHub:
 
 * [WebSocket Connector](https://github.com/dog-gateway/websocket-connector)
 * [WebSocket Device API](https://github.com/dog-gateway/websocket-device-api)
