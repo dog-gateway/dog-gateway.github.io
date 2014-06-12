@@ -10,6 +10,8 @@ sidebar: twitter-feed.html
 ### Want to remain in touch? ###
   
   * Follow us on Twitter: [@TheDogGateway](http://twitter.com/TheDogGateway)
+  * Like our page on [Facebook](https://www.facebook.com/TheDogGateway)
+  * Subscribe to the blog [RSS feed](http://dog-gateway.github.io/feed.xml)
 
 ### Got a problem or a question? ##
 
@@ -28,3 +30,4 @@ sidebar: twitter-feed.html
 
   * Contact [domoticdog@gmail.com](mailto:domoticdog@gmail.com) and let us know how we can help!
   * Send a tweet at [@TheDogGateway](http://twitter.com/TheDogGateway).
+  * Ask a question on our [Facebook](https://www.facebook.com/TheDogGateway) page.
