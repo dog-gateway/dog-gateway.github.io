@@ -5,7 +5,7 @@ date:   2014-06-12 11:00:00
 categories: news
 ---
 
-Stemming from the thesis work of [Teodoro Montanaro](http://www.rosario49.it/teodoro_montanaro/) (_thanks, Teo!_), today we unveil the **Dog WebSocket API**.
+Stemming from the thesis work of [Teodoro Montanaro](http://www.rosario49.it/teodoro_montanaro/) (thanks, Teo!), today we unveil the **Dog WebSocket API**.
 
 Such an API allows bi-directional communication between Dog and a client application, building upon the REST API and extending it with the introduction of device **notifications** handling.
 
