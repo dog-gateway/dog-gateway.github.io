@@ -150,7 +150,7 @@ The following message represent a response for the previous example request.
 	}
 
 ---
-#### <a id="notification"></a>Notifications ####
+#### <a id="notifications"></a>Notifications ####
 A client can subscribe (and unsubscribe) the receptions of one or more notifications, in JSON format.
 A notification is a message autonomously sent by a device controlled by Dog, without any explicit request.
 Typically, it represent an *event* that throws the notification and update the corresponding device status. See the [device reference](device-documentation.html) for further details on which notifications are available for all devices.
