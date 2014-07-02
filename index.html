@@ -47,9 +47,9 @@ active: Home
 				<!--<div class="container"> -->
 				<div class="carousel-caption">
 					<h1>Develop!</h1>
-					<p>Design your own application or web interface.
-						Add new functionalities and integrate new
-						technologies. Build your own modules.</p>
+					<p>Design your own application or web interface. Add new
+						functionalities and integrate new technologies. Build your own
+						modules.</p>
 					<p>
 						<a class="btn btn-lg btn-primary" href="/develop.html"
 							role="button">Developer Resources</a> <a
@@ -83,8 +83,8 @@ active: Home
 					technologies, devices, and automation networks.
 				</p>
 				<p class="learn-more">
-					<a class="btn btn-default" href="#abstraction" role="button">Learn More
-						&raquo;</a>
+					<a class="btn btn-default" href="#abstraction" role="button">Learn
+						More &raquo;</a>
 				</p>
 			</div>
 			<!-- /.col-lg-4 -->
@@ -98,8 +98,8 @@ active: Home
 					MyHome, Echelon, Z-Wave, ZigBee, EnOcean*, Modbus, Philips Hue.</p>
 				<p>* currently under development</p>
 				<p class="learn-more">
-					<a class="btn btn-default" href="#multiprotocol" role="button">Learn More
-						&raquo;</a>
+					<a class="btn btn-default" href="#multiprotocol" role="button">Learn
+						More &raquo;</a>
 				</p>
 			</div>
 			<!-- /.col-lg-4 -->
@@ -122,26 +122,24 @@ active: Home
 
 
 		<!-- START THE FEATURETTES -->
-		
-		
-		
+
+
+
 		<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12">
-		<p class="text-primary lead">News</p>
-		<hr>
-		<ul>
-		{% for post in site.posts %} 
-			{%if forloop.index0 < 5 %}
-			<li> {{ post.date | date: "%-d %B %Y" }} - {{post.title}}, <a href="{{post.url}}">more...</a></li>
-			{% endif %}
-		{% endfor %}
-		</ul>
-		<hr>
-		</div>
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<p class="text-primary lead">News</p>
+				<hr>
+				<ul>
+					{% for post in site.posts %} {%if forloop.index0 < 5 %}
+					<li>{{ post.date | date: "%-d %B %Y" }} - {{post.title}}, <a
+						href="{{post.url}}">more...</a></li> {% endif %} {% endfor %}
+				</ul>
+				<hr>
+			</div>
 		</div>
 		<div class="row featurette">
 			<div class="col-md-7">
-			<a id="abstraction"></a>
+				<a id="abstraction"></a>
 				<h2 class="featurette-heading">
 					OWL-based <span class="text-muted">device abstraction.</span>
 				</h2>
@@ -161,26 +159,24 @@ active: Home
 		</div>
 		<div class="row featurette">
 			<div class="col-md-5">
-				
+
 				<iframe class="featurette"
 					src="http://www.slideshare.net/slideshow/embed_code/26825269?rel=0"
 					width="427" height="356" frameborder="0" marginwidth="0"
-					marginheight="0" scrolling="no"
-					allowfullscreen> </iframe>
+					marginheight="0" scrolling="no" allowfullscreen> </iframe>
 			</div>
 			<div class="col-md-7">
 				<a id="multiprotocol"></a>
 				<h2 class="featurette-heading">
 					Multi-protocol <span class="text-muted">operation.</span>
 				</h2>
-				<p class="lead">
-					Virtually support any home, building and automation protocol. 
-					Wide range of networks, including bus technologies, wireless systems and typical
-					industrial automation solutions.
-				</p>
+				<p class="lead">Virtually support any home, building and
+					automation protocol. Wide range of networks, including bus
+					technologies, wireless systems and typical industrial automation
+					solutions.</p>
 			</div>
 		</div>
 
-		
+		{% include technologies.html %}
 	</div>
 </div>
