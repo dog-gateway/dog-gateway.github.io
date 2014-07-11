@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Back to Semantic Web"
+title:  "Back to the Semantic Web"
 date:   2014-07-11 12:05:00
 categories: news
 ---
