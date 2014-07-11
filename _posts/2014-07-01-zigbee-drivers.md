@@ -10,7 +10,7 @@ Checkout the OSGi bundles from GitHub:
 
 * [ZigBee Drivers](https://github.com/dog-gateway/zigbee-drivers)
 * [Jemma for Dog](https://github.com/dog-gateway/jemma-for-dog)
-* [Jemma for Dog dependencies](https://github.com/dog-gateway/jemma-dependencies)
+* [Jemma for Dog dependencies](https://github.com/dog-gateway/jemma-for-dog/tree/master/jemma.dependencies)
 * [Sample configuration](https://github.com/dog-gateway/zigbee-configuration)
 
 
