@@ -2,18 +2,18 @@ var activeGraphs = new Array();
 $(function() {
 	"use strict";
 
-	xively.setKey("s5ZMzIPoBAuiTaV1BCvDJeY8kGraiNG70CyYPDws2t2mmKXe");
+	xively.setKey("ddoVhib97le0230EjcTo4bYDb0MGcspW72jM7mVKpiCOohbQ");
 
 	$('#humidity').xively('live', {
-		feed : 937093077,
+		feed : 339886769,
 		datastream : 'HUMIDITY_OFFICE'
 	});
 	$('#temperature').xively('live', {
-		feed : 937093077,
+		feed : 339886769,
 		datastream : 'TEMPERATURE_OFFICE'
 	});
 	$('#pc-monitor').xively('live', {
-		feed : 937093077,
+		feed : 339886769,
 		datastream : 'MeteringPowerOutlet_5_Power'
 	});
 
