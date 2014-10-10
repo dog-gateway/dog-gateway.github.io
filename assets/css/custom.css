@@ -54,6 +54,12 @@ img.ribbon
 	padding-left: 10px;
 }
 
+iframe {
+	text-align: center;
+	border-width: 1px;
+	border-style: solid;
+}
+
 @media ( min-width : 768px) {
 	.sidebar {
 		position: fixed;
