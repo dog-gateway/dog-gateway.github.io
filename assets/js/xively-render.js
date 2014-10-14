@@ -2,7 +2,7 @@ var activeGraphs = new Array();
 $(function() {
 	"use strict";
 
-	xively.setKey("ddoVhib97le0230EjcTo4bYDb0MGcspW72jM7mVKpiCOohbQ");
+	xively.setKey("FvnBTZvR0BL8Xi3mLpXaN8svwnG6acOpyUYliMzUvMLxcfak");
 
 	$('#humidity').xively('live', {
 		feed : 339886769,
