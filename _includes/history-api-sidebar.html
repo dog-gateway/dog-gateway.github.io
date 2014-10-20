@@ -1,17 +1,40 @@
 <!-- sidebar -->
-
 <div class="col-md-3 col-sm-3 sidebar" id="sidebar" role="navigation">
-	<div class="list-group upper">
-		<a href="build-on-it.html" class="list-group-item">Overview</a>
-		<a href="rest-api.html" class="list-group-item">REST API</a>
-		<a href="websocket-api.html" class="list-group-item list-group-item-info">WebSocket API</a>
-		<a href="history-api.html" class="list-group-item list-group-item-info">History API</a>
-	</div>
-	<div class="list-group nested">
-		<a href="history-api.html#presentation" class="list-group-item upper-item">Presentation</a>
-		<a href="history-api.html#request" class="list-group-item">Request</a>
-		<a href="history-api.html#response" class="list-group-item">Response</a>
-		<a href="history-api.html#notifications" class="list-group-item">Notifications</a>
-		<a href="history-api.html#browser-comp" class="list-group-item">Browser Compatibility</a>
+	<div class="panel-group" id="accordion">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<a href="build-on-it.html"> API Overview </a>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<a href="rest-api.html"> REST API </a>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<a href="websocket-api.html"> WebSocket API </a>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+
+				<a class="accordion-toggle" data-toggle="collapse"
+					data-parent="#menu" href="#collapseThree"> History API </a>
+
+			</div> 
+			<div id="collapseThree" class="panel-collapse collapse in">
+				<div class="panel-body">
+					<ul>
+
+						<li><a href="history-api.html#allParametric">Notifications</a></li>
+						<li><a href="history-api.html#allContinuousStates">States</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
 	</div>
 </div>
+
