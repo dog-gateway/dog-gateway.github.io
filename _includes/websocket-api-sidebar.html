@@ -1,19 +1,56 @@
 <!-- sidebar -->
 
+<!-- sidebar -->
 <div class="col-md-3 col-sm-3 sidebar" id="sidebar" role="navigation">
-	<div class="list-group upper">
-		<a href="build-on-it.html" class="list-group-item">Overview</a>
-		<a href="rest-api.html" class="list-group-item">REST API</a>
-		<a href="websocket-api.html" class="list-group-item list-group-item-info">WebSocket API</a>
-	</div>	
-	<div class="list-group nested">
-		<a href="websocket-api.html#presentation" class="list-group-item upper-item">Presentation</a>
-		<a href="websocket-api.html#request" class="list-group-item">Request</a>
-		<a href="websocket-api.html#response" class="list-group-item">Response</a>
-		<a href="websocket-api.html#notifications" class="list-group-item">Notifications</a>
-		<a href="websocket-api.html#browser-comp" class="list-group-item">Browser Compatibility</a>
-	</div>
-	<div class="list-group lower">
-	<a href="history-api.html" class="list-group-item list-group-item-info">History API</a>
+	<div class="panel-group" id="accordion">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<a href="build-on-it.html"> API Overview </a>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<a href="rest-api.html"> REST API </a>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<a href="rest-api.html#environment"> Environment API </a>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<a href="rest-api.html#rules"> Rules API </a>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+
+				<a class="accordion-toggle" data-toggle="collapse"
+					data-parent="#menu" href="#collapseThree"> WebSocket API </a>
+
+			</div>
+			<div id="collapseThree" class="panel-collapse collapse in">
+				<div class="panel-body">
+					<ul>
+
+						<li><a href="websocket-api.html#presentation">Presentation</a></li>
+						<li><a href="websocket-api.html#request">Request</a></li>
+						<li><a href="websocket-api.html#response">Response</a></li>
+						<li><a href="websocket-api.html#notifications">Notifications</a></li>
+
+						<li><a href="websocket-api.html#browser-comp">Browser
+								Compatibility</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<a href="history-api.html"> History API </a>
+			</div>
+		</div>
 	</div>
 </div>
+
