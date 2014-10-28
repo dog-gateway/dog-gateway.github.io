@@ -23,7 +23,7 @@ The History API allows to:
 	
 API access is currently available over HTTP, at:
 
-  `http://<dog-address>/api/v1`. 
+  `http://<dog-address>/api/v1/`. 
 
 To select the desired response type (only JSON is currently supported), the `Accept` HTTP header must be used in the request.
 In the same way, a proper `Content-Type` *must* be always present for `PUT` and `POST` requests.
@@ -34,20 +34,20 @@ In the same way, a proper `Content-Type` *must* be always present for `PUT` and 
 |||
 |:----|:----|
 |Resource | Description |
-|[devices/{device-id}/notifications/parametric/all](#allParametric) | The history of all parametric notifications associated to the given device, identified by the given device id. |
-|[devices/{device-id}/notifications/nonparametric/all](#allNonParametric) | The history of all non parametric notifications associated to the given device, identified by the given device id. |
-|[/devices/{device-id}/notifications/parametric/{notification-name}/{notification-params}](#specificParametricNotificationsWithParams) | The history of all parametric notifications of the given type, for the given device id, with values restricted to the given parameters only. |
-|[/devices/{device-id}/notifications/parametric/{notification-name}](#specificParametricNotifications) | The history of all parametric notifications of the given type, for the given device id. |
-|[/devices/{device-id}/notifications/nonparametric/{notification-name}](#specificNonParametricNotifications) | The history of all non-parametric notifications of the given type, for the given device id. |
-|[/devices/{device-id}/states/continuous/all](#allContinuousStates) | The history of all continuous states associated to the given device, identified by the given device id. |
-|[/devices/{device-id}/states/discrete/all](#allDiscreteStates) | The history of all discrete states associated to the given device, identified by the given device id.|
-|[/devices/{device-id}/states/continuous/{state-name}/{state-params}](#specificContinuousStatesWithParams) | The history of all continuous states of the given type, for the given device id, with values restricted to the given parameters only. |
-|[/devices/{device-id}/states/continuous/{state-name}](#specificContinuousStates) | The history of all continuous states of the given type, for the given device id. |
-|[/devices/{device-id}/states/discrete/{state-name}](#specificDiscreteStates) | The history of all discrete states of the given type, for the given device id. |
+|[history/devices/{device-id}/notifications/parametric/all](#allParametric) | The history of all parametric notifications associated to the given device, identified by the given device id. |
+|[history/devices/{device-id}/notifications/nonparametric/all](#allNonParametric) | The history of all non parametric notifications associated to the given device, identified by the given device id. |
+|[history/devices/{device-id}/notifications/parametric/{notification-name}/{notification-params}](#specificParametricNotificationsWithParams) | The history of all parametric notifications of the given type, for the given device id, with values restricted to the given parameters only. |
+|[history/devices/{device-id}/notifications/parametric/{notification-name}](#specificParametricNotifications) | The history of all parametric notifications of the given type, for the given device id. |
+|[history/devices/{device-id}/notifications/nonparametric/{notification-name}](#specificNonParametricNotifications) | The history of all non-parametric notifications of the given type, for the given device id. |
+|[history/devices/{device-id}/states/continuous/all](#allContinuousStates) | The history of all continuous states associated to the given device, identified by the given device id. |
+|[history/devices/{device-id}/states/discrete/all](#allDiscreteStates) | The history of all discrete states associated to the given device, identified by the given device id.|
+|[history/devices/{device-id}/states/continuous/{state-name}/{state-params}](#specificContinuousStatesWithParams) | The history of all continuous states of the given type, for the given device id, with values restricted to the given parameters only. |
+|[history/devices/{device-id}/states/continuous/{state-name}](#specificContinuousStates) | The history of all continuous states of the given type, for the given device id. |
+|[history/devices/{device-id}/states/discrete/{state-name}](#specificDiscreteStates) | The history of all discrete states of the given type, for the given device id. |
 
 ---------------------------------------
 
-#### <a id="allParametric"></a> Resource devices/{device-id}/notifications/parametric/all ####
+#### <a id="allParametric"></a> Resource history/devices/{device-id}/notifications/parametric/all ####
 
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
@@ -63,7 +63,7 @@ In the same way, a proper `Content-Type` *must* be always present for `PUT` and 
 
 Represents the history of all parametric notifications associated to the given device, identified by the given device id.
 
-**URL:** devices/{device-id}/notifications/parametric/all
+**URL:** history/devices/{device-id}/notifications/parametric/all
 
 |Method|Description|
 |:-----|:----------|
@@ -73,7 +73,7 @@ Represents the history of all parametric notifications associated to the given d
 
 **Example Request**
 
-	GET http://www.mydog.com/api/v1/devices/meter1/notifications/parametric/all?start=20141017T07:00:000Z&offset=100&limit=100
+	GET http://www.mydog.com/api/v1/history/devices/meter1/notifications/parametric/all?start=20141017T07:00:000Z&offset=100&limit=100
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='1' %}
@@ -85,7 +85,7 @@ Represents the history of all parametric notifications associated to the given d
 
 ---------------------------------------
 
-#### <a id="allNonParametric"></a> Resource devices/{device-id}/notifications/nonparametric/all ####
+#### <a id="allNonParametric"></a> Resource history/devices/{device-id}/notifications/nonparametric/all ####
 
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
@@ -101,7 +101,7 @@ Represents the history of all parametric notifications associated to the given d
 
 Represents the history of all non-parametric notifications associated to the given device, identified by the given device id.
 
-**URL:** devices/{device-id}/notifications/nonparametric/all
+**URL:** history/devices/{device-id}/notifications/nonparametric/all
 
 |Method|Description|
 |:-----|:----------|
@@ -111,7 +111,7 @@ Represents the history of all non-parametric notifications associated to the giv
 
 **Example Request**
 
-	GET http://www.mydog.com/api/v1/devices/meter1/notifications/nonparametric/all?start=20141017T07:00:000Z&offset=100&limit=100
+	GET http://www.mydog.com/api/v1/history/devices/meter1/notifications/nonparametric/all?start=20141017T07:00:000Z&offset=100&limit=100
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='2' %}
@@ -123,7 +123,7 @@ Represents the history of all non-parametric notifications associated to the giv
 
 ---------------------------------------
 
-#### <a id="specificParametricNotificationsWithParams"></a>Resource /devices/{device-id}/notifications/parametric/{notification-name}/{notification-params} ####
+#### <a id="specificParametricNotificationsWithParams"></a>Resource history/devices/{device-id}/notifications/parametric/{notification-name}/{notification-params} ####
 
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
@@ -139,7 +139,7 @@ Represents the history of all non-parametric notifications associated to the giv
 
 Represents the history of all parametric notifications of the given type, for the given device id, with values restricted to the given parameters only.
 
-**URL:** /devices/{device-id}/notifications/parametric/{notification-name}/{notification-params}
+**URL:** history/devices/{device-id}/notifications/parametric/{notification-name}/{notification-params}
 
 |Method|Description|
 |:-----|:----------|
@@ -149,7 +149,7 @@ Represents the history of all parametric notifications of the given type, for th
 
 **Example Request**
 
-	GET http://www.mydog.com/api/v1/devices/meter1/notifications/parametric/ThreePhaseActivePowerNotification/phaseId-L1?start=20141017T07:00:000Z&offset=100&limit=100
+	GET http://www.mydog.com/api/v1/history/devices/meter1/notifications/parametric/ThreePhaseActivePowerNotification/phaseId-L1?start=20141017T07:00:000Z&offset=100&limit=100
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='5' %}
@@ -161,7 +161,7 @@ Represents the history of all parametric notifications of the given type, for th
 
 ---------------------------------------
 
-#### <a id="specificParametricNotifications"></a> Resource /devices/{device-id}/notifications/parametric/{notification-name} ####
+#### <a id="specificParametricNotifications"></a> Resource history/devices/{device-id}/notifications/parametric/{notification-name} ####
 
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
@@ -177,7 +177,7 @@ Represents the history of all parametric notifications of the given type, for th
 
 Represents the history of all parametric notifications of the given type, for the given device id.
 
-**URL:** /devices/{device-id}/notifications/parametric/{notification-name}
+**URL:** history/devices/{device-id}/notifications/parametric/{notification-name}
 
 |Method|Description|
 |:-----|:----------|
@@ -187,7 +187,7 @@ Represents the history of all parametric notifications of the given type, for th
 
 **Example Request**
 
-	GET http://www.mydog.com/api/v1/devices/meter1/notifications/parametric/ThreePhaseActivePowerNotification?start=20141017T07:00:000Z&offset=100&limit=100
+	GET http://www.mydog.com/api/v1/history/devices/meter1/notifications/parametric/ThreePhaseActivePowerNotification?start=20141017T07:00:000Z&offset=100&limit=100
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='6' %}
@@ -199,7 +199,7 @@ Represents the history of all parametric notifications of the given type, for th
 
 ---------------------------------------
 
-#### <a id="specificNonParametricNotifications"></a> Resource /devices/{device-id}/notifications/nonparametric/{notification-name} ####
+#### <a id="specificNonParametricNotifications"></a> Resource history/devices/{device-id}/notifications/nonparametric/{notification-name} ####
 
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
@@ -215,7 +215,7 @@ Represents the history of all parametric notifications of the given type, for th
 
 Represents The history of all non-parametric notifications of the given type, for the given device id.
 
-**URL:** /devices/{device-id}/notifications/nonparametric/{notification-name}
+**URL:** history/devices/{device-id}/notifications/nonparametric/{notification-name}
 
 |Method|Description|
 |:-----|:----------|
@@ -225,7 +225,7 @@ Represents The history of all non-parametric notifications of the given type, fo
 
 **Example Request**
 
-	GET http://www.mydog.com/api/v1/devices/meter1/notifications/nonparametric/OnNotification?start=20141017T07:00:000Z&offset=100&limit=100
+	GET http://www.mydog.com/api/v1/history/devices/meter1/notifications/nonparametric/OnNotification?start=20141017T07:00:000Z&offset=100&limit=100
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='7' %}
@@ -237,7 +237,7 @@ Represents The history of all non-parametric notifications of the given type, fo
 
 ---------------------------------------
 
-#### <a id="allContinuousStates"></a> Resource /devices/{device-id}/states/continuous/all ####
+#### <a id="allContinuousStates"></a> Resource history/devices/{device-id}/states/continuous/all ####
 
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
@@ -253,7 +253,7 @@ Represents The history of all non-parametric notifications of the given type, fo
 
 Represents the history of all continuous states associated to the given device, identified by the given device id. 
 
-**URL:** /devices/{device-id}/states/continuous/all
+**URL:** history/devices/{device-id}/states/continuous/all
 
 |Method|Description|
 |:-----|:----------|
@@ -263,7 +263,7 @@ Represents the history of all continuous states associated to the given device, 
 
 **Example Request**
 
-	GET http://www.mydog.com/api/v1//devices/meter1/states/continuous/all?start=20141017T07:00:000Z&offset=100&limit=100
+	GET http://www.mydog.com/api/v1/history/devices/meter1/states/continuous/all?start=20141017T07:00:000Z&offset=100&limit=100
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='3' %}
@@ -275,7 +275,7 @@ Represents the history of all continuous states associated to the given device, 
 
 ---------------------------------------
 
-#### <a id="allDiscreteStates"></a> Resource /devices/{device-id}/states/discrete/all ####
+#### <a id="allDiscreteStates"></a> Resource history/devices/{device-id}/states/discrete/all ####
 
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
@@ -291,7 +291,7 @@ Represents the history of all continuous states associated to the given device, 
 
 Represents the history of all discrete states associated to the given device, identified by the given device id.
 
-**URL:** /devices/{device-id}/states/discrete/all
+**URL:** history/devices/{device-id}/states/discrete/all
 
 |Method|Description|
 |:-----|:----------|
@@ -301,7 +301,7 @@ Represents the history of all discrete states associated to the given device, id
 
 **Example Request**
 
-	GET http://www.mydog.com/api/v1//devices/lamp1/states/discrete/all?start=20141017T07:00:000Z&offset=100&limit=100
+	GET http://www.mydog.com/api/v1/history/devices/lamp1/states/discrete/all?start=20141017T07:00:000Z&offset=100&limit=100
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='4' %}
@@ -313,7 +313,7 @@ Represents the history of all discrete states associated to the given device, id
 
 ---------------------------------------
 
-#### <a id="specificContinuousStatesWithParams"></a> Resource /devices/{device-id}/states/continuous/{state-name}/{state-params} ####
+#### <a id="specificContinuousStatesWithParams"></a> Resource history/devices/{device-id}/states/continuous/{state-name}/{state-params} ####
 
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
@@ -329,7 +329,7 @@ Represents the history of all discrete states associated to the given device, id
 
 Represents the history of all continuous states of the given type, for the given device id, with values restricted to the given parameters only.
 
-**URL:** /devices/{device-id}/states/continuous/{state-name}/{state-params}
+**URL:** history/devices/{device-id}/states/continuous/{state-name}/{state-params}
 
 |Method|Description|
 |:-----|:----------|
@@ -339,7 +339,7 @@ Represents the history of all continuous states of the given type, for the given
 
 **Example Request**
 
-	GET http://www.mydog.com/api/v1/devices/meter1/states/continuous/ThreePhaseActivePowerMeasurementState/phaseId-L1?start=20141017T07:00:000Z&offset=100&limit=100
+	GET http://www.mydog.com/api/v1/history/devices/meter1/states/continuous/ThreePhaseActivePowerMeasurementState/phaseId-L1?start=20141017T07:00:000Z&offset=100&limit=100
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='8' %}
@@ -351,7 +351,7 @@ Represents the history of all continuous states of the given type, for the given
 
 ---------------------------------------
 
-#### <a id="specificContinuousStates"></a> Resource /devices/{device-id}/states/continuous/{state-name} ####
+#### <a id="specificContinuousStates"></a> Resource history/devices/{device-id}/states/continuous/{state-name} ####
 
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
@@ -367,7 +367,7 @@ Represents the history of all continuous states of the given type, for the given
 
 Represents the history of all continuous states of the given type, for the given device id
 
-**URL:** /devices/{device-id}/states/continuous/{state-name}
+**URL:** history/devices/{device-id}/states/continuous/{state-name}
 
 |Method|Description|
 |:-----|:----------|
@@ -377,7 +377,7 @@ Represents the history of all continuous states of the given type, for the given
 
 **Example Request**
 
-	GET http://www.mydog.com/api/v1/devices/meter1/states/continuous/ThreePhaseActivePowerMeasurementState?start=20141017T07:00:000Z&offset=100&limit=100
+	GET http://www.mydog.com/api/v1/history/devices/meter1/states/continuous/ThreePhaseActivePowerMeasurementState?start=20141017T07:00:000Z&offset=100&limit=100
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='9' %}
@@ -389,7 +389,7 @@ Represents the history of all continuous states of the given type, for the given
 
 ---------------------------------------
 
-#### <a id="specificDiscreteStates"></a> Resource /devices/{device-id}/states/discrete/{state-name} ####
+#### <a id="specificDiscreteStates"></a> Resource history/devices/{device-id}/states/discrete/{state-name} ####
 
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
@@ -405,7 +405,7 @@ Represents the history of all continuous states of the given type, for the given
 
 Represents the history of all discrete states of the given type, for the given device id.
 
-**URL:** /devices/{device-id}/states/discrete/{state-name}
+**URL:** history/devices/{device-id}/states/discrete/{state-name}
 
 |Method|Description|
 |:-----|:----------|
@@ -415,7 +415,7 @@ Represents the history of all discrete states of the given type, for the given d
 
 **Example Request**
 
-	GET http://www.mydog.com/api/v1/devices/lamp1/states/discrete/OnOffState?start=20141017T07:00:000Z&offset=100&limit=100
+	GET http://www.mydog.com/api/v1/history/devices/lamp1/states/discrete/OnOffState?start=20141017T07:00:000Z&offset=100&limit=100
 	
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='10' %}
