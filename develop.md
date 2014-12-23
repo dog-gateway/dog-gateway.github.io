@@ -18,7 +18,7 @@ sidebar: develop-sidebar.html
 ### <a id="Setup"></a> Setup ###
 * Install 
 	* Java SDK (1.6+)
-	* Eclipse RCP 4.3
+	* Eclipse RCP (4.3+)
 	* Git
 * Download / Fork the project sources
 	* see [http://github.com/dog-gateway](http://github.com/dog-gateway)
@@ -29,6 +29,7 @@ sidebar: develop-sidebar.html
 		* [h2-eventstore](http://github.com/dog-gateway/h2-eventstore)
 		* [xively](http://github.com/dog-gateway/xively)
 		* [rule-engine](http://github.com/dog-gateway/rule-engine)
+		* [mqtt](https://github.com/dog-gateway/mqtt)
 		
 	* admin
 		* [system-management](http://github.com/dog-gateway/system-management)
@@ -38,6 +39,10 @@ sidebar: develop-sidebar.html
 		* [device-api](http://github.com/dog-gateway/device-api)
 		* [environment-api](http://github.com/dog-gateway/environment-api)
 		* [rule-engine-api](http://github.com/dog-gateway/rule-engine-api)
+		* [websocket-connector](https://github.com/dog-gateway/websocket-connector)
+		* [websocket-device-api](https://github.com/dog-gateway/websocket-device-api)
+		* [websocket-environment-api](https://github.com/dog-gateway/websocket-environment-api)
+		* [websocket-dependencies](https://github.com/dog-gateway/websocket-dependencies)
 	* core
 		* [clock](http://github.com/dog-gateway/clock)
 		* [device-factory](http://github.com/dog-gateway/device-factory)
@@ -76,6 +81,8 @@ Together with source repositories, we provide a set of configuration samples (as
 * [knx-configuration](http://github.com/dog-gateway/knx-configuration)
 * [xively-configuration](http://github.com/dog-gateway/xively-configuration)
 * [adminui-configuration] (http://github.com/dog-gateway/adminui-configuration)
+* [websocket-configuration](https://github.com/dog-gateway/websocket-configuration)
+* [mqtt-configuration](https://github.com/dog-gateway/mqtt-configuration)
 
 
 ### <a id="Guidelines"></a> Development guidelines ###
