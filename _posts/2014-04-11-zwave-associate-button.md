@@ -3,6 +3,7 @@ layout: post
 title:  "Hardware button and LED to control association in wireless networks"
 date:   2014-04-11 17:00:00
 categories: news
+active: Blog
 ---
 
 Almost all wireless technologies use some kind of association process to enable devices to join the network. Such a process is typically initiated by pressing a button on the network controller and by subsequently pressing another button on the device to associate.

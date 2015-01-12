@@ -3,6 +3,7 @@ layout: post
 title:  "WebSocket API are now available!"
 date:   2014-06-12 11:00:00
 categories: news
+active: Blog
 ---
 
 Stemming from the thesis work of [Teodoro Montanaro](http://www.rosario49.it/teodoro_montanaro/) (thanks, Teo!), today we unveil the **Dog WebSocket API**.

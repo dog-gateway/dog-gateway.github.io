@@ -3,6 +3,7 @@ layout: post
 title:  "Testing the MqttBridge bundle"
 date:   2014-12-23 15:22
 categories: development-howto
+active: Develop
 ---
 This How-To aims at providing the basics to start experimenting/developing with MQTT and the corresponding Dog MqttBridge bundle. [MQTT](http://mqtt.org) is a lightweight protocol mainly designed for transferring telemetry data, with configurable reliability. It adopts a publish/subscribe communication paradigm based on a central broker (e.g., [Mosquitto](http://mosquitto.org)). Delivered data belongs to specific topics which allow subscribers to select needed streams, only. Topics are hierarchically organized and wildcard constructs are provided to allow subscription to entire families of messages (see for further references). 
 

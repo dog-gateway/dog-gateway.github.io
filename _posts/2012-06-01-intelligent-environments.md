@@ -3,6 +3,7 @@ layout: post
 title:  "Intelligent Domotic Environments"
 date:   2012-06-01 17:50:06
 categories: development-video
+active: Blog
 ---
 
 <p>A demo video introducing dog-based intelligent domotic environments</p>

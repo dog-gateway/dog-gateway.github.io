@@ -3,6 +3,7 @@ layout: post
 title:  "ZigBee drivers are now available!"
 date:   2014-07-01 12:40:00
 categories: news
+active: Blog
 ---
 Today we published the first version of the Dog drivers for ZigBee Home Automation devices based on the lower layers of the [Jemma](http://ismb.github.io/jemma/) ZigBee stack. The drivers support: metered plugs, single phase meters, door and window sensors (still under testing), light sensors, movement sensors and, temperature and humidity sensors.
 

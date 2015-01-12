@@ -3,6 +3,7 @@ layout: post
 title:  "Dog Live!"
 date:   2014-03-20 15:15:00
 categories: news
+active: Blog
 ---
 
 We just added a new "Demo" section where data measured by the Dog gateway running in our lab is published. The page (that can be forked on GitHub) exploits the [Xively.js](http://xively.github.io/xively-js/) API to fetch measures posted by the gateway on Xively. 

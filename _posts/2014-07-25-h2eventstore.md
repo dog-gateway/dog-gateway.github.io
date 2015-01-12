@@ -3,6 +3,7 @@ layout: post
 title:  "History bundle published"
 date:   2014-07-25 12:41:00
 categories: news
+active: Blog
 ---
 
 The long awaited history bundle and the corresponding REST API are finally here. Today we publish the first experimental version of the dog history bundle (namely h2eventstore) which exploits the [h2](http://www.h2database.com) file database for storing all events monitored by the Dog gateway. 

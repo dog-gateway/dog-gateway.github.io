@@ -3,6 +3,7 @@ layout: post
 title:  "Device driver How-To (for existing technologies)"
 date:   2014-02-24 16:30:06
 categories: development-howto
+active: Develop
 ---
 
 Even if a given technology, e.g., ZWave, might already be supported in Dog, there are cases in which drivers for specific devices are missing. In this simple tutorial we tackle the development of a new device driver for a technology already supported in Dog.

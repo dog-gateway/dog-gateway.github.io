@@ -3,6 +3,7 @@ layout: post
 title:  "Dog 3.1 is out!"
 date:   2014-05-26 16:26:00
 categories: news
+active: Blog
 ---
 
 Check its new features in the changelog or get it on [GitHub](https://github.com/dog-gateway/dog/releases/tag/v3.1.0).

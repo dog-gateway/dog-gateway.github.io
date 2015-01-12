@@ -3,6 +3,7 @@ layout: post
 title:  "Published the Device Reference for the REST API"
 date:   2014-06-06 13:23:00
 categories: news
+active: Blog
 ---
 
 The complete device reference, to be used as complimentary material for the REST API documentation, has been published at [http://dog-gateway.github.io/device-documentation.html](/device-documentation.html). 

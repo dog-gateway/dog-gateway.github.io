@@ -3,6 +3,7 @@ layout: post
 title:  "Added support to Quadruple Sensors"
 date:   2014-04-03 16:00:00
 categories: news
+active: Blog
 ---
 
 We added support for quadruple sensors (temperature, humidity, lighting and movement) in the core-library. The new device, named QuadSensor, can now be exploited in every technology given that a suitable driver will be developed.
