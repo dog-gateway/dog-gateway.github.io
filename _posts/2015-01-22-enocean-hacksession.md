@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "EnOcean hack session using Python and Dog"
-date:   2015-01-25 12:17
+date:   2015-01-22 12:17
 categories: news
 active: Blog
 ---
