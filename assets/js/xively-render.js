@@ -29,7 +29,7 @@ $(function() {
 		interval : 10,
 		limit : 1000
 	};
-	
+
 	$('[data-stream]').each(
 			function(index) {
 				xively.setKey($(this).attr('data-key'));
@@ -53,7 +53,7 @@ $(function() {
 			interval : 10,
 			limit : 1000
 		};
-	}, 60000);
+	}, 300000);
 
 });
 
