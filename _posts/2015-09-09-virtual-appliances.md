@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Virtual appliances bundle has been releases"
+title:  "The Virtual appliances bundle has been released"
 date:   2015-09-09 08:28
 categories: news
 active: Blog
