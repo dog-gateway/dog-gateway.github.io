@@ -381,6 +381,6 @@ public void handleEvent(Event event)
 
 Please note that no checks are performed on the event topic as, by registration, it belongs to the set of notifications to be propagated to XBMC. All other events on the event bus are filtered by the OSGi framework (according to the EventAdmin specification).
 
-Now that everything is complete, we will be able to receive Dog notifications on our XBMC server, like in the figure below. The full code of this simple add-on bundle can be downloaded on [github]()
+Now that everything is complete, we will be able to receive Dog notifications on our XBMC server, like in the figure below. The full code of this simple add-on bundle can be downloaded on [github](https://github.com/dog-gateway/xbmc-notifier-addon)
 
 <img src="/assets/img/screenshots/xbmc-addon/xbmc.png"/ title="Notification on XBMC" alt="Notification on XBMC" width="100%" height="100%"/>
