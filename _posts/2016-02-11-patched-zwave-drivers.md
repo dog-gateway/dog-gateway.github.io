@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Patched Z-Wave drivers"
-date:   2016-02-11 10:00
+date:   2016-02-11 08:00
 categories: news
 active: Blog
 ---
