@@ -20,18 +20,16 @@ The History API allows to:
 *  Insert historical data
 	*  about specific notifications issued by a device in a given time frame;
 	*  about specific states assumed by a device in a given time frame;
-	
+
 API access is currently available over HTTP, at:
 
-  `http://<dog-address>/api/v1/`. 
+  `http://<dog-address>/api/v1/`.
 
 To select the desired response type (only JSON is currently supported), the `Accept` HTTP header must be used in the request.
 In the same way, a proper `Content-Type` *must* be always present for `PUT` and `POST` requests.
 
 #### Function summary ####
 
-
-|||
 |:----|:----|
 |Resource | Description |
 |[history/devices/{device-id}/notifications/parametric/all](#allParametric) | The history of all parametric notifications associated to the given device, identified by the given device id. |
@@ -52,7 +50,6 @@ In the same way, a proper `Content-Type` *must* be always present for `PUT` and 
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -74,7 +71,7 @@ Represents the history of all parametric notifications associated to the given d
 **Example Request**
 
 	GET http://www.mydog.com/api/v1/history/devices/TemperatureAndHumiditySensor_76/notifications/parametric/all?start=2014-10-28T17:00:00.000Z&offset=100&limit=100
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle="Example Response (JSON)" panelCount="1" %}
 <pre class="pre-scrollable">
@@ -116,7 +113,6 @@ Represents the history of all parametric notifications associated to the given d
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -138,7 +134,7 @@ Represents the history of all non-parametric notifications associated to the giv
 **Example Request**
 
 	GET http://www.mydog.com/api/v1/history/devices/EnergyAndPowerMeteringLevelControllableOutput_74/notifications/nonparametric/all?start=2014-10-28T17:00:00.000Z&offset=100&limit=100
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle="Example Response (JSON)" panelCount="2" %}
 <pre class="pre-scrollable">
@@ -154,7 +150,7 @@ Represents the history of all non-parametric notifications associated to the giv
     } ],
     "parameters" : ""
   } ]
-}	
+}
 </pre>
 {% include close-accordion-item.html %}
 {% include accordion-footer.html %}
@@ -166,7 +162,6 @@ Represents the history of all non-parametric notifications associated to the giv
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -188,7 +183,7 @@ Represents the history of all parametric notifications of the given type, for th
 **Example Request**
 
 	GET http://www.mydog.com/api/v1/history/devices/meter1/notifications/parametric/ThreePhaseActivePowerNotification/phaseId-L1?start=2014-10-28T17:00:00.000Z&offset=100&limit=100
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle="Example Response (JSON)" panelCount="5" %}
 <pre class="pre-scrollable">
@@ -204,7 +199,6 @@ Represents the history of all parametric notifications of the given type, for th
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -226,7 +220,7 @@ Represents the history of all parametric notifications of the given type, for th
 **Example Request**
 
 	GET http://www.mydog.com/api/v1/history/devices/EnergyAndPowerMeteringLevelControllableOutput_74/notifications/parametric/LevelControlNotification?start=2014-10-28T17:00:00.000Z&offset=100&limit=100
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle="Example Response (JSON)" panelCount="6" %}
 <pre class="pre-scrollable">
@@ -264,7 +258,6 @@ Represents the history of all parametric notifications of the given type, for th
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -286,7 +279,7 @@ Represents The history of all non-parametric notifications of the given type, fo
 **Example Request**
 
 	GET http://www.mydog.com/api/v1/history/devices/EnergyAndPowerMeteringLevelControllableOutput_74/notifications/nonparametric/OnNotification?start=2014-10-28T17:00:00.000Z&offset=100&limit=100
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle="Example Response (JSON)" panelCount="7" %}
 <pre class="pre-scrollable">
@@ -324,7 +317,6 @@ Represents The history of all non-parametric notifications of the given type, fo
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -333,7 +325,7 @@ Represents The history of all non-parametric notifications of the given type, fo
 |Response Object|**Array [State]**|
 |API Version|**v1.0**|
 
-Represents the history of all continuous states associated to the given device, identified by the given device id. 
+Represents the history of all continuous states associated to the given device, identified by the given device id.
 
 **URL:** history/devices/{device-id}/states/continuous/all
 
@@ -346,7 +338,7 @@ Represents the history of all continuous states associated to the given device, 
 **Example Request**
 
 	GET http://www.mydog.com/api/v1/history/devices/EnergyAndPowerMeteringLevelControllableOutput_74/states/continuous/all?start=2014-10-28T17:00:00.000Z&offset=100&limit=100
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle="Example Response (JSON)" panelCount="3" %}
 <pre class="pre-scrollable">
@@ -394,7 +386,6 @@ Represents the history of all continuous states associated to the given device, 
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -416,7 +407,7 @@ Represents the history of all discrete states associated to the given device, id
 **Example Request**
 
 	GET http://www.mydog.com/api/v1/history/devices/EnergyAndPowerMeteringLevelControllableOutput_74/states/discrete/all?start=2014-10-28T17:00:00.000Z&offset=100&limit=100
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle="Example Response (JSON)" panelCount="4" %}
 <pre class="pre-scrollable">
@@ -444,7 +435,6 @@ Represents the history of all discrete states associated to the given device, id
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -466,7 +456,7 @@ Represents the history of all continuous states of the given type, for the given
 **Example Request**
 
 	GET http://www.mydog.com/api/v1/history/devices/meter1/states/continuous/ThreePhaseActivePowerMeasurementState/phaseId-L1?start=2014-10-28T17:00:00.000Z&offset=100&limit=100
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle="Example Response (JSON)" panelCount="8" %}
 <pre class="pre-scrollable">
@@ -482,7 +472,6 @@ Represents the history of all continuous states of the given type, for the given
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -504,7 +493,7 @@ Represents the history of all continuous states of the given type, for the given
 **Example Request**
 
 	GET http://www.mydog.com/api/v1/history/devices/MeteringPowerOutlet_75/states/continuous/SinglePhaseActiveEnergyState?start=2014-10-28T17:00:00.000Z&offset=100&limit=100
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle="Example Response (JSON)" panelCount="9" %}
 <pre class="pre-scrollable">
@@ -557,7 +546,6 @@ Represents the history of all continuous states of the given type, for the given
 *Updated on Fri, 2014-10-17*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -579,7 +567,7 @@ Represents the history of all discrete states of the given type, for the given d
 **Example Request**
 
 	GET http://www.mydog.com/api/v1/history/devices/MeteringPowerOutlet_75/states/discrete/OnOffState?start=2014-10-28T17:00:00.000Zoffset=100&limit=100
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle="Example Response (JSON)" panelCount="10" %}
 <pre class="pre-scrollable">
@@ -587,12 +575,12 @@ Represents the history of all discrete states of the given type, for the given d
   "name" : "OnOffState",
   "deviceUri" : "MeteringPowerOutlet_75",
   "id" : "MeteringPowerOutlet_75/OnOffState",
-  "datapoints" : [ 
+  "datapoints" : [
   	{
     	"at" : "2014-10-28T16:49:40.560+0000",
     	"value" : "off",
     	"unit" : ""
-  	}, 
+  	},
   	{
     	"at" : "2014-10-28T16:49:43.935+0000",
     	"value" : "off",

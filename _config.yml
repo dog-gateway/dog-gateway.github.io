@@ -1,5 +1,4 @@
 name: The Dog Gateway
-markdown: redcarpet
 highlighter: pygments
 url: http://dog-gateway.github.io
 permalink: /:categories/:year/:title.html

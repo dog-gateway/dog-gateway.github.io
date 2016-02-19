@@ -40,9 +40,8 @@ All the messages handled by the API are in JSON format.
 Refer to the [REST API](rest-api.html) for the possible responses coming from the common functionalities.
 
 #### Summary ####
-A generic JSON message exchanged via the WebSocket API encompasses the following fields. 
+A generic JSON message exchanged via the WebSocket API encompasses the following fields.
 
-|||
 |:----|:----|
 | **clientId** | The client identifier sent from the server as soon as the connection is established (in a [presentation](#presentation) message). |
 | **sequenceNumber** | A number that identify a specific pair request/response. By this number, it is possible to identify to which [request](#request) corresponds a successive [response](#response) message. |
@@ -56,6 +55,7 @@ A generic JSON message exchanged via the WebSocket API encompasses the following
 According to the different message type, some fields may not be present, as shown in the following sections.
 
 ---
+
 #### <a id="presentation"></a> Presentation ####
 *Updated on Thu, 2014-06-12*
 <span class="label label-info pull-right">API version 1.0</span>
@@ -71,8 +71,9 @@ As soon as a client establishes a connection with Dog, a *presentation message* 
   		"clientId":"1f7170d4",
   		"messageType":"presentation",
 	}
-	
+
 ---
+
 #### <a id="request"></a> Request ####
 When a connection has been established, to request any information as provided by the [REST API](rest-api.html), the client has to sent a JSON formatted message with the following field.
 The order of the fields is not important but no empty fields **should** be present.
@@ -95,8 +96,9 @@ The following message asks for the [status](rest-api.html#status-single) of the 
 		"action":"GET",
 		"endPoint":"/api/v1/devices/MeteringPowerOutlet_3/status"
 	}
-	
+
 ---
+
 #### <a id="response"></a> Response ####
 *Updated on Thu, 2014-06-12*
 <span class="label label-info pull-right">API version 1.0</span>
@@ -150,6 +152,7 @@ The following message represent a response for the previous example request.
 	}
 
 ---
+
 #### <a id="notifications"></a>Notifications ####
 A client can subscribe (and unsubscribe) the receptions of one or more notifications, in JSON format.
 A notification is a message autonomously sent by a device controlled by Dog, without any explicit request.
@@ -202,7 +205,7 @@ A request body can indicate what notification type the client would receive. The
 		"sequenceNumber":"1",
 		"action":"POST",
 		"endPoint":"/api/v1/subscriptions/devices/notifications",
-		"response": 
+		"response":
 		{
 			"result":"Registration completed successfully"
 		}
@@ -244,13 +247,13 @@ For unsubscribing a specific notification for a chosen devices:
 		"sequenceNumber":"1",
 		"action":"DELETE",
 		"endPoint":"/api/v1/subscriptions/devices/notifications/OnOffNotification",
-		"response": 
+		"response":
 		{
 			"result":"Unregistration completed successfully"
 		}
 	}
-	
-	
+
+
 #### Notification message ####
 *Updated on Thu, 2014-06-12*
 <span class="label label-info pull-right">API version 1.0</span>
@@ -276,6 +279,7 @@ A notification message consists of JSON formatted message containing the followi
 	}
 
 ---
+
 #### <a id="browser-comp"></a> Browser Compatibility ####
 
 Nowadays, WebSocket is compatible with most of the major desktop and mobile browsers.
@@ -299,4 +303,3 @@ Firefox 4 and Opera 11 have their WebSocket support disabled by default.
 * Opera Mobile (from version 12.10)
 * Apple Safari (from iOS 4.2)
 * Blackberry Browser (from Version 6)
-

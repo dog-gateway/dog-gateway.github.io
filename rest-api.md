@@ -26,29 +26,27 @@ APIs allow to:
 	* historical information on consumptions;
 	* historical information on activations;
 	* related statistics;
-* manage Dog 
+* manage Dog
 	* manage system performance;
 	* manage system updates;
 	* troubleshoot problems.
 
 API access is currently available over HTTP, at:
 
-  `http://<dog-address>/api/v1`. 
+  `http://<dog-address>/api/v1`.
 
 To select the desired response type (JSON or XML), the `Accept` HTTP header must be used in the request.
 In the same way, a proper `Content-Type` *must* be always present for `PUT` and `POST` requests.
 
 #### Function summary ####
 
-
-|||
 |:----|:----|
 |[Resource /devices](#devices) | Represents domotic devices handled by Dog and "controllable" by applications using this API. |
 |[Resource /devices/{device-id} ](#singleDevice) | Represents a single domotic device handled by Dog, identified by a unique *device-id* (currently encoded in the *id* attribute for the XML response to the [GET /devices](#devices) request), and "controllable" by applications using this API. |
 |[Resource /devices/{device-id}/location ](#device-location) | Update the location of a single domotic device handled by Dog, identified by a unique *device-id*. |
 |[Resource /devices/{device-id}/description ](#device-description) | Update the description (i.e., the long name) of a single domotic device handled by Dog, identified by a unique *device-id*. |
 |[Resource /devices/status](#status) | Represents the status of devices registered in the Dog gateway runtime, i.e., defined in the Dog [configuration](#devices) and successfully registered within the gateway runtime.|
-|[Resource /devices/{device-id}/status](#status-single) | Represents the status of the device identified by the given *device-id*, registered in the Dog gateway runtime, i.e., defined in the Dog [configuration](#devices) and successfully registered within the gateway runtime. | 
+|[Resource /devices/{device-id}/status](#status-single) | Represents the status of the device identified by the given *device-id*, registered in the Dog gateway runtime, i.e., defined in the Dog [configuration](#devices) and successfully registered within the gateway runtime. |
 |[Resource /devices/{device-id}/commands/{command-name} ](#command)|Represents a command, identified by a *command-name*, to be sent to the device identified by the given *device-id*. Commands are idempotent: the same command always results in the same behavior of the selected device. If the command brings the device in same state in which the device is, no differences will be appreciable.|
 |[Resource /dog/configuration](#dogConfiguration) | Unsupported, to be implemented in future... |
 |[Resource /environment](#environment) | Represents the environment (i.e., the building) configured in Dog.|
@@ -66,7 +64,6 @@ In the same way, a proper `Content-Type` *must* be always present for `PUT` and 
 *Updated on Mon, 2014-01-22*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json** or **xml**|
@@ -86,7 +83,7 @@ Represents domotic devices handled by Dog and "controllable" by applications usi
 **Example Request**
 
 	GET http://www.mydog.com/api/v1/devices
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='1' %}
 <pre class="pre-scrollable">
@@ -111,7 +108,6 @@ Represents domotic devices handled by Dog and "controllable" by applications usi
 *Updated on Thu, 2014-01-22*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json** or **xml**|
@@ -120,7 +116,7 @@ Represents domotic devices handled by Dog and "controllable" by applications usi
 |Response Object|**Device**|
 |API Version|**v1.0**|
 
-Represents a single domotic device handled by Dog, identified by a unique *device-id* (currently encoded in the *id* attribute for the XML response to the [GET /devices](#devices) request), and "controllable" by applications using this API. 
+Represents a single domotic device handled by Dog, identified by a unique *device-id* (currently encoded in the *id* attribute for the XML response to the [GET /devices](#devices) request), and "controllable" by applications using this API.
 
 *URL:* /devices/{device-id}
 
@@ -155,7 +151,6 @@ Represents a single domotic device handled by Dog, identified by a unique *devic
 *Updated on Thu, 2013-11-11*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -164,7 +159,7 @@ Represents a single domotic device handled by Dog, identified by a unique *devic
 |Response Object|**String**|
 |API Version|**v1.0**|
 
-Updates the location of a single domotic device handled by Dog, identified by a unique *device-id*. 
+Updates the location of a single domotic device handled by Dog, identified by a unique *device-id*.
 
 *URL:* /devices/{device-id}/location
 
@@ -175,7 +170,7 @@ Updates the location of a single domotic device handled by Dog, identified by a 
 **PUT: Example**
 
 	PUT http://www.mydog.com/api/v1/devices/Lamp_Holder/location
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Request Body' panelCount='5' %}
 <pre class="pre-scrollable">
@@ -191,7 +186,6 @@ Updates the location of a single domotic device handled by Dog, identified by a 
 *Updated on Thu, 2013-11-11*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**Requires app key**|
 |Response Format|**json**|
@@ -200,7 +194,7 @@ Updates the location of a single domotic device handled by Dog, identified by a 
 |Response Object|**String**|
 |API Version|**v1.0**|
 
-Updates the description (i.e., the long name) of a single domotic device handled by Dog, identified by a unique *device-id*. 
+Updates the description (i.e., the long name) of a single domotic device handled by Dog, identified by a unique *device-id*.
 
 *URL:* /devices/{device-id}/description
 
@@ -209,9 +203,9 @@ Updates the description (i.e., the long name) of a single domotic device handled
 | PUT |Update the description (i.e., the long name) of the device identified by the given *device-id* |
 
 **PUT: Example**
-	
+
 	PUT http://www.mydog.com/api/v1/devices/Lamp_Holder/description
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Request Body' panelCount='6' %}
 <pre class="pre-scrollable">
@@ -226,7 +220,6 @@ Updates the description (i.e., the long name) of a single domotic device handled
 
 *Updated on Mon, 2014-01-22* <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -246,7 +239,7 @@ Represents the status of devices registered in the Dog gateway runtime, i.e., de
 **Example Request**
 
 	GET http://www.mydog.com/api/v1/devices/status
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='7' %}
 <pre class="pre-scrollable">
@@ -270,7 +263,6 @@ Represents the status of devices registered in the Dog gateway runtime, i.e., de
 *Updated on Thu, 2014-01-22*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -290,7 +282,7 @@ Represents the status of the device identified by the given *device-id* and regi
 **Example Request**
 
 	GET http://www.mydog.com/api/v1/devices/MeteringPowerOutlet/status
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='9' %}
 <pre class="pre-scrollable">
@@ -313,7 +305,6 @@ Represents the status of the device identified by the given *device-id* and regi
 
 *Updated on Fri, 2014-05-06* <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -326,8 +317,8 @@ Represents a command, identified by a *command-name*, to be sent to the device i
 
 The *command-name* is the value associated to the `realCommandName` parameter present in the device description (see the [\devices](#devices) resource).
 
-Commands are idempotent: the same command always results in the same behavior of the selected device. 
-If the command brings the device in same state in which the device is, no differences will be appreciable. 
+Commands are idempotent: the same command always results in the same behavior of the selected device.
+If the command brings the device in same state in which the device is, no differences will be appreciable.
 
 *URL:* /devices/{device-id}/commands/{command-name}
 
@@ -359,7 +350,6 @@ If the command brings the device in same state in which the device is, no differ
 *Updated on Thu, 2013-12-05*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -378,7 +368,7 @@ Sets the Weekly Schedule for the Thermostatic Vlave identified by {device-id}
 | POST |*(Deprecated)* Set the new weekly schedule for the Thermostatic Valve identified by {device-id}, the previous schedule is discarded.|
 
 **PUT: Example**
-	
+
 	PUT http://www.mydog.com/api/v1/devices/ThermostaticRadiatorValve_1/commands/setClimateSchedule
 
 {% include accordion-header.html %}
@@ -396,7 +386,6 @@ Sets the Weekly Schedule for the Thermostatic Vlave identified by {device-id}
 *Updated on Thu, 2013-12-05*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -418,7 +407,7 @@ Sets the Daily Schedule for the Thermostatic Valve identified by {device-id}
 **PUT: Example**
 
 	PUT http://www.mydog.com/api/v1/devices/ThermostaticRadiatorValve_1/commands/setDailyClimateSchedule
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Request Body' panelCount='13' %}
 <pre class="pre-scrollable">
@@ -434,7 +423,6 @@ Sets the Daily Schedule for the Thermostatic Valve identified by {device-id}
 *Updated on Thu, 2013-12-05*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -455,7 +443,7 @@ Sets the Temperature setPoint for the Thermostatic Valve identified by {device-i
 **PUT: Example**
 
 	PUT http://www.mydog.com/api/v1/devices/ThermostaticRadiatorValve_1/commands/setTemperatureAt
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Request Body' panelCount='14' %}
 <pre class="pre-scrollable">
@@ -470,7 +458,6 @@ Sets the Temperature setPoint for the Thermostatic Valve identified by {device-i
 
 *Updated on Tue, 2013-10-22* <span class="label label-important pull-right">Unavailable</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -498,7 +485,6 @@ Sets the Temperature setPoint for the Thermostatic Valve identified by {device-i
 *Updated on Thu, 2013-11-09*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json** or **xml**|
@@ -507,7 +493,7 @@ Sets the Temperature setPoint for the Thermostatic Valve identified by {device-i
 |Response Object|**Array [ Buildings ]**|
 |API Version|**v1.0**|
 
-Represents the environment (i.e., the building) configured in Dog. 
+Represents the environment (i.e., the building) configured in Dog.
 
 **URL:** /environment
 
@@ -518,7 +504,7 @@ Represents the environment (i.e., the building) configured in Dog.
 **Example Request**
 
 	GET http://www.mydog.com/api/v1/environment
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='15' %}
 <pre class="pre-scrollable">
@@ -542,7 +528,6 @@ Represents the environment (i.e., the building) configured in Dog.
 *Updated on Thu, 2013-11-09*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -551,7 +536,7 @@ Represents the environment (i.e., the building) configured in Dog.
 |Response Object|**Array [ Flat ]**|
 |API Version|**v1.0**|
 
-Represents all the flats present in the environment (i.e., int the building). 
+Represents all the flats present in the environment (i.e., int the building).
 
 **URL:** /environment/flats
 
@@ -564,7 +549,7 @@ Represents all the flats present in the environment (i.e., int the building).
 **Example Requests**
 
 	GET http://www.mydog.com/api/v1/environment/flats
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='17' %}
 <pre class="pre-scrollable">
@@ -593,7 +578,6 @@ Represents all the flats present in the environment (i.e., int the building).
 *Updated on Wed, 2014-05-07*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -602,7 +586,7 @@ Represents all the flats present in the environment (i.e., int the building).
 |Response Object|**Flat**|
 |API Version|**v1.0**|
 
-Represents a specific flat present in the environment (i.e., in the building). 
+Represents a specific flat present in the environment (i.e., in the building).
 
 **URL:** /environment/flats
 
@@ -616,7 +600,7 @@ Represents a specific flat present in the environment (i.e., in the building).
 **Example Requests**
 
 	GET http://www.mydog.com/api/v1/environment/flats/flat
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='19' %}
 <pre class="pre-scrollable">
@@ -647,7 +631,6 @@ Represents a specific flat present in the environment (i.e., in the building).
 *Updated on Thu, 2013-11-09*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -656,7 +639,7 @@ Represents a specific flat present in the environment (i.e., in the building).
 |Response Object|**Array [ Room ]**|
 |API Version|**v1.0**|
 
-Represents all the rooms present in a given flat. 
+Represents all the rooms present in a given flat.
 
 **URL:** /environment/flats
 
@@ -668,7 +651,7 @@ Represents all the rooms present in a given flat.
 **Example Requests**
 
 	GET http://www.mydog.com/api/v1/environment/flats/flat/rooms
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='21' %}
 <pre class="pre-scrollable">
@@ -697,7 +680,6 @@ Represents all the rooms present in a given flat.
 *Updated on Wed, 2014-05-07*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**json**|
@@ -706,7 +688,7 @@ Represents all the rooms present in a given flat.
 |Response Object|**Room**|
 |API Version|**v1.0**|
 
-Represents a specific room in the flat identified by the given *flat-id*. 
+Represents a specific room in the flat identified by the given *flat-id*.
 
 **URL:** /environment/flats/{flat-id}/rooms/{room-id}
 
@@ -719,7 +701,7 @@ Represents a specific room in the flat identified by the given *flat-id*.
 **Example Requests**
 
 	GET http://www.mydog.com/api/v1/environment/flats/flat/rooms/kitchen
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='23' %}
 <pre class="pre-scrollable">
@@ -754,7 +736,6 @@ Represents a specific room in the flat identified by the given *flat-id*.
 *Updated on Thu, 2013-11-08*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**xml** or **json**|
@@ -778,7 +759,7 @@ Currently, all the responses and the requests are in XML format.
 **Example Requests**
 
 	GET http://www.mydog.com/api/v1/rules
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='25' %}
 <pre class="pre-scrollable">
@@ -796,7 +777,7 @@ Currently, all the responses and the requests are in XML format.
 {% include accordion-footer.html %}
 
 	POST http://www.mydog.com/api/v1/rules
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Request Body' panelCount='27' %}
 <pre class="pre-scrollable">
@@ -815,7 +796,6 @@ Currently, all the responses and the requests are in XML format.
 *Updated on Thu, 2013-11-08*
 <span class="label label-info pull-right">API version 1.0</span>
 
-|||
 |----------------|------------------|
 |Authentication |**None**|
 |Response Format|**xml** or **json**|
@@ -839,7 +819,7 @@ Currently, all the responses and the requests are in XML format.
 **Example Requests**
 
 	GET http://www.mydog.com/api/v1/rules/onToOn
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Example Response (JSON)' panelCount='28' %}
 <pre class="pre-scrollable">
@@ -857,7 +837,7 @@ Currently, all the responses and the requests are in XML format.
 {% include accordion-footer.html %}
 
 	PUT http://www.mydog.com/api/v1/rules/consumptionToHigh
-	
+
 {% include accordion-header.html %}
 {% include open-accordion-item.html panelTitle='Request Body' panelCount='30' %}
 <pre class="pre-scrollable">
@@ -868,5 +848,5 @@ Currently, all the responses and the requests are in XML format.
 </pre>
 {% include close-accordion-item.html %}
 {% include accordion-footer.html %}
-	
+
 	DELETE http://www.mydog.com/api/v1/rules/onToOn
