@@ -1,4 +1,4 @@
 name: The Dog Gateway
-highlighter: pygments
+highlighter: rouge
 url: http://dog-gateway.github.io
 permalink: /:categories/:year/:title.html
