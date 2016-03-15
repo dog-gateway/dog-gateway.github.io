@@ -33,7 +33,7 @@ We are actively involved in some European and International standardization acti
 
 # Who are we? #
 
-We are a team of developers working as postdoc researchers at the [Politecnico di Torino](http://www.polito.it). We carry design and development activities in our spare time and, when possible, during normal working hours (if the designed/developed feature is part of a research project). Dog benefits also by the work of several contributors, working in different companies.
+We are an heterogeneous team of developers either working as postdoc researchers at the [Politecnico di Torino](http://www.polito.it), or as researchers at the [Istituto Superiore Mario Boella](http://www.ismb.it). We carry design and development activities in our spare time and, when possible, during normal working hours (if the designed/developed feature is part of a research project). Dog benefits also by the work of several contributors, working in different companies.
 
 ---
 
