@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Experimental Bluetooth Low Energy drivers available"
-date:   2016-05-27 07:51
+date:   2016-05-26 07:51
 categories: news
 active: Blog
 ---
