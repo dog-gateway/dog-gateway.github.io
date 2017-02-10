@@ -20,7 +20,7 @@ Before downloading the latest version, check the hardware and software environme
 * Ethernet connection (to access the gateway, and to connect to the automation networks)
 
 ### Download ###
-Download the latest release from [GitHub](https://github.com/dog-gateway/dog/releases). If you are planning to run the Dog Gateway on [Raspberry Pi](http://www.raspberrypi.org/) you might want to check the available pre-compiled [images](/raspberrypi.html).
+Download the latest release from [GitHub](https://github.com/dog-gateway/dog/releases). If you are planning to run the Dog Gateway on [Raspberry Pi](http://www.raspberrypi.org/) you might want to check the additional [information](/raspberrypi.html).
 Check which technology drivers are available and choose the ones you prefer; download the latest releases on the corresponding drivers repositories:
 
  * [BTicino MyHome](https://github.com/dog-gateway/bticino-drivers/releases)
