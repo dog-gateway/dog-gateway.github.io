@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Added support to Multiple Z-Wave gateways"
-date:   2016-10-19 10:29
+date:   2017-02-10 10:02
 categories: news
 active: Blog
 ---
