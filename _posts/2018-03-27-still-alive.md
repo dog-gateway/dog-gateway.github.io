@@ -9,6 +9,6 @@ You might have noticed a sensible decrease in "public" activities of the Dog gat
 
 We plan to invest more effort on Dog in the next months, both on fixing/upgrading dog modules to the latest versions of libraries and solutions, and on further automation on Dog modules building with the aim of making Dog fully buildable through Maven (Tycho).
 
-We would like to here from you about desired features, annoying bugs, suggestions, etc. So please, stay tuned and contact us for any concern! We are always open to new contributors, if you wich to get more involved in the project, drop us few lines describing what is your planned contribution and/or you would like to help us in this project.
+We would like to here from you about desired features, annoying bugs, suggestions, etc. So please, stay tuned and contact us for any concern! We are always open to new contributors, if you wish to get more involved in the project, drop us few lines describing what is your planned contribution and/or how you would like to help us in this project.
 
 The Dog development Team
