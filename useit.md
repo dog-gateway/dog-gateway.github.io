@@ -28,10 +28,34 @@ Check which technology drivers are available and choose the ones you prefer; dow
  * [Echelon](https://github.com/dog-gateway/echelon-drivers/releases)
  * [Modbus](https://github.com/dog-gateway/modbus-drivers/releases)
  * [Z-Wave](https://github.com/dog-gateway/zwave-drivers/releases)
+ 
+### Debian packages ###
+Dog is now available as a Debian package usable for Debian-related distros. Packages have been tested with:
+
+* Ubuntu Linux
+* Raspbian Buster
+
+The last available version is:
+ * [Dog 3.1.0](/assets/releases/dog-oss.deb)
+
+Whereas older versions can be found here:
+ * [Older releases](/assets/releases)
 
 <a id="Installation"></a>
 
-### Installation  ###
+### Installation ###
+Once downloaded the latest Debian package, copy it to you target, DEBIAN-based, system and type:
+
+```shell
+sudo apt install ./dog-oss.deb
+```
+After the end of the installation process you instance of Dog should be running as a service (named dog-gateway) and you should be able to access it diagnostic interface at the 8080 http port:
+
+* http://<your-target-system-ip>:8080/admin/ui/index.html
+
+Please notice that the current package contains only a limited subset of the Dog packages. Soon complementary packages will be released to add functionalities to the core Dog distribution.
+
+### Installation  from sources###
 Ok you've got the latest release, what to do next?
 
 * Uncompress the release file in the directory in which you want to install the gateway (or move it later to the right place); e.g.,<br/> 
