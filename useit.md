@@ -36,10 +36,14 @@ Dog is now available as a Debian package usable for Debian-related distros. Pack
 * Raspbian Buster
 
 The last available version is:
- * [Dog 3.1.0](/assets/releases/dog-oss.deb)
+ * [Dog 3.1.2](/assets/releases/dog-oss.deb)
 
 Whereas older versions can be found here:
- * [Older releases](/assets/releases)
+ * [Dog 3.0.2](/assets/releases/dog-oss-3.0.2.deb)
+ * [Dog 3.0.3](/assets/releases/dog-oss-3.0.3.deb)
+ * [Dog 3.0.4](/assets/releases/dog-oss-3.0.4.deb)
+ * [Dog 3.1.0](/assets/releases/dog-oss-3.1.0.deb)
+ * [Dog 3.1.1](/assets/releases/dog-oss-3.1.1.deb)
 
 <a id="Installation"></a>
 
