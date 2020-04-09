@@ -49,23 +49,23 @@ Whereas older versions can be found here:
 <a id="Installation"></a>
 
 ### Installation ###
-Once downloaded the latest Debian package, copy it to you target, DEBIAN-based, system and type:
+Once downloaded the latest Debian package, copy it to your target, DEBIAN-based, system and type:
 
 ```shell
 sudo apt install ./dog-oss.deb
 ```
-After the end of the installation process you instance of Dog should be running as a service (named dog-gateway) and you should be able to access it diagnostic interface at the 8080 http port:
+After the end of the installation process your instance of Dog should be running as a service (named dog-gateway) and you should be able to access its diagnostic interface at the 8080 http port:
 
 * http://<your-target-system-ip>:8080/admin/ui/index.html
 
-Please notice that the current package contains only a limited subset of the Dog packages. Soon complementary packages will be released to add functionalities to the core Dog distribution.
+Please notice that the current package contains only a limited subset of the Dog packages. Complementary packages will be released soon to add functionalities to the core Dog distribution.
 
-### Installation  from sources###
+### Installation  from sources ###
 Ok you've got the latest release, what to do next?
 
 * Uncompress the release file in the directory in which you want to install the gateway (or move it later to the right place); e.g.,<br/> 
 	```
-	unzip dog-3.0.0.zip
+	unzip dog-3.2.0.zip
 	```
 * If you downloaded some additional drivers, uncompress the driver files in a temporary folder, and move them to the ```drivers``` sub-directory located in the dog installation folder.<br/>
 	```
