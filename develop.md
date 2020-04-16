@@ -22,6 +22,8 @@ sidebar: develop-sidebar.html
 	* Git
 * Download / Fork the project sources
 	* see [http://github.com/dog-gateway](http://github.com/dog-gateway)
+* Dependencies
+	* Most dependencies can be found in the ```dependencies``` folder of the [StandaloneVersion](http://github.com/dog-gateway/standaloneversion repository
 * Organize the sources in the following working sets (reflecting the Dog logic architecture)
 	* addons
 		* [stream-processor](http://github.com/dog-gateway/stream-processor)
@@ -35,7 +37,6 @@ sidebar: develop-sidebar.html
 		* [system-management](http://github.com/dog-gateway/system-management)
 		* [admin-ui](http://github.com/dog-gateway/adminui)
 	* communication
-		* [rest-dependencies](http://github.com/dog-gateway/rest-dependencies)
 		* [device-api](http://github.com/dog-gateway/device-api)
 		* [environment-api](http://github.com/dog-gateway/environment-api)
 		* [rule-engine-api](http://github.com/dog-gateway/rule-engine-api)
@@ -47,7 +48,6 @@ sidebar: develop-sidebar.html
 		* [clock](http://github.com/dog-gateway/clock)
 		* [device-factory](http://github.com/dog-gateway/device-factory)
 		* [device-manager](http://github.com/dog-gateway/device-manager)
-		* [semantic-house-model](http://github.com/dog-gateway/semantic-house-model)
 		* [simple-house-model](http://github.com/dog-gateway/simple-house-model)
 		* [core-library](http://github.com/dog-gateway/core-library)
 		* [jaxb-library](http://github.com/dog-gateway/jaxb-library)
