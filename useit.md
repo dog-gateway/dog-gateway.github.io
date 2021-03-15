@@ -48,7 +48,9 @@ Whereas older versions can be found here:
  * [Dog 3.2.0](/assets/releases/dog-oss-3.2.0.deb)
  * [Dog 3.3.0](/assets/releases/dog-oss-3.3.0.deb)
  * [Dog 3.4.0](/assets/releases/dog-oss-3.4.0.deb) - [md5](/assets/releases/dog-oss-3.4.0.deb.md5)
- * [Dog 3.4.1](/assets/releases/dog-oss.deb) - [md5](/assets/releases/dog-oss.deb.md5)
+ * [Dog 3.4.1](/assets/releases/dog-oss-3.4.1.deb) - [md5](/assets/releases/dog-oss-3.4.1.deb.md5)
+ * [Dog 3.5.0](/assets/releases/dog-oss-3.5.0.deb) - [md5](/assets/releases/dog-oss-3.5.0.deb.md5)
+ * [Dog 3.5.1](/assets/releases/dog-oss.deb) - [md5](/assets/releases/dog-oss.deb.md5)
 
 <a id="Installation"></a>
 
