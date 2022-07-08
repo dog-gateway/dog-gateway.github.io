@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dog 3.5.7 is OUT!"
-date:   2022-05-16 10:00
+date:   2022-07-08 06:00
 categories: news
 active: Blog
 ---
