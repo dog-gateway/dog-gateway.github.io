@@ -1,5 +1,7 @@
 - name: Dario Bonino
-  description: Researcher at Istituto Superiore Mario Boella (ISMB). He received his M.S. and Ph.D. degrees in Electronics and Computer Science Engineering, from Politecnico di Torino in 2002 and 2006. 
+  website: https://www.linkedin.com/in/dariobonino/
+  website-name: LinkedIn profile
+  description: Big Data Software Engineer at CHILI. He received his M.S. and Ph.D. degrees in Electronics and Computer Science Engineering, from Politecnico di Torino in 2002 and 2006. 
   image: assets/img/people/dbonino.jpg
   
 - name: Luigi De Russis
