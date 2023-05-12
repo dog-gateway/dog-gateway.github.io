@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Dog 3.5.8 is OUT!"
+title:  "Dog 3.5.9 is OUT!"
 date:   2023-03-19 10:00
 categories: news
 active: Blog

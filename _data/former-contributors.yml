@@ -4,7 +4,7 @@
   image: assets/img/people/contributors/montanaro-teodoro.jpg
   
 - name: Davide Aimone
-  website: http://it.linkedin.com/pub/davide-aimone/4b/714/3a3
+  website: https://www.linkedin.com/in/davide-aimone/
   website-name: LinkedIn profile
   description: Software Developer at Freepath s.r.l.
   image: assets/img/people/former/contributors/aimone-davide.jpg
@@ -18,7 +18,7 @@
   
 - name: Enrico Allione
   image: assets/img/people/former/contributors/enrico-allione.jpg
-  website: it.linkedin.com/in/icobasco
+  website: https://www.linkedin.com/in/icobasco
   website-name: LinkedIn profile
   
 - name: Marta De Giorgio
